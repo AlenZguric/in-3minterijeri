@@ -1,0 +1,186 @@
+@import '../utils/colors.scss';
+@import '../utils/mixins.scss';
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+
+  .logo {a{
+      
+    img {
+      width: 120px;
+      clip-path: circle(30%);
+      transform: translateX(-15px);
+      
+    }
+  }}
+
+  .hamburger {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 1001;
+
+   
+  }
+
+  .nav {
+    transform: translateX(-230px);
+
+    ul {
+      display: flex;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      background-color: transparent;
+
+      li {
+        margin-left: 3rem;
+        padding: 6px;
+
+        a {
+          color: $text-color;
+          text-decoration: none;
+          font-size: 2.1rem;
+          background: transparent;
+          padding: 4px 10px;
+          @include hover-effect;
+        }
+      }
+    }
+  }
+
+}
+
+// Mobile size
+@media (max-width: 768px) {
+  .header {
+
+    .hamburger {
+      display: block;
+    
+    }
+
+    .nav {
+      position: fixed;
+      right: 0;
+      top: 0;
+      height: 100%;
+      width: 250px;
+      background-color: #3333335b;
+      transform: translateX(100%);
+      transition: transform 0.9s ease-in-out;
+      z-index: 1000;
+
+      ul {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+
+        li {
+          margin: 1rem 0;
+        }
+      }
+    }
+
+    .nav.open {
+      transform: translateX(0);
+      background-color: $navbar_background-color;
+      ul li a{
+        color: white;
+      }
+    }
+  }
+}
+
+// Tablet portrait
+@media (min-width: 768px) and (max-width: 991px) {
+  .header {
+    .hamburger {
+      display: block;
+    }
+
+    .nav {
+      position: fixed;
+      right: 0;
+      top: 0;
+      height: 100%;
+      width: 350px;
+      background-color: #3333335b;
+      transform: translateX(100%);
+      transition: transform 0.9s ease-in-out;
+      z-index: 1000;
+
+      ul {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+
+        li {
+          margin: 1rem 0;
+        }
+      }
+    }
+
+    .nav.open {
+      transform: translateX(0);
+      background-color: $navbar_background-color;
+      ul li a{
+        color: white;
+      }
+    }
+  }
+}
+
+
+// Tablet landscape, Laptop, Desktop
+@media (min-width: 992px) {
+  .header {
+    .hamburger {
+      display: none;
+    }
+
+    .nav {
+      position: relative;
+      transform: translateX(0);
+      display: flex;
+      align-items: center;
+
+      ul {
+        flex-direction: row;
+
+        li {
+          margin-left: 3rem;
+          padding: 6px;
+
+          a {
+            font-size: 2rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Large Desktop, TV etc.
+@media (min-width: 1200px) {
+  .header {
+    .nav {
+      transform: translateX(0);
+
+      ul li a {
+        font-size: 2.1rem;
+      }
+    }
+  }
+}

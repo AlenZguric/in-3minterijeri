@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+.header-component {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  top: 100px;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../../assets/images/fullsize/header-home-big1.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.header-component::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: inherit;
+  background-size: inherit;
+  background-position: inherit;
+  filter: blur(3px);
+  z-index: 1;
+}
+.header-component .box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  z-index: 2;
+}
+.header-component .box h1 {
+  color: white;
+  text-shadow: -2px -1px 0px black, 1px -1px 0px black, -1px 1px 0px black, 1px 1px 0px black;
+  font-size: 6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: "Caveat", "Roboto", sans-serif;
+}
+.header-component .box h2 {
+  font-size: 2rem;
+  margin-top: 40px;
+  color: #464545;
+}/*# sourceMappingURL=Header.css.map */

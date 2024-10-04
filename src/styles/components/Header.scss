@@ -1,0 +1,54 @@
+@import "../utils/main.scss";
+
+.header-component {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  // position: relative;
+  top: 100px;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../../assets/images/fullsize/header-home-big1.jpg");
+  background-size: cover;
+  background-position: center;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: inherit;
+    background-size: inherit;
+    background-position: inherit;
+    filter: blur(3px);
+    z-index: 1;
+  }
+
+  .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    h1 {
+      color: white;
+      text-shadow: 
+    -2px -1px 0px black,
+    1px -1px 0px black,
+    -1px 1px 0px black,
+    1px 1px 0px black;
+      font-size: 6rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      font-family: "Caveat", "Roboto", sans-serif;
+    }
+    h2 {
+      font-size: 2rem;
+      margin-top: 40px;
+      color: $text-color;
+    }
+  }
+}
