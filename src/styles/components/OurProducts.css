@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+.our-products {
+  padding: 50px 0;
+  text-align: center;
+  background-color: rgb(75, 77, 77);
+}
+.our-products .title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+.our-products .title h2 {
+  font-size: 3rem;
+  color: rgba(255, 255, 255, 0.781);
+}
+.our-products .product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+.our-products .product-list .product-item {
+  width: 250px;
+  text-align: center;
+  margin-top: 50px;
+}
+.our-products .product-list .product-item:hover {
+  transform: scale(1.1);
+}
+.our-products .product-list .product-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.our-products .product-list .product-item h3 {
+  font-size: 1.5rem;
+  margin: 20px 0 10px;
+}
+.our-products .product-list .product-item p {
+  color: #666;
+  font-size: 1rem;
+}/*# sourceMappingURL=OurProducts.css.map */

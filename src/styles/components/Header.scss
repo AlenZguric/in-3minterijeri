@@ -5,27 +5,23 @@
   flex-direction: column;
   width: 100%;
   height: 100vh;
-  // position: relative;
-  top: 100px;
   justify-content: center;
   align-items: center;
-  background-image: url("../../assets/images/fullsize/header-home-big1.jpg");
-  background-size: cover;
-  background-position: center;
-  &::before {
-    content: "";
+  position: relative;
+  
+  .background-image {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: inherit;
-    background-size: inherit;
-    background-position: inherit;
-    filter: blur(3px);
+    background-image: url("../../assets/images/fullsize/HomePage1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.5); // Crni overlay
+    filter: brightness(0.4); // Potamnjenje
     z-index: 1;
   }
-
   .box {
     display: flex;
     flex-direction: column;
@@ -33,22 +29,37 @@
     width: 100%;
     position: relative;
     z-index: 2;
-    h1 {
-      color: white;
-      text-shadow: 
-    -2px -1px 0px black,
-    1px -1px 0px black,
-    -1px 1px 0px black,
-    1px 1px 0px black;
-      font-size: 6rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      font-family: "Caveat", "Roboto", sans-serif;
+    p {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color:$text-color;
+      margin-bottom: 20px;
+
+      span {
+        font-size: 6rem;
+        text-transform: uppercase;
+        font-family: "Roboto Mono", monospace;
+        font-optical-sizing: auto;
+        letter-spacing: 20px;
+        font-weight: 400;
+        align-content: space-between;
+      }
+      :nth-child(2) {
+        font-size: 5rem;
+        font-weight: 400;
+        margin-top: 25px;
+        margin-bottom: 60px;
+      }
     }
     h2 {
-      font-size: 2rem;
-      margin-top: 40px;
-      color: $text-color;
+      font-size: 1, 25rem;
+      color:$text-color;
+      text-transform: lowercase;
+      font-weight: 300;
+      letter-spacing: 4px;
+      margin-top: 80px;
+      transform: translate(-150px, 100px);
     }
   }
 }

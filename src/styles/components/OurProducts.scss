@@ -1,0 +1,52 @@
+@import "../utils/main.scss";
+
+.our-products {
+    padding: 50px 0;
+    text-align: center;
+    background-color: $background_color_div;
+  
+   .title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    margin-bottom: 40px;
+    h2 {
+      font-size: 3rem;
+      color: $text-color;
+     
+    }}
+  
+    .product-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    
+  
+    .product-item {
+      width: 250px;
+      text-align: center;
+      margin-top: 50px;
+
+      &:hover{
+        transform: scale(1.1) ;
+      }
+      img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+  
+      h3 {
+        font-size: 1.5rem;
+        margin: 20px 0 10px;
+      }
+  
+      p {
+        color: #666;
+        font-size: 1rem;
+      }
+    }}
+  }
+  

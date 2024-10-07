@@ -4,9 +4,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family:  'Roboto', 'Open sans', sans-serif;
  
 }
 body{
   background-color: white;
+  font-family: 'Roboto','Open Sans', sans-serif;
 }

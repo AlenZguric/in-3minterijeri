@@ -2,6 +2,9 @@ import React from "react";
 import { Helmet } from "react-helmet";
 import Header from "../components/Header";
 import NavBar from "../components/NavBar";
+import WhyChooseUs from "../components/WhyChooseUs ";
+import OurProducts from "../components/OurProducts";
+import Questions from "../components/Questions";
 
 const HomePage = () => {
   return (
@@ -26,11 +29,15 @@ const HomePage = () => {
         <section>
           <article>
             <Header />
+            <WhyChooseUs/>
           </article>
         </section>
         <section>
-          <article></article>
+          <article>
+            <OurProducts/>
+          </article>
         </section>
+        <Questions/>
         <section>
           <article></article>
         </section>

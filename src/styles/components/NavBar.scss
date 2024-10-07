@@ -7,7 +7,7 @@
   align-items: center;
   padding: 1rem;
   background-color: transparent;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   z-index: 2;
@@ -16,8 +16,8 @@
   .logo {a{
       
     img {
-      width: 120px;
-      clip-path: circle(30%);
+      width: 150px;
+      clip-path: circle(33%);
       transform: translateX(-15px);
       
     }
@@ -44,15 +44,16 @@
 
       li {
         margin-left: 3rem;
-        padding: 6px;
+        padding: 2px;
 
         a {
           color: $text-color;
           text-decoration: none;
+          font-weight: 200;
           font-size: 2.1rem;
           background: transparent;
-          padding: 4px 10px;
-          @include hover-effect;
+          padding: 1px 10px;
+                    @include hover-effect;
         }
       }
     }

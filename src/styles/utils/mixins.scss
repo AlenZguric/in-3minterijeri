@@ -1,6 +1,8 @@
+@import "../utils/colors.scss";
+
 @mixin hover-effect {
     &:hover {
-      background-color: white;
+      background-color:$text-color;
       color: black;
       border-radius: 10px;
       transition: 0.5s ease-in-out all; }
