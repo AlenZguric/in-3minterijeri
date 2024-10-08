@@ -3,19 +3,12 @@ import '../styles/components/WhyChooseUs.css';
 import DiamondIcon from '@mui/icons-material/Diamond';
 import SupportAgentIcon from '@mui/icons-material/SupportAgent';
 import DesignServicesIcon from '@mui/icons-material/DesignServices';
-import { Helmet } from 'react-helmet';
 
 
 
 const WhyChooseUs = () => {
   return (
     <div className="why-choose-us">
-         <Helmet>
-        <title>Zašto odabrati nas | In3m Interijeri</title>
-        <meta name="description" content="Saznajte zašto odabrati In3m Interijeri. Nudimo vrhunsku kvalitetu, potpuno prilagođene proizvode i profesionalnu podršku kroz cijeli proces izrade namještaja." />
-        <meta name="keywords" content="vrhunska kvaliteta, prilagođeni namještaj, profesionalna podrška, In3m Interijeri" />
-        <meta name="author" content="In3m Interijeri" />
-      </Helmet>
       <div className="title">
       <h2>Zašto odabrati nas?</h2>
 

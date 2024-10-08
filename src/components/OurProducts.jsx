@@ -4,7 +4,6 @@ import kupaoniceImg from "../assets/images/smallsize/kupaonica/kupaona-small.jpg
 import kuhinjaImg from "../assets/images/smallsize/kuhinja/kuhinja-small.jpg";
 import ormarImg from "../assets/images/smallsize/ormar/ormar-small.jpg";
 import predobljeImg from "../assets/images/smallsize//predsoblje/predoblje-small.jpg";
-import { Helmet } from 'react-helmet';
 
 const OurProducts = () => {
   const products = [
@@ -16,12 +15,6 @@ const OurProducts = () => {
 
   return (
     <div className="our-products">
-           <Helmet>
-        <title>Naši proizvodi | In3m Interijeri</title>
-        <meta name="description" content="Pogledajte našu ponudu vrhunskih proizvoda: elegantne kupaonice, dizajnerske kuhinje, ormari po mjeri, i stilizirana predsoblja." />
-        <meta name="keywords" content="kupaonice, kuhinje, ormari, predsoblja, namještaj po mjeri, interijeri" />
-        <meta name="author" content="Alen Zgurić" />
-      </Helmet>
       <div className="title">
       <h2>Naši proizvodi</h2>
 

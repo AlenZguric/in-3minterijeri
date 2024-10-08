@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import "../styles/components/Questions.css";
-import { Helmet } from "react-helmet";
 
 const Questions = () => {
   const [openIndex, setOpenIndex] = useState(null);
@@ -65,12 +64,6 @@ const Questions = () => {
 
   return (
     <div className="faq-component">
-      <Helmet>
-        <title>Česta Pitanja | In3m Interijeri</title>
-        <meta name="description" content="Odgovori na najčešće postavljana pitanja o izradi namještaja po mjeri, montaži, materijalima, i ostalim uslugama koje nudimo." />
-        <meta name="keywords" content="česta pitanja, izrada namještaja, materijali, montaža, prilagođeni dizajn" />
-        <meta name="author" content="Alen Zgurić" />
-      </Helmet>
       <h2>Česta Pitanja</h2>
       <div className="faq-list">
         {questions.map((q, index) => (

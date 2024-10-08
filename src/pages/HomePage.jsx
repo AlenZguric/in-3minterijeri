@@ -7,46 +7,52 @@ import OurProducts from "../components/OurProducts";
 import Questions from "../components/Questions";
 import ContactForm from "../components/ContactForm";
 import { motion } from "framer-motion";
-
-const scrollAnimation = {
-  hidden: { opacity: 0, y: 100 },
-  show: { opacity: 1, y: 0, transition: { duration: 1 } }
-};
-const scrollAnimationDownRight = {
-  hidden: { opacity: 0, x: 100, y: 100 }, 
-  show: { opacity: 1, x: 0, y: 0, transition: { duration: 1 } } 
-};
-
+import { scrollAnimations } from "../styles/utils/animations/animations";
 
 const HomePage = () => {
-
-useEffect(()=>{
-  window.scrollTo(0,0);
-},[])
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div className="home-page">
       <Helmet>
-        <title>Ne tražite namještaj - Izradite ga po mjeri</title>
+        <title>In-3M Interijeri - Namještaj po mjeri za vaš dom</title>
         <meta
           name="description"
-          content="Izradite namještaj po mjeri Vašeg životnog prostora. Pogledajte naše radove i inspiraciju."
+          content="Izradite namještaj po mjeri za svoj dom ili ured. Nudimo personalizirane kuhinje, kupaonice, ormare i predsoblja vrhunske kvalitete."
         />
         <meta
           name="keywords"
-          content="namještaj, izrada namještaja, interijeri, dizajn, izrada namještaja po mjeri, namještaj po mjeri, galerija kuhinja, kuhinje, kuhinje po mjeri"
+          content="namještaj po mjeri, kuhinje po mjeri, kupaonice, ormar, predsoblje, interijer, personalizirani namještaj"
         />
         <meta name="author" content="Alen Zgurić" />
+        <meta name="robots" content="index, follow" />
+        <meta property="og:title" content="In-3M Interijeri" />
+        <meta
+          property="og:description"
+          content="Personaliziran namještaj po mjeri za dom ili ured. Pogledajte našu ponudu i radove."
+        />
+        <meta property="og:image" content="URL_OG_IMAGE" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://in3m-interijeri.web.app" />
+        <link rel="canonical" href="https://in3m-interijeri.web.app" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="In-3M Interijeri" />
+        <meta
+          name="twitter:description"
+          content="Najbolji namještaj po mjeri za dom i ured."
+        />
+        <meta name="twitter:image" content="URL_TWITTER_IMAGE" />
       </Helmet>
       <header>
         <NavBar />
       </header>
-
       <main>
         <motion.section
           initial="hidden"
           whileInView="show"
-          variants={scrollAnimation}
+          //variants={scrollAnimations.fadeInDownRight}
           viewport={{ once: true, amount: 0.1 }}
         >
           <Header />
@@ -55,7 +61,7 @@ useEffect(()=>{
         <motion.section
           initial="hidden"
           whileInView="show"
-          variants={scrollAnimation}
+          variants={scrollAnimations.fadeInUp}
           viewport={{ once: true, amount: 0.4 }}
         >
           <WhyChooseUs />
@@ -64,7 +70,7 @@ useEffect(()=>{
         <motion.section
           initial="hidden"
           whileInView="show"
-          variants={scrollAnimationDownRight}
+          variants={scrollAnimations.fadeInDownRight}
           viewport={{ once: true, amount: 0.2 }}
         >
           <OurProducts />
@@ -73,7 +79,7 @@ useEffect(()=>{
         <motion.section
           initial="hidden"
           whileInView="show"
-          variants={scrollAnimation}
+          variants={scrollAnimations.scaleUp}
           viewport={{ once: true, amount: 0.2 }}
         >
           <Questions />
@@ -82,7 +88,7 @@ useEffect(()=>{
         <motion.section
           initial="hidden"
           whileInView="show"
-          variants={scrollAnimation}
+          variants={scrollAnimations.scaleUp}
           viewport={{ once: true, amount: 0.2 }}
         >
           <ContactForm />
