@@ -1,11 +1,18 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { Helmet } from "react-helmet";
 
 import "../styles/components/Header.css";
 
 const Header = () => {
   return (
     <div className="header-component">
+       <Helmet>
+        <title>In3m Interijeri | Namještaj po mjeri</title>
+        <meta name="description" content="Transformirajte svoj prostor s namještajem koji odražava vaš stil i osobnost. Namještaj po mjeri za svaki dom." />
+        <meta name="keywords" content="namještaj po mjeri, interijeri, dizajn interijera, personalizirani namještaj" />
+        <meta name="author" content="Alen Zgurić" />
+      </Helmet>
        <motion.div
         className="background-image"
         initial={{ y: 500, opacity: 0 }} // Početna pozicija (izvan ekrana, dole)

@@ -1,9 +1,12 @@
 @import "../utils/main.scss";
 
 .our-products {
+  display: flex;
+  flex-direction: column;
     padding: 50px 0;
     text-align: center;
     background-color: $background_color_div;
+    height: 100vh;
   
    .title{
     display: flex;

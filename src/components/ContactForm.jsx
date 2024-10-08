@@ -1,23 +1,26 @@
-import axios from 'axios';
-import React, { useState } from 'react'
+import React, { useState } from "react";
+import { TextField, Button, IconButton, Box } from "@mui/material";
+import { Facebook, Instagram } from "@mui/icons-material";
+import axios from "axios";
+import { ToastContainer, toast } from "react-toastify";
+import {Helmet} from "react-helmet";
+import "react-toastify/dist/ReactToastify.css";
 
-import "../styles/components/ContactForm.css";
+import "../styles/components/ContactForm.scss";
 
 const ContactForm = () => {
-
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [message, setMessage] = useState('');
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [number, setNumber] = useState("");
+  const [message, setMessage] = useState("");
 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    // Your EmailJS service ID, template ID, and Public Key
     const serviceId = process.env.REACT_APP_EMAILJS_SERVICE_ID;
-    const templateId =process.env.REACT_APP_EMAILJS_TEMPLATE_ID;
+    const templateId = process.env.REACT_APP_EMAILJS_TEMPLATE_ID;
     const publicKey = process.env.REACT_APP_EMAILJS_PUBLIC_KEY;
 
-    // Create an object with EmailJS service ID, template ID, Public Key, and Template params
     const data = {
       service_id: serviceId,
       template_id: templateId,
@@ -25,49 +28,189 @@ const ContactForm = () => {
       template_params: {
         from_name: name,
         from_email: email,
-        to_name: 'Web Wizard',
+        from_number: number,
+        to_name: "Žarko",
         message: message,
-      }
+      },
     };
 
-    // Send the email using EmailJS
     try {
-      const res = await axios.post("https://api.emailjs.com/api/v1.0/email/send", data);
+      const res = await axios.post(
+        "https://api.emailjs.com/api/v1.0/email/send",
+        data
+      );
       console.log(res.data);
-      setName('');
-      setEmail('');
-      setMessage('');
+      setName("");
+      setEmail("");
+      setNumber("");
+      setMessage("");
+      toast.success(
+        "Email uspješno poslan! Odgovoriti ćemo Vam u najkraćem mogućem vremenu.",
+        {
+          position: "top-right",
+          autoClose: 5000,
+        }
+      );
     } catch (error) {
       console.error(error);
+      toast.error(
+        "Došlo je do greške prilikom slanja emaila. Pokušajte ponovno.",
+        {
+          position: "top-right",
+          autoClose: 5000,
+        }
+      );
     }
-  }
+  };
 
   return (
-    <div>
-      <form onSubmit={handleSubmit} className='emailForm'>
-        <input
-          type="text"
-          placeholder="Your Name"
+    
+    <Box className="contact-container">
+        <Helmet>
+        <title>Kontaktirajte nas - In3m Interijeri</title>
+        <meta name="description" content="Kontaktirajte In3m Interijere putem naše forme ili nas pratite na društvenim mrežama. Naš tim je dostupan za sve upite i suradnju." />
+        <meta name="keywords" content="In3m Interijeri, kontakt, dizajn interijera, Facebook, Instagram" />
+        <meta name="author" content="Alen Zgurić" />
+      </Helmet>
+      <Box className="contact-info">
+        <div className="title-contact-info">
+          <h2>Izradimo nešto zajedno</h2>
+          <h4>NAZOVI NAS</h4>
+        </div>
+        <div className="contact-info">
+          <address>
+            <dl>
+              <dt></dt>
+              <dd>In3m Interijeri</dd>
+
+              <dt></dt>
+              <dd>
+                <a href="tel:+385917208379">+385 91 720 8379</a>
+              </dd>
+
+              <dt></dt>
+              <dd>
+                <a href="mailto:info.in3m@gmail.com">info.in3m@gmail.com</a>
+              </dd>
+            </dl>
+          </address>
+        </div>
+
+        <Box className="social-icons">
+          <div className="title-social">
+            {/* <h3>
+              <span>* </span>zapratite nas
+            </h3> */}
+          </div>
+          <div className="icons-social">
+            <IconButton
+              href="https://www.instagram.com/interijeri_in3m/"
+              target="_blank"
+              className="instagram"
+            >
+              <Instagram />
+            </IconButton>
+            <IconButton
+              href="https://web.facebook.com/profile.php?id=100090646789855"
+              target="_blank"
+            >
+              <Facebook />
+            </IconButton>
+          </div>
+        </Box>
+      </Box>
+
+      <Box component="form" onSubmit={handleSubmit} className="contact-form">
+        <TextField
+          fullWidth
+          label="Ime"
           value={name}
           onChange={(e) => setName(e.target.value)}
+          margin="normal"
+          sx={{
+            '& .MuiInputBase-root': {
+              backgroundColor: ' rgb(75,77,77)', 
+            },
+            '& .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline': {
+              borderColor: 'white', // Boja okvira kad je fokusirano
+            },
+            '& .MuiInputLabel-root.Mui-focused': {
+              color: 'white', // Boja labela kad je fokusirano
+            },
+          }}
+          required
         />
-        <input
-          type="email"
-          placeholder="Your Email"
+        <TextField
+          fullWidth
+          label="E-mail"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
+          margin="normal"
+          sx={{
+            '& .MuiInputBase-root': {
+              backgroundColor: ' rgb(75,77,77)', 
+            },
+            '& .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline': {
+              borderColor: 'white', // Boja okvira kad je fokusirano
+            },
+            '& .MuiInputLabel-root.Mui-focused': {
+              color: 'white', // Boja labela kad je fokusirano
+            },
+          }}
+          required
         />
-        <textarea
-          cols="30"
-          rows="10"
+        <TextField
+          label="Broj tel."
+          value={number}
+          onChange={(e) => setNumber(e.target.value)}
+          sx={{
+            '& .MuiInputBase-root': {
+              backgroundColor: ' rgb(75,77,77)', 
+            },
+            '& .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline': {
+              borderColor: 'white', // Boja okvira kad je fokusirano
+            },
+            '& .MuiInputLabel-root.Mui-focused': {
+              color: 'white', // Boja labela kad je fokusirano
+            },
+          }}
+        />
+        <TextField
+          fullWidth
+          label="Unesi poruku"
           value={message}
           onChange={(e) => setMessage(e.target.value)}
+          margin="normal"
+          multiline
+          rows={4}
+          required
+          sx={{
+            '& .MuiInputBase-root': {
+              backgroundColor: ' rgb(75,77,77)', 
+            },
+            '& .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline': {
+              borderColor: 'white', // Boja okvira kad je fokusirano
+            },
+            '& .MuiInputLabel-root.Mui-focused': {
+              color: 'white', // Boja labela kad je fokusirano
+            },
+          }}
+        />
+        <Button
+          type="submit"
+          variant="contained"
+          sx={{
+            backgroundColor: "#e4dfdf",
+            color: "black",
+            "&:hover": { backgroundColor: "#eec668" },
+          }}
         >
-        </textarea>
-        <button type="submit">Send Email</button>
-      </form>
-    </div>
-  )
-}
+          zatraži ponudu
+        </Button>
+      </Box>
+      <ToastContainer />
+    </Box>
+  );
+};
 
 export default ContactForm;
