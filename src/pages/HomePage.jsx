@@ -5,6 +5,7 @@ import NavBar from "../components/NavBar";
 import WhyChooseUs from "../components/WhyChooseUs ";
 import OurProducts from "../components/OurProducts";
 import Questions from "../components/Questions";
+import ContactForm from "../components/ContactForm";
 
 const HomePage = () => {
   return (
@@ -39,7 +40,9 @@ const HomePage = () => {
         </section>
         <Questions/>
         <section>
-          <article></article>
+          <article>
+            <ContactForm/>
+          </article>
         </section>
       </main>
     </div>

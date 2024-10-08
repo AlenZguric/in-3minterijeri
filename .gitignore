@@ -4,6 +4,7 @@
 /node_modules
 firebase.json
 .firebaserc
+.env
 /.pnp
 .pnp.js
 
