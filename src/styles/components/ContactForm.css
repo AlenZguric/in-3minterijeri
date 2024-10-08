@@ -98,11 +98,27 @@
   display: flex;
   flex-direction: column;
   width: 45%;
-  max-height: 500px;
+  height: 50%;
   padding: 1rem;
   transform: translateY(450px);
   background-color: rgba(44, 42, 42, 0.4431372549);
-  border-radius: 45px 0px 15px 10px;
+  border-radius: 45px 95px 0px 1045px;
+}
+.contact-container .contact-form .title-contact {
+  display: flex;
+  flex-direction: column;
+}
+.contact-container .contact-form .title-contact p {
+  color: rgba(255, 255, 255, 0.781);
+  padding: 15px;
+  font-size: 1rem;
+  font-weight: 200;
+  letter-spacing: 1px;
+}
+.contact-container .contact-form .title-contact p:nth-child(2) {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 0.8rem;
 }
 .contact-container .contact-form .MuiTextField-root {
   margin-bottom: 1.5rem;
@@ -110,4 +126,5 @@
 }
 .contact-container .contact-form .MuiButton-containedPrimary {
   margin-top: 1rem;
+  margin-bottom: 100px;
 }/*# sourceMappingURL=ContactForm.css.map */

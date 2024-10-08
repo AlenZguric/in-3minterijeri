@@ -48,6 +48,7 @@ const HomePage = () => {
       <header>
         <NavBar />
       </header>
+
       <main>
         <motion.section
           initial="hidden"
