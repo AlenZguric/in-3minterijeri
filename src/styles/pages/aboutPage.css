@@ -5,8 +5,5 @@
   flex-direction: column;
   width: 100%;
   height: 100vh;
-  background-image: url("../../assets/images/fullsize/backAboutPage.png");
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-image: linear-gradient(to right, #ffffff, #e2e2e4, #c5c5ca, #a8aab1, #8c8f98, #7c818a, #6c737b, #5d666d, #576064, #535a5c, #4f5354, #4b4d4d);
 }/*# sourceMappingURL=aboutPage.css.map */

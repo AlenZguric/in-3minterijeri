@@ -8,6 +8,8 @@ import Questions from "../components/Questions";
 import ContactForm from "../components/ContactForm";
 import { motion } from "framer-motion";
 import { scrollAnimations } from "../styles/utils/animations/animations";
+import OurBusiness from "../components/OurBusiness";
+import ScrollingText from "../components/ScrollingText";
 
 const HomePage = () => {
   useEffect(() => {
@@ -65,9 +67,18 @@ const HomePage = () => {
           variants={scrollAnimations.fadeInUp}
           viewport={{ once: true, amount: 0.4 }}
         >
-          <WhyChooseUs />
+          <OurBusiness />
         </motion.section>
 
+        <motion.section
+          initial="hidden"
+          whileInView="show"
+          variants={scrollAnimations.fadeInUp}
+          viewport={{ once: true, amount: 0.4 }}
+        >
+          <WhyChooseUs />
+        </motion.section>
+<ScrollingText/>
         <motion.section
           initial="hidden"
           whileInView="show"

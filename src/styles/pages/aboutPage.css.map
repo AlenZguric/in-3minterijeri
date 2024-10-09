@@ -1,1 +1,1 @@
-{"version":3,"sources":["../utils/fonts.scss","aboutPage.scss","aboutPage.css"],"names":[],"mappings":"AAAQ,4RAAA;AACA,6JAAA;ACCR;EACI,aAAA;EACA,sBAAA;EACA,WAAA;EACA,aAAA;EACA,uEAAA;EACA,4BAAA;EACA,4BAAA;EACA,sBAAA;ACCJ","file":"aboutPage.css"}
+{"version":3,"sources":["../utils/fonts.scss","aboutPage.scss","aboutPage.css"],"names":[],"mappings":"AAAQ,4RAAA;AACA,6JAAA;ACCR;EACI,aAAA;EACA,sBAAA;EACA,WAAA;EACA,aAAA;EACA,uJAAA;ACCJ","file":"aboutPage.css"}

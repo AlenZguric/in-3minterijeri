@@ -43,7 +43,13 @@
           margin-bottom: 0.5rem;
         }
         dd {
+          display: flex;
           margin-left: 0;
+          background-color: #3d3e3e;
+          padding: 0.5rem;
+          color:  rgba(255, 255, 255, 0.781);
+          justify-content: center;
+
           &:nth-child(1) {
             text-transform: capitalize;
           }
@@ -52,7 +58,8 @@
           }
           a {
             text-decoration: none;
-            color: inherit;
+            color:  rgba(255, 255, 255, 0.781);
+            
           }
         }
       }
@@ -89,6 +96,9 @@
           color: #3b5998; // Facebook default color
           &.instagram {
             color: #e1306c; // Instagram default color
+          }
+          &.whatsapp{
+            color: #25d366;
           }
           svg {
             font-size: 3rem;
