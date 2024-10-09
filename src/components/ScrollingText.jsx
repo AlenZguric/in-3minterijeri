@@ -8,7 +8,7 @@ const ScrollingText = () => {
     { name: '| IVERPAN |', url: 'https://www.iverpan.hr/' },
     { name: '| DEWALT |', url: 'https://www.dewalt.com/' },
     { name: '| FESTOOL |', url: 'https://www.festool.com/' },
-    { name: '| GROSS |', url: 'https://www.gross.com.hr/' }
+    { name: '| GRASS |', url: 'https://www.grass.eu/' }
   ];
 
   return (
