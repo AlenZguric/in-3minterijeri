@@ -8,6 +8,7 @@ import ContactPage from './pages/ContactPage';
 //import NavBar from './components/NavBar';
 
 import '../src/styles/utils/main.css';
+import Services from './pages/ServicesPage';
 
 const App = () => {
   return (
@@ -18,7 +19,8 @@ const App = () => {
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/o-nama" element={<AboutPage />} />
-            <Route path="/galerija" element={<GalleryPage />} />
+            <Route path="/proizvodi" element={<GalleryPage />} />
+            <Route path="/usluge" element={<Services />} />
             <Route path="/kontakt" element={<ContactPage />} />
           </Routes>
      
