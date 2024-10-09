@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { TextField, Button, IconButton, Box } from "@mui/material";
 import { Facebook, Instagram } from "@mui/icons-material";
+import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -69,7 +70,7 @@ const ContactForm = () => {
       <Box className="contact-info">
         <div className="title-contact-info">
           <h2>Izradimo nešto zajedno</h2>
-          <h4>NAZOVI NAS</h4>
+          <h4>kontaktiraj nas;</h4>
         </div>
         <div className="contact-info">
           <address>
@@ -110,6 +111,13 @@ const ContactForm = () => {
             >
               <Facebook />
             </IconButton>
+            <IconButton
+              href="https://wa.me/385917208379"
+              target="_blank"
+              className="whatsapp"
+            >
+              <WhatsAppIcon  />
+            </IconButton>
           </div>
         </Box>
       </Box>
@@ -125,12 +133,14 @@ const ContactForm = () => {
           <p>
             Vaše vizije savršenog namještaja mogu postati stvarnost. Izazovite
             nas i dopustite da vaš dom postane živahno mjesto. Ne čekajte,
-            obratite nam se danas za besplatnu izradu namještaja po
-            mjeri.
+            obratite nam se danas za besplatnu izradu namještaja po mjeri.
           </p>
-          <p> Slanjem ovog obrasca slažete se s pravilima privatnosti naše
+          <p>
+            {" "}
+            Slanjem ovog obrasca slažete se s pravilima privatnosti naše
             stranice. Podaci prikupljeni ovim putem neće biti javno objavljeni
-            niti korišteni u druge svrhe, osim za odgovor na vaš upit!</p>
+            niti korišteni u druge svrhe, osim za odgovor na vaš upit!
+          </p>
         </div>
         <TextField
           fullWidth
