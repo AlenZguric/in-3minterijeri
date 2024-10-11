@@ -65,7 +65,7 @@ const HomePage = () => {
           initial="hidden"
           whileInView="show"
           variants={scrollAnimations.fadeInUp}
-          viewport={{ once: true, amount: 0.4 }}
+          viewport={{ once: true, amount: 0.3 }}
         >
           <OurBusiness />
         </motion.section>
@@ -74,7 +74,7 @@ const HomePage = () => {
           initial="hidden"
           whileInView="show"
           variants={scrollAnimations.fadeInUp}
-          viewport={{ once: true, amount: 0.4 }}
+          viewport={{ once: true, amount: 0.3 }}
         >
           <WhyChooseUs />
         </motion.section>

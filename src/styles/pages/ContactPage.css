@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+.contact-page {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+.contact-page main {
+  display: flex;
+  flex-direction: column;
+  margin-top: 150px;
+}
+.contact-page main .title-contact-page {
+  display: flex;
+  flex-direction: column;
+  transform: translateX(250px);
+  justify-content: center;
+  width: 80%;
+  height: 70vh;
+}
+.contact-page main .title-contact-page .title-box1 h2 {
+  color: white;
+  letter-spacing: 2.5px;
+  font-family: "roboto mono", sans-serif;
+  font-size: 2.1rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.contact-page main .title-contact-page .title-box1 h1 {
+  color: red;
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-family: "roboto mono", sans-serif;
+}
+.contact-page main .title-contact-page .title-box2 {
+  display: flex;
+  flex-direction: column;
+  margin-top: 4rem;
+}
+.contact-page main .title-contact-page .title-box2 p {
+  color: white;
+  letter-spacing: 2px;
+  line-height: 1.5;
+}
+.contact-page main .title-contact-page .title-box2 p span a {
+  color: white;
+  letter-spacing: 2px;
+  line-height: 1.5;
+  text-decoration: none;
+}
+.contact-page main .title-contact-page .title-box2 .button {
+  margin-top: 2rem;
+}
+.contact-page main .title-contact-page .title-box2 .button button {
+  background-color: red;
+  height: 1.8rem;
+  width: 9rem;
+  transition: all 0.3s ease;
+  border-radius: 6px;
+}
+.contact-page main .title-contact-page .title-box2 .button button:hover {
+  background-color: white;
+  color: black;
+  transform: scale(1.05);
+}
+.contact-page main .title-contact-page .title-box2 .button button a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+.contact-page main .title-contact-page .title-box2 .button button a:hover {
+  color: black;
+  transition: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}/*# sourceMappingURL=ContactPage.css.map */

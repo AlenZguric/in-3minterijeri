@@ -7,7 +7,9 @@ import "../styles/pages/aboutPage.css";
 const AboutPage = () => {
   return (
     <div className="aboutUs-page">
-      <Helmet></Helmet>
+      <Helmet>
+        
+      </Helmet>
       <header >
   <NavBar  />
 </header>

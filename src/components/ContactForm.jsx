@@ -67,175 +67,185 @@ const ContactForm = () => {
 
   return (
     <Box className="contact-container">
-      <Box className="contact-info">
-        <div className="title-contact-info">
+      <div className="contact-container-box">
+        <div className="title">
           <h2>Izradimo nešto zajedno</h2>
-          <h4>kontaktiraj nas;</h4>
         </div>
-        <div className="contact-info">
-          <address>
-            <dl>
-              <dt></dt>
-              <dd>In3m Interijeri</dd>
+        <div className="contact-box">
+          <Box className="contact-info-box">
+            <div className="title-contact-info">
+              <h4>kontaktiraj nas</h4>
+            </div>
+            <div className="contact-info">
+              <address>
+                <dl>
+                  <dt></dt>
+                  <dd>In3m Interijeri</dd>
 
-              <dt></dt>
-              <dd>
-                <a href="tel:+385917208379">+385 91 720 8379</a>
-              </dd>
+                  <dt></dt>
+                  <dd>
+                    <a href="tel:+385917208379">+385 91 720 8379</a>
+                  </dd>
 
-              <dt></dt>
-              <dd>
-                <a href="mailto:info.in3m@gmail.com">info.in3m@gmail.com</a>
-              </dd>
-            </dl>
-          </address>
-        </div>
+                  <dt></dt>
+                  <dd>
+                    <a href="mailto:info.in3m@gmail.com">info.in3m@gmail.com</a>
+                  </dd>
+                </dl>
+              </address>
+            </div>
 
-        <Box className="social-icons">
-          <div className="title-social">
-            {/* <h3>
+            <Box className="social-icons">
+              <div className="title-social">
+                {/* <h3>
               <span>* </span>zapratite nas
             </h3> */}
-          </div>
-          <div className="icons-social">
-            <IconButton
-              href="https://www.instagram.com/interijeri_in3m/"
-              target="_blank"
-              className="instagram"
-            >
-              <Instagram />
-            </IconButton>
-            <IconButton
-              href="https://web.facebook.com/profile.php?id=100090646789855"
-              target="_blank"
-            >
-              <Facebook />
-            </IconButton>
-            <IconButton
-              href="https://wa.me/385917208379"
-              target="_blank"
-              className="whatsapp"
-            >
-              <WhatsAppIcon  />
-            </IconButton>
-          </div>
-        </Box>
-      </Box>
-
-      {/* <motion.section
+              </div>
+              <div className="icons-social">
+                <IconButton
+                  href="https://www.instagram.com/interijeri_in3m/"
+                  target="_blank"
+                  className="instagram"
+                >
+                  <Instagram />
+                </IconButton>
+                <IconButton
+                  href="https://web.facebook.com/profile.php?id=100090646789855"
+                  target="_blank"
+                >
+                  <Facebook />
+                </IconButton>
+                <IconButton
+                  href="https://wa.me/385917208379"
+                  target="_blank"
+                  className="whatsapp"
+                >
+                  <WhatsAppIcon />
+                </IconButton>
+              </div>
+            </Box>
+          </Box>
+              {/* <motion.section
         initial="hidden"
         whileInView="show"
         variants={scrollAnimations.fadeInDownRight}
         viewport={{ once: true, amount: 0.2 }}
       > */}
-      <Box component="form" onSubmit={handleSubmit} className="contact-form">
-        <div className="title-contact">
-          <p>
-            Vaše vizije savršenog namještaja mogu postati stvarnost. Izazovite
-            nas i dopustite da vaš dom postane živahno mjesto. Ne čekajte,
-            obratite nam se danas za besplatnu izradu namještaja po mjeri.
-          </p>
-          <p>
-            {" "}
-            Slanjem ovog obrasca slažete se s pravilima privatnosti naše
-            stranice. Podaci prikupljeni ovim putem neće biti javno objavljeni
-            niti korišteni u druge svrhe, osim za odgovor na vaš upit!
-          </p>
+        <Box component="form" onSubmit={handleSubmit} className="contact-form">
+          <div className="title-contact">
+            <p>
+              Vaše vizije savršenog namještaja mogu postati stvarnost. Izazovite
+              nas i dopustite da vaš dom postane živahno mjesto. Ne čekajte,
+              obratite nam se danas za besplatnu izradu namještaja po mjeri.
+            </p>
+            <p>
+              {" "}
+              Slanjem ovog obrasca slažete se s pravilima privatnosti naše
+              stranice. Podaci prikupljeni ovim putem neće biti javno objavljeni
+              niti korišteni u druge svrhe, osim za odgovor na vaš upit!
+            </p>
+          </div>
+          <TextField
+            fullWidth
+            label="Ime"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            margin="normal"
+            sx={{
+              "& .MuiInputBase-root": {
+                backgroundColor: " rgb(75,77,77)",
+              },
+              "& .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline":
+                {
+                  borderColor: "white", // Boja okvira kad je fokusirano
+                },
+              "& .MuiInputLabel-root.Mui-focused": {
+                color: "white", // Boja labela kad je fokusirano
+              },
+            }}
+            required
+          />
+          <TextField
+            fullWidth
+            label="E-mail"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            margin="normal"
+            sx={{
+              "& .MuiInputBase-root": {
+                backgroundColor: " rgb(75,77,77)",
+              },
+              "& .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline":
+                {
+                  borderColor: "white", // Boja okvira kad je fokusirano
+                },
+              "& .MuiInputLabel-root.Mui-focused": {
+                color: "white", // Boja labela kad je fokusirano
+              },
+            }}
+            required
+          />
+          <TextField
+            label="Broj tel."
+            value={number}
+            onChange={(e) => setNumber(e.target.value)}
+            sx={{
+              "& .MuiInputBase-root": {
+                backgroundColor: " rgb(75,77,77)",
+              },
+              "& .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline":
+                {
+                  borderColor: "white", // Boja okvira kad je fokusirano
+                },
+              "& .MuiInputLabel-root.Mui-focused": {
+                color: "white", // Boja labela kad je fokusirano
+              },
+            }}
+          />
+          <TextField
+            fullWidth
+            label="Unesi poruku"
+            value={message}
+            onChange={(e) => setMessage(e.target.value)}
+            margin="normal"
+            multiline
+            rows={4}
+            required
+            sx={{
+              "& .MuiInputBase-root": {
+                backgroundColor: " rgb(75,77,77)",
+              },
+              "& .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline":
+                {
+                  borderColor: "white", // Boja okvira kad je fokusirano
+                },
+              "& .MuiInputLabel-root.Mui-focused": {
+                color: "white", // Boja labela kad je fokusirano
+              },
+            }}
+          />
+          <Button
+            type="submit"
+            variant="contained"
+            sx={{
+              backgroundColor: "#e4dfdf",
+              color: "black",
+              width: "200px",
+              
+              "&:hover": {backgroundColor: "red", color: 'white'
+               },
+            }}
+          >
+            zatraži ponudu
+          </Button>
+        </Box>
         </div>
-        <TextField
-          fullWidth
-          label="Ime"
-          value={name}
-          onChange={(e) => setName(e.target.value)}
-          margin="normal"
-          sx={{
-            "& .MuiInputBase-root": {
-              backgroundColor: " rgb(75,77,77)",
-            },
-            "& .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline":
-              {
-                borderColor: "white", // Boja okvira kad je fokusirano
-              },
-            "& .MuiInputLabel-root.Mui-focused": {
-              color: "white", // Boja labela kad je fokusirano
-            },
-          }}
-          required
-        />
-        <TextField
-          fullWidth
-          label="E-mail"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          margin="normal"
-          sx={{
-            "& .MuiInputBase-root": {
-              backgroundColor: " rgb(75,77,77)",
-            },
-            "& .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline":
-              {
-                borderColor: "white", // Boja okvira kad je fokusirano
-              },
-            "& .MuiInputLabel-root.Mui-focused": {
-              color: "white", // Boja labela kad je fokusirano
-            },
-          }}
-          required
-        />
-        <TextField
-          label="Broj tel."
-          value={number}
-          onChange={(e) => setNumber(e.target.value)}
-          sx={{
-            "& .MuiInputBase-root": {
-              backgroundColor: " rgb(75,77,77)",
-            },
-            "& .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline":
-              {
-                borderColor: "white", // Boja okvira kad je fokusirano
-              },
-            "& .MuiInputLabel-root.Mui-focused": {
-              color: "white", // Boja labela kad je fokusirano
-            },
-          }}
-        />
-        <TextField
-          fullWidth
-          label="Unesi poruku"
-          value={message}
-          onChange={(e) => setMessage(e.target.value)}
-          margin="normal"
-          multiline
-          rows={4}
-          required
-          sx={{
-            "& .MuiInputBase-root": {
-              backgroundColor: " rgb(75,77,77)",
-            },
-            "& .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline":
-              {
-                borderColor: "white", // Boja okvira kad je fokusirano
-              },
-            "& .MuiInputLabel-root.Mui-focused": {
-              color: "white", // Boja labela kad je fokusirano
-            },
-          }}
-        />
-        <Button
-          type="submit"
-          variant="contained"
-          sx={{
-            backgroundColor: "#e4dfdf",
-            color: "black",
-            "&:hover": { backgroundColor: "#eec668" },
-          }}
-        >
-          zatraži ponudu
-        </Button>
-      </Box>
 
-      <ToastContainer />
-      {/* </motion.section> */}
+    
+
+        <ToastContainer />
+        {/* </motion.section> */}
+      </div>
     </Box>
   );
 };

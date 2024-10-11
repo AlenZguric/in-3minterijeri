@@ -5,6 +5,7 @@ import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
 import GalleryPage from './pages/GalleryPage';
 import ContactPage from './pages/ContactPage';
+import KitchensPage from './pages/KitchensPage';
 //import NavBar from './components/NavBar';
 
 import '../src/styles/utils/main.css';
@@ -22,6 +23,8 @@ const App = () => {
             <Route path="/proizvodi" element={<GalleryPage />} />
             <Route path="/usluge" element={<Services />} />
             <Route path="/kontakt" element={<ContactPage />} />
+
+            <Route path='/kuhinje' element={<KitchensPage/>}/>
           </Routes>
      
         <Footer />

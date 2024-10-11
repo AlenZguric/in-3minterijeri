@@ -1,53 +1,45 @@
-@import '../utils/main.scss';
+@import'../utils/main.scss';
 
 .scrolling-component {
   display: flex;
   flex-direction: column;
-  height: 100px;
+  height: 200px;
   width: 100%;
   justify-content: center;
   background-color: rgba(228, 223, 223, 0.9);
-  .title-scroll-text{
+
+  .title-scroll-text {
     display: flex;
     justify-content: center;
     margin-bottom: 2rem;
-   
-    h2{
-        color: #333333;
-    font-style: italic;
-    text-transform: uppercase;
-    font-weight: 400;
-    letter-spacing: 2px;
 
+    h2 {
+      color: #333333;
+      font-style: italic;
+      text-transform: uppercase;
+      font-weight: 400;
+      letter-spacing: 2px;
     }
   }
+
   .scrolling-text {
     display: flex;
     overflow: hidden;
     white-space: nowrap;
-    animation: scroll 25s linear infinite;
 
     .scroll-item {
-      padding: 0 20px;
+      padding: 10px;
       font-size: 2rem;
-      color: #333; // Promijenite boju po želji
-      margin-right: 50px;      
-      a{
+      color: #333;
+      margin-right: 50px;
+
+      a {
         text-decoration: none;
         color: #333;
-        &:hover{
-            scale: 1.05;
+        &:hover {
+          transform: scale(1.05);
         }
       }
-    }
-  }
-
-  @keyframes scroll {
-    0% {
-      transform: translateX(100%);
-    }
-    100% {
-      transform: translateX(-100%);
     }
   }
 }

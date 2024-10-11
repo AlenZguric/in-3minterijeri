@@ -3,65 +3,96 @@
 .contact-container {
   display: flex;
   justify-content: center;
-  justify-content: space-around;
-  padding: 2rem;
-  background-color: #4b4d4d;
+  background: url("../../assets/images/fullsize/ContactFormBeckground.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 100%;
-  height: 1200px;
+  height: 100%;
 }
-.contact-container .contact-info {
+.contact-container .contact-container-box {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.9);
+  padding: 2rem;
+}
+.contact-container .contact-container-box .title {
+  display: flex;
+  justify-content: center;
+}
+.contact-container .contact-container-box .title h2 {
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+  color: red;
+  font-family: "roboto mono", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 200;
+}
+.contact-container .contact-container-box .contact-box {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-evenly;
+}
+.contact-container .contact-container-box .contact-box .contact-info-box {
+  display: flex;
+  flex-direction: column;
   width: 45%;
-  padding: 1rem;
+  padding: 2rem;
+  border-left: 2px solid red;
+  border-top: 2px solid red;
+  border-radius: 10%;
+  justify-content: space-evenly;
+  align-items: center;
 }
-.contact-container .contact-info .title-contact-info {
+.contact-container .contact-container-box .contact-box .contact-info-box .title-contact-info {
   display: flex;
   flex-direction: column;
 }
-.contact-container .contact-info .title-contact-info h2 {
-  font-size: 2rem;
-  margin-top: 2rem;
-  margin-bottom: 4rem;
+.contact-container .contact-container-box .contact-box .contact-info-box .title-contact-info h4 {
   color: rgba(255, 255, 255, 0.781);
-  font-family: "roboto mono", sans-serif;
-  font-size: 3.2rem;
-  font-weight: 200;
-}
-.contact-container .contact-info .title-contact-info h4 {
-  color: rgba(255, 255, 255, 0.781);
+  font-size: 1.5rem;
   font-family: "roboto mono";
+  font-weight: 600;
   letter-spacing: 3px;
+  text-transform: uppercase;
 }
-.contact-container .contact-info address {
-  translate: 50px;
+.contact-container .contact-container-box .contact-box .contact-info-box address {
+  display: flex;
+  flex-direction: column;
   font-style: normal;
 }
-.contact-container .contact-info address dl {
+.contact-container .contact-container-box .contact-box .contact-info-box address dl {
   margin-top: 20px;
   margin-bottom: 1rem;
 }
-.contact-container .contact-info address dl dt {
+.contact-container .contact-container-box .contact-box .contact-info-box address dl dt {
   font-weight: bold;
   margin-bottom: 0.5rem;
 }
-.contact-container .contact-info address dl dd {
+.contact-container .contact-container-box .contact-box .contact-info-box address dl dd {
   display: flex;
   margin-left: 0;
+  margin-bottom: 1rem;
   background-color: #3d3e3e;
   padding: 0.5rem;
   color: rgba(255, 255, 255, 0.781);
   justify-content: center;
 }
-.contact-container .contact-info address dl dd:nth-child(1) {
+.contact-container .contact-container-box .contact-box .contact-info-box address dl dd:nth-child(1) {
   text-transform: capitalize;
 }
-.contact-container .contact-info address dl dd:hover {
+.contact-container .contact-container-box .contact-box .contact-info-box address dl dd:hover {
   scale: 1.05;
 }
-.contact-container .contact-info address dl dd a {
+.contact-container .contact-container-box .contact-box .contact-info-box address dl dd a {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.781);
 }
-.contact-container .contact-info .social-icons {
+.contact-container .contact-container-box .contact-box .contact-info-box .social-icons {
   margin-top: 1.5rem;
   display: flex;
   gap: 1rem;
@@ -69,16 +100,16 @@
   justify-content: center;
   align-items: center;
 }
-.contact-container .contact-info .social-icons .title-social h3 {
+.contact-container .contact-container-box .contact-box .contact-info-box .social-icons .title-social h3 {
   color: rgba(255, 255, 255, 0.781);
   font-weight: 200;
   letter-spacing: 2px;
   font-size: 1.25rem;
 }
-.contact-container .contact-info .social-icons .title-social h3 span {
+.contact-container .contact-container-box .contact-box .contact-info-box .social-icons .title-social h3 span {
   color: red;
 }
-.contact-container .contact-info .social-icons .icons-social {
+.contact-container .contact-container-box .contact-box .contact-info-box .social-icons .icons-social {
   display: flex;
   flex-direction: row;
   width: 100%;
@@ -86,53 +117,53 @@
   align-items: center;
   margin-top: 20px;
 }
-.contact-container .contact-info .social-icons .icons-social a {
+.contact-container .contact-container-box .contact-box .contact-info-box .social-icons .icons-social a {
   font-size: 4rem;
   color: #3b5998;
 }
-.contact-container .contact-info .social-icons .icons-social a.instagram {
+.contact-container .contact-container-box .contact-box .contact-info-box .social-icons .icons-social a.instagram {
   color: #e1306c;
 }
-.contact-container .contact-info .social-icons .icons-social a.whatsapp {
+.contact-container .contact-container-box .contact-box .contact-info-box .social-icons .icons-social a.whatsapp {
   color: #25d366;
 }
-.contact-container .contact-info .social-icons .icons-social a svg {
+.contact-container .contact-container-box .contact-box .contact-info-box .social-icons .icons-social a svg {
   font-size: 3rem;
 }
-.contact-container .contact-info .social-icons .icons-social a svg:hover {
+.contact-container .contact-container-box .contact-box .contact-info-box .social-icons .icons-social a svg:hover {
   scale: 1.05;
 }
-.contact-container .contact-form {
+.contact-container .contact-container-box .contact-box .contact-form {
   display: flex;
   flex-direction: column;
   width: 45%;
-  height: 50%;
   padding: 1rem;
-  transform: translateY(450px);
   background-color: rgba(44, 42, 42, 0.4431372549);
-  border-radius: 45px 95px 0px 1045px;
+  border-right: 2px solid red;
+  border-bottom: 2px solid red;
+  border-radius: 10%;
 }
-.contact-container .contact-form .title-contact {
+.contact-container .contact-container-box .contact-box .contact-form .title-contact {
   display: flex;
   flex-direction: column;
 }
-.contact-container .contact-form .title-contact p {
+.contact-container .contact-container-box .contact-box .contact-form .title-contact p {
   color: rgba(255, 255, 255, 0.781);
   padding: 15px;
   font-size: 1rem;
   font-weight: 200;
   letter-spacing: 1px;
 }
-.contact-container .contact-form .title-contact p:nth-child(2) {
+.contact-container .contact-container-box .contact-box .contact-form .title-contact p:nth-child(2) {
   font-style: italic;
   font-weight: 400;
   font-size: 0.8rem;
 }
-.contact-container .contact-form .MuiTextField-root {
+.contact-container .contact-container-box .contact-box .contact-form .MuiTextField-root {
   margin-bottom: 1.5rem;
   width: 100%;
 }
-.contact-container .contact-form .MuiButton-containedPrimary {
+.contact-container .contact-container-box .contact-box .contact-form .MuiButton-containedPrimary {
   margin-top: 1rem;
   margin-bottom: 100px;
 }/*# sourceMappingURL=ContactForm.css.map */

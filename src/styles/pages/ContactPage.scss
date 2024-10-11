@@ -1,0 +1,84 @@
+@import "../../styles/utils/main.scss";
+
+.contact-page {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+  background-color: $background_color_div;
+  main {
+    display: flex;
+    flex-direction: column;
+    margin-top: 150px;
+    .title-contact-page {
+      display: flex;
+      flex-direction: column;
+      transform: translateX(250px);
+      justify-content: center;
+      width: 80%;
+      height: 70vh;
+      .title-box1 {
+        h2 {
+          color: white;
+          letter-spacing: 2.5px;
+          font-family: "roboto mono", sans-serif;
+          font-size: 2.1rem;
+          font-weight: 400;
+          line-height: 1.5;
+        }
+        h1 {
+          color: red;
+          font-size: 1.6rem;
+          font-weight: 400;
+          font-family: "roboto mono", sans-serif;
+        }
+      }
+      .title-box2 {
+        display: flex;
+        flex-direction: column;
+        margin-top: 4rem;
+        p {
+          color: white;
+          letter-spacing: 2px;
+          line-height: 1.5;
+
+          span {
+            a {
+              color: white;
+              letter-spacing: 2px;
+              line-height: 1.5;
+              text-decoration: none;
+             
+            }
+          }
+        }
+        .button {
+          margin-top: 2rem;
+          button {
+            background-color: red;
+            height: 1.8rem;
+            width: 9rem;
+            transition: all 0.3s ease;
+            border-radius: 6px;
+            &:hover {
+              background-color: white;
+              color: black;
+              transform: scale(1.05);
+            }
+            a {
+              text-decoration: none;
+              color: white;
+              text-transform: uppercase;
+              font-weight: 600;
+              letter-spacing: 2px;
+              &:hover {
+                color: black;
+                transition: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

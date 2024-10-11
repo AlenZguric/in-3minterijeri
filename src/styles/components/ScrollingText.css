@@ -3,7 +3,7 @@
 .scrolling-component {
   display: flex;
   flex-direction: column;
-  height: 100px;
+  height: 200px;
   width: 100%;
   justify-content: center;
   background-color: rgba(228, 223, 223, 0.9);
@@ -24,10 +24,9 @@
   display: flex;
   overflow: hidden;
   white-space: nowrap;
-  animation: scroll 25s linear infinite;
 }
 .scrolling-component .scrolling-text .scroll-item {
-  padding: 0 20px;
+  padding: 10px;
   font-size: 2rem;
   color: #333;
   margin-right: 50px;
@@ -37,13 +36,5 @@
   color: #333;
 }
 .scrolling-component .scrolling-text .scroll-item a:hover {
-  scale: 1.05;
-}
-@keyframes scroll {
-  0% {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
+  transform: scale(1.05);
 }/*# sourceMappingURL=ScrollingText.css.map */
