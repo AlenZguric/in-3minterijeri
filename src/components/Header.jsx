@@ -11,7 +11,7 @@ const Header = () => {
         className="background-image"
         initial={{ y: 500, opacity: 0 }} // Početna pozicija (izvan ekrana, dole)
         animate={{ y: 0, opacity: 1 }}  // Ciljna pozicija (normalna)
-        transition={{ duration: 3.5 }}    // Trajanje animacije
+        transition={{ duration: 1.5 }}    // Trajanje animacije
       ></motion.div>
 
       <motion.div

@@ -15,11 +15,24 @@
 
     h2 {
       color: #333333;
-      font-style: italic;
       text-transform: uppercase;
       font-weight: 400;
       letter-spacing: 2px;
     }
+  }
+  .react-multi-carousel-list  {
+    ul{li{
+      p{
+        a{
+          text-decoration: none;
+          color: black;
+          font-family: 'roboto mono', sans-serif;
+          font-size: 2rem;
+          font-weight: 600;
+          font-style: italic;
+        }
+      }
+    }}
   }
 
   .scrolling-text {

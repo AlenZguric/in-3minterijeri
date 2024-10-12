@@ -4,14 +4,15 @@ import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 
 import '../styles/components/ScrollingText.css';
+import { color } from 'framer-motion';
 
 const ScrollingText = () => {
   const words = [
-    { name: '| ELGRAD |', url: 'https://www.elgrad.hr/' },
-    { name: '| IVERPAN |', url: 'https://www.iverpan.hr/' },
-    { name: '| DEWALT |', url: 'https://www.dewalt.com/' },
-    { name: '| FESTOOL |', url: 'https://www.festool.com/' },
-    { name: '| GRASS |', url: 'https://www.grass.eu/' }
+    { name: ' ELGRAD ', url: 'https://www.elgrad.hr/', color: '#ca1a20' },
+    { name: ' IVERPAN ', url: 'https://www.iverpan.hr/', color: 'black' },
+    { name: ' DEWALT ', url: 'https://www.dewalt.com/', color: '#ffba00' },
+    { name: ' FESTOOL ', url: 'https://www.festool.com/', color: '#46b82e' },
+    { name: ' GRASS ', url: 'https://www.grass.eu/', color: 'black' }
   ];
 
   const responsive = {
@@ -49,8 +50,8 @@ const ScrollingText = () => {
       >
         {words.map((word, index) => (
           <div key={index} className="scroll-item">
-            <Typography>
-              <a href={word.url} target="_blank" rel="noopener noreferrer">
+            <Typography style={{color: word.color}}>
+              <a href={word.url} target="_blank" rel="noopener noreferrer" style={{color: word.color}}>
                 {word.name}
               </a>
             </Typography>
