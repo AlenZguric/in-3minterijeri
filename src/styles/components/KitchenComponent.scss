@@ -1,0 +1,121 @@
+@import "../utils/main.scss";
+
+.kitchen {
+  display: flex;
+  flex-direction: column;
+  padding-left: 8rem;
+  padding-right: 8rem;
+  padding-bottom: 25rem;
+  .title-kitchen {
+    padding-bottom: 01rem;
+    color: white;
+    h2 {
+      margin: 0;
+      font-size: 2rem;
+      padding-bottom: 2rem;
+    }
+
+    p {
+      margin: 5px 0;
+      font-size: 1.2rem;
+      line-height: 1.5;
+      font-weight: 500;
+      span{
+        font-style: italic;
+        margin-left: 20px;
+        font-weight: 200;
+      }
+    }
+  }
+
+  .gallery {
+    display: flex;
+    flex-direction: row;
+    position: relative; // Dodano za strelice
+width: 100%;
+align-content: space-between;
+.large-image {
+    display: flex;
+    margin-right: 2rem;
+    width: 45%;
+    height: 600px;
+    min-width: 44%;
+  
+    a {
+      display: flex;
+      width: 100%;
+      height: 100%;
+  
+      img {
+        display: block; /* ili flex, ali block je češće korišteno */
+        width: 100%;
+        height: 100%;
+        border-radius: 1rem;
+        object-fit: cover; /* Održava proporcije i popunjava kontejner */
+        object-position: center; /* Centriranje slike */
+      }
+    }
+  }
+  
+  .small-images {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 600px; // Ostavi visinu 600px ako želiš da slike budu iste visine
+    justify-content: center;
+    align-content: space-around;
+    a {
+      margin-left:1rem;
+      width: 170px; // Postavi fiksnu širinu za slike
+      height: 170px; // Postavi visinu za slike
+  
+      img {
+        width: 100%;
+        height: 100%; // Postavi da slike ispunjavaju cijeli prostor
+        object-fit: cover; // Održava proporcije slike
+        border-radius: 5px;
+      }
+    }
+  }
+  
+ 
+  
+    // Stilovi za strelice
+    .arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 40px;
+      height: 40px;
+      background-color: rgba(0, 0, 0, 0.5);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      z-index: 10;
+    }
+
+    .arrow--left {
+      left: 10px;
+    }
+
+    .arrow--right {
+      right: 10px;
+    }
+
+    .arrow svg {
+      fill: white;
+      width: 20px;
+      height: 20px;
+    }
+  }
+  .pswp__img {
+    display: block;
+    width: 100%; /* Širina slike 100% od kontejnera */
+    height: auto; /* Visina automatski postavljena prema proporcijama slike */
+    object-fit: cover;
+    object-position: center; /* Slika ispunjava prostor bez izobličenja */
+    border-radius: 5px; /* Opcionalno, za zaobljene ivice */
+  }
+}
