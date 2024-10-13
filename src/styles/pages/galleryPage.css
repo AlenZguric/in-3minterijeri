@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+.gallery-page {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+  background: #000000; /* fallback for old browsers */ /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, rgba(67, 67, 67, 0.7803921569), #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.gallery-page main {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  height: 100%;
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+  align-items: center;
+}
+.gallery-page main .main-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+.gallery-page main .main-container .title-section {
+  display: flex;
+  flex-direction: column;
+  padding: 4rem;
+}
+.gallery-page main .main-container .title-section p {
+  font-size: 1.5rem;
+}
+.gallery-page main .main-container .article-about {
+  display: flex;
+  flex-direction: column;
+  width: 1000px;
+  height: 300px;
+  position: relative;
+  justify-content: space-around;
+  margin-bottom: 2rem;
+}
+.gallery-page main .main-container .article-about .article-about-box {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  min-width: 1400px;
+  height: 100%;
+  overflow: hidden;
+}
+.gallery-page main .main-container .article-about .article-about-box img {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.gallery-page main .main-container .article-about .article-about-box h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 2rem;
+  z-index: 2;
+}/*# sourceMappingURL=galleryPage.css.map */

@@ -10,10 +10,10 @@
   justify-content: center;
 
   &:nth-child(even) {
-    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+    background-image: linear-gradient(120deg, #fdfbfb56 0%, #ebedee86 100%);
     h2,
     p {
-      color: black; // Change h2 and p text color to black
+      color: rgb(255, 255, 255); // Change h2 and p text color to black
     }
   }
 

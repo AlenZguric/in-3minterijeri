@@ -4,8 +4,8 @@ const importAll = (r) => {
     return images;
   };
   
-  const images = importAll(require.context('../../assets/images/fullsize/kuhinja', false, /\.(png|jpe?g|svg|webp)$/));
-  const thumbnails = importAll(require.context('../../assets/images/thumbnails/kuhinja', false, /\.(png|jpe?g|svg|jpg)$/));
+  const images = importAll(require.context('../../assets/images/fullsize/kuhinja/kuhinja_1', false, /\.(png|jpe?g|svg|webp)$/));
+  const thumbnails = importAll(require.context('../../assets/images/fullsize/kuhinja/kuhinja_1', false, /\.(png|jpe?g|svg|jpg)$/));
   
   export const kitchensData = [
       {
@@ -13,15 +13,18 @@ const importAll = (r) => {
         material: "Drvo",
         hardware: "Blum okovi",
         images: [
-          { src: images['kuhinja1.webp'], thumb: thumbnails['kuhinja1-small.jpg'], width:2000, height: 1100},
-          { src: images['kuhinja2.webp'], thumb: thumbnails['kuhinja2-small.jpg'], width: 3000, height: 2000 },
-          { src: images['kuhinja3.webp'], thumb: thumbnails['kuhinja3-small.jpg'], width: 3000, height: 2000 },
-          { src: images['kuhinja4.webp'], thumb: thumbnails['kuhinja4-small.jpg'], width: 3000, height: 2000 },
-          { src: images['kuhinja5.webp'], thumb: thumbnails['kuhinja5-small.jpg'], width: 3000, height: 2000 },
-          { src: images['kuhinja2.webp'], thumb: thumbnails['kuhinja2-small.jpg'], width: 3000, height: 2000 },
-          { src: images['kuhinja3.webp'], thumb: thumbnails['kuhinja3-small.jpg'], width: 3000, height: 2000 },
-          { src: images['kuhinja4.webp'], thumb: thumbnails['kuhinja4-small.jpg'], width: 3000, height: 2000 },
-          { src: images['kuhinja5.webp'], thumb: thumbnails['kuhinja5-small.jpg'], width: 3000, height: 2000 },
+          { src: images['IMG_5748.webp'], thumb: images['IMG_5748.webp'], width: 1440, height: 1080 },
+          { src: images['IMG_5748.webp'], thumb: images['IMG_5748.webp'], width: 1440, height: 1080 },
+          { src: images['IMG_5748.webp'], thumb: images['IMG_5748.webp'], width: 1440, height: 1080 },
+          { src: images['IMG_5748.webp'], thumb: images['IMG_5748.webp'], width: 1440, height: 1080 },
+          { src: images['IMG_5748.webp'], thumb: images['IMG_5748.webp'], width: 1440, height: 1080 },
+          { src: images['IMG_5748.webp'], thumb: images['IMG_5748.webp'], width: 1440, height: 1080 },
+          { src: images['IMG_5748.webp'], thumb: images['IMG_5748.webp'], width: 1440, height: 1080 },
+          { src: images['IMG_5748.webp'], thumb: images['IMG_5748.webp'], width: 1440, height: 1080 },
+          { src: images['IMG_5748.webp'], thumb: images['IMG_5748.webp'], width: 1440, height: 1080 },
+          { src: images['IMG_5748.webp'], thumb: images['IMG_5748.webp'], width: 1440, height: 1080 },
+          { src: images['IMG_5748.webp'], thumb: images['IMG_5748.webp'], width: 1440, height: 1080 },
+          { src: images['IMG_5748.webp'], thumb: images['IMG_5748.webp'], width: 1440, height: 1080 },
         ],
       },
       {
