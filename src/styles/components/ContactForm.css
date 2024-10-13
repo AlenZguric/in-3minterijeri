@@ -34,7 +34,8 @@
 .contact-container .contact-container-box .contact-box {
   display: flex;
   flex-direction: row;
-  width: 100%;
+  margin: auto;
+  max-width: 90%;
   justify-content: space-evenly;
 }
 .contact-container .contact-container-box .contact-box .contact-info-box {
