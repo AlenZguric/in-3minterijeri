@@ -12,7 +12,7 @@ const KitchenComponent = ({ kitchen }) => {
       imageClickAction: "next",
       tapAction: "next",
       doubleTapAction: "zoom",
-      preloaderDelay: 500, // Prikazuje loader ako slika nije učitana za 2 sekunde
+      preloaderDelay: 0, // Prikazuje loader ako slika nije učitana za 2 sekunde
       mainClass: "pswp-with-preloader", // Dodaj ovu klasu da prilagodiš preloader
       initialZoomLevel: 'fit', // Slika će se prilagoditi vidnom okviru
       secondaryZoomLevel: 2, // Drugi nivo zooma
@@ -24,6 +24,7 @@ const KitchenComponent = ({ kitchen }) => {
 
   return (
     <div className="kitchen">
+      <div className="kitchen-box">
       <div className="title-kitchen">
         <h2>{kitchen.name}</h2>
         <p title={kitchen.material}>
@@ -57,6 +58,8 @@ const KitchenComponent = ({ kitchen }) => {
           ))}
         </div>
       </div>
+      </div>
+
     </div>
   );
 };

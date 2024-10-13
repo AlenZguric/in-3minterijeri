@@ -6,48 +6,69 @@
   flex-direction: column;
   padding-left: 8rem;
   padding-right: 8rem;
-  padding-bottom: 25rem;
+  width: 100%;
+  height: 110vh;
+  justify-content: center;
 }
-.kitchen .title-kitchen {
+.kitchen:nth-child(even) {
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+}
+.kitchen:nth-child(even) h2,
+.kitchen:nth-child(even) p {
+  color: black;
+}
+.kitchen .kitchen-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 80%;
+}
+.kitchen .kitchen-box .title-kitchen {
   padding-bottom: 1rem;
   color: white;
 }
-.kitchen .title-kitchen h2 {
+.kitchen .kitchen-box .title-kitchen h2 {
   margin: 0;
   font-size: 2rem;
   padding-bottom: 2rem;
 }
-.kitchen .title-kitchen p {
+.kitchen .kitchen-box .title-kitchen p {
   margin: 5px 0;
   font-size: 1.2rem;
   line-height: 1.5;
   font-weight: 500;
 }
-.kitchen .title-kitchen p span {
+.kitchen .kitchen-box .title-kitchen p span {
   font-style: italic;
   margin-left: 20px;
   font-weight: 200;
 }
-.kitchen .gallery {
+.kitchen .kitchen-box .gallery {
   display: flex;
   flex-direction: row;
   position: relative;
   width: 100%;
   align-content: space-between;
 }
-.kitchen .gallery .large-image {
+.kitchen .kitchen-box .gallery .large-image {
   display: flex;
   margin-right: 2rem;
   width: 45%;
   height: 600px;
   min-width: 44%;
+  transition: transform 0.4s ease, opacity 0.4s ease;
 }
-.kitchen .gallery .large-image a {
+.kitchen .kitchen-box .gallery .large-image:hover {
+  transform: scale(1.05);
+  opacity: 0.8;
+}
+.kitchen .kitchen-box .gallery .large-image a {
   display: flex;
   width: 100%;
   height: 100%;
 }
-.kitchen .gallery .large-image a img {
+.kitchen .kitchen-box .gallery .large-image img {
   display: block; /* ili flex, ali block je češće korišteno */
   width: 100%;
   height: 100%;
@@ -57,27 +78,34 @@
   -o-object-position: center;
      object-position: center; /* Centriranje slike */
 }
-.kitchen .gallery .small-images {
+.kitchen .kitchen-box .gallery .small-images {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   height: 600px;
-  justify-content: center;
-  align-content: space-around;
+  justify-content: start;
+  align-content: space-evenly;
+  position: relative;
+  min-width: 45%;
+  transition: transform 0.4s ease, opacity 0.4s ease;
 }
-.kitchen .gallery .small-images a {
+.kitchen .kitchen-box .gallery a {
   margin-left: 1rem;
   width: 170px;
   height: 170px;
 }
-.kitchen .gallery .small-images a img {
+.kitchen .kitchen-box .gallery a:hover {
+  transform: scale(1.05);
+  opacity: 0.8;
+}
+.kitchen .kitchen-box .gallery a img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 5px;
 }
-.kitchen .gallery .arrow {
+.kitchen .kitchen-box .arrow {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -91,13 +119,13 @@
   cursor: pointer;
   z-index: 10;
 }
-.kitchen .gallery .arrow--left {
+.kitchen .kitchen-box .arrow--left {
   left: 10px;
 }
-.kitchen .gallery .arrow--right {
+.kitchen .kitchen-box .arrow--right {
   right: 10px;
 }
-.kitchen .gallery .arrow svg {
+.kitchen .kitchen-box .arrow svg {
   fill: white;
   width: 20px;
   height: 20px;

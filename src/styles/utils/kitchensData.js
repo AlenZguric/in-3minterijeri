@@ -13,7 +13,7 @@ const importAll = (r) => {
         material: "Drvo",
         hardware: "Blum okovi",
         images: [
-          { src: images['kuhinja1.webp'], thumb: thumbnails['kuhinja1-small.jpg'], width: 3000, height: 2000 },
+          { src: images['kuhinja1.webp'], thumb: thumbnails['kuhinja1-small.jpg'], width:2000, height: 1100},
           { src: images['kuhinja2.webp'], thumb: thumbnails['kuhinja2-small.jpg'], width: 3000, height: 2000 },
           { src: images['kuhinja3.webp'], thumb: thumbnails['kuhinja3-small.jpg'], width: 3000, height: 2000 },
           { src: images['kuhinja4.webp'], thumb: thumbnails['kuhinja4-small.jpg'], width: 3000, height: 2000 },

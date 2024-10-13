@@ -5,81 +5,114 @@
   flex-direction: column;
   padding-left: 8rem;
   padding-right: 8rem;
-  padding-bottom: 25rem;
-  .title-kitchen {
-    padding-bottom: 01rem;
-    color: white;
-    h2 {
-      margin: 0;
-      font-size: 2rem;
-      padding-bottom: 2rem;
-    }
+  width: 100%;
+  height: 110vh;
+  justify-content: center;
 
+  &:nth-child(even) {
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+    h2,
     p {
-      margin: 5px 0;
-      font-size: 1.2rem;
-      line-height: 1.5;
-      font-weight: 500;
-      span{
-        font-style: italic;
-        margin-left: 20px;
-        font-weight: 200;
-      }
+      color: black; // Change h2 and p text color to black
     }
   }
 
-  .gallery {
+  .kitchen-box {
     display: flex;
-    flex-direction: row;
-    position: relative; // Dodano za strelice
-width: 100%;
-align-content: space-between;
-.large-image {
-    display: flex;
-    margin-right: 2rem;
-    width: 45%;
-    height: 600px;
-    min-width: 44%;
-  
-    a {
-      display: flex;
-      width: 100%;
-      height: 100%;
-  
-      img {
-        display: block; /* ili flex, ali block je češće korišteno */
-        width: 100%;
-        height: 100%;
-        border-radius: 1rem;
-        object-fit: cover; /* Održava proporcije i popunjava kontejner */
-        object-position: center; /* Centriranje slike */
-      }
-    }
-  }
-  
-  .small-images {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    height: 600px; // Ostavi visinu 600px ako želiš da slike budu iste visine
+    flex-direction: column;
     justify-content: center;
-    align-content: space-around;
-    a {
-      margin-left:1rem;
-      width: 170px; // Postavi fiksnu širinu za slike
-      height: 170px; // Postavi visinu za slike
-  
-      img {
-        width: 100%;
-        height: 100%; // Postavi da slike ispunjavaju cijeli prostor
-        object-fit: cover; // Održava proporcije slike
-        border-radius: 5px;
+    width: 100%;
+    height: 80%;
+
+    .title-kitchen {
+      padding-bottom: 01rem;
+      color: white;
+
+      h2 {
+        margin: 0;
+        font-size: 2rem;
+        padding-bottom: 2rem;
+      }
+
+      p {
+        margin: 5px 0;
+        font-size: 1.2rem;
+        line-height: 1.5;
+        font-weight: 500;
+        span {
+          font-style: italic;
+          margin-left: 20px;
+          font-weight: 200;
+        }
       }
     }
-  }
-  
- 
-  
+
+    .gallery {
+      display: flex;
+      flex-direction: row;
+      position: relative; // Dodano za strelice
+      width: 100%;
+      align-content: space-between;
+      .large-image {
+        display: flex;
+        margin-right: 2rem;
+        width: 45%;
+        height: 600px;
+      min-width: 44%;
+        transition: transform 0.4s ease, opacity 0.4s ease;
+
+        &:hover {
+          transform: scale(1.05);
+          opacity: 0.8;
+        }
+
+        a {
+          display: flex;
+          width: 100%;
+          height: 100%;
+        }
+
+        img {
+          display: block; /* ili flex, ali block je češće korišteno */
+          width: 100%;
+          height: 100%;
+          border-radius: 1rem;
+          object-fit: cover; /* Održava proporcije i popunjava kontejner */
+          object-position: center; /* Centriranje slike */
+        }
+      }
+
+      .small-images {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: 600px; // Ostavi visinu 600px ako želiš da slike budu iste visine
+        justify-content: start;
+        align-content: space-evenly;
+        position: relative;
+min-width: 45%;
+        transition: transform 0.4s ease, opacity 0.4s ease;
+      }
+
+      a {
+        margin-left: 1rem;
+        width: 170px; // Postavi fiksnu širinu za slike
+        height: 170px; // Postavi visinu za slike
+        &:hover {
+          transform: scale(1.05);
+
+          opacity: 0.8;
+        }
+
+        img {
+          width: 100%;
+          height: 100%; // Postavi da slike ispunjavaju cijeli prostor
+          object-fit: cover; // Održava proporcije slike
+          border-radius: 5px;
+        }
+      }
+    }
+
     // Stilovi za strelice
     .arrow {
       position: absolute;
