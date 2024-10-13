@@ -83,9 +83,8 @@ const FurnitureCarousel = () => {
   };
 
   return (
-    <div className="carousel-container">
-      <h2>Naš namještaj po mjeri</h2>
-      <Carousel responsive={responsive} infinite autoPlay autoPlaySpeed={3000} showDots rtl={true}>
+    <div className="carousel-container">  
+      <Carousel responsive={responsive} infinite autoPlay autoPlaySpeed={3000}  showDots rtl={true} >
         {categories.map((category, index) => (
           <div
             key={index}

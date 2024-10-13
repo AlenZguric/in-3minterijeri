@@ -14,3 +14,11 @@ body{
   background-repeat: no-repeat;
   font-family: 'Roboto','Open Sans', sans-serif;
 }
+body .pswp__img {
+  display: block;
+  width: 100%; /* Širina slike 100% od kontejnera */
+  height: auto; /* Visina automatski postavljena prema proporcijama slike */
+  object-fit: cover;
+  object-position: center; /* Slika ispunjava prostor bez izobličenja */
+  border-radius: 5px; /* Opcionalno, za zaobljene ivice */
+}

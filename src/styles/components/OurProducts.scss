@@ -1,10 +1,15 @@
 @import '../utils/main.scss';
 
 .carousel-container {
+
+
   padding: 20px;
   text-align: center;
   background-color: $background_color_div;
-  height: 600px;
+  height: 100%;
+
+
+
 }
 
 .carousel-item {
@@ -24,11 +29,13 @@
 }
 
 .carousel-item h3 {
-  margin-top: 10px;
-  font-size: 18px;
+  margin-top: 1.5rem;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
 }
 
 .carousel-item p {
-  font-size: 14px;
+  font-size: 1rem;
   color: #666;
+  padding: 1rem;
 }
