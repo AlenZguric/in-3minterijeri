@@ -54,7 +54,7 @@
 .kitchen .kitchen-box .gallery .large-image {
   display: flex;
   margin-right: 2rem;
-  min-width: 600px;
+  min-width: 500px;
   height: 600px;
   transition: transform 0.4s ease, opacity 0.4s ease;
 }
@@ -89,8 +89,9 @@
 }
 .kitchen .kitchen-box .gallery .small-images a {
   margin-left: 1rem;
-  max-width: 170px;
-  max-height: 170px;
+  margin-bottom: 0.5rem;
+  max-width: 120px;
+  max-height: 120px;
 }
 .kitchen .kitchen-box .gallery .small-images a:hover {
   transform: scale(1.05);
