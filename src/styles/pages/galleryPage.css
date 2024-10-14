@@ -11,7 +11,7 @@
 .gallery-page main {
   display: flex;
   flex-direction: column;
-  width: 70%;
+  width: 100%;
   height: 100%;
   margin-top: 8rem;
   margin-bottom: 8rem;
@@ -33,35 +33,39 @@
 }
 .gallery-page main .main-container .article-about {
   display: flex;
-  flex-direction: column;
-  width: 1000px;
-  height: 300px;
-  position: relative;
-  justify-content: space-around;
-  margin-bottom: 2rem;
+  flex-direction: row;
+  width: 100%;
+  height: 600px;
+  justify-content: space-between;
+  margin-bottom: 8rem;
 }
-.gallery-page main .main-container .article-about .article-about-box {
-  flex-grow: 1;
+.gallery-page main .main-container .article-about:nth-child(even) {
+  flex-direction: row-reverse;
+}
+.gallery-page main .main-container .article-about:nth-child(even) img {
+  border-radius: 10rem 0 0 10rem;
+}
+.gallery-page main .main-container .article-about-box-descriptions {
   display: flex;
   flex-direction: column;
-  min-width: 1400px;
+  width: 50%;
+  padding: 3rem;
+}
+.gallery-page main .main-container .article-about-box {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
   height: 100%;
+  padding-left: 2rem;
+  margin-bottom: 10rem;
   overflow: hidden;
 }
-.gallery-page main .main-container .article-about .article-about-box img {
-  position: relative;
+.gallery-page main .main-container .article-about-box img {
   display: flex;
   width: 100%;
-  height: 100%;
+  height: 600px;
+  background-attachment: fixed;
   -o-object-fit: cover;
      object-fit: cover;
-}
-.gallery-page main .main-container .article-about .article-about-box h2 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  font-size: 2rem;
-  z-index: 2;
+  border-radius: 0 10rem 10rem 0;
 }/*# sourceMappingURL=galleryPage.css.map */

@@ -5,7 +5,7 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
 import "../styles/pages/galleryPage.css";
 
-import kuhinjeImage from "../assets/images/smallsize/kuhinja-po-mjeri-img.jpg"; // Dodaj slike
+import kuhinjeImage from "../assets/images/fullsize/kuhinja/kuhinja_1/IMG_5748.webp"; 
 import ormariImage from "../assets/images/smallsize/ormari-img.jpg";
 import zidneOblogeImage from "../assets/images/smallsize/zidni-paneli-first-img.jpg";
 import dnevniBoravciImage from "../assets/images/smallsize/dnevni- boravak-img.jpg";
@@ -34,10 +34,13 @@ const GalleryPage = () => {
                   alt="Kuhinje po mjeri"
                   effect="blur"
                 />
-                <h2>Kuhinje po mjeri</h2>
+                
+              </div>
+              <div className="article-about-box-descriptions">
+                <p>Kuhinje po mjeri</p>
+
               </div>
             </article>
-            <hr />
 
             <article className="article-about">
               <div className="article-about-box">
@@ -46,11 +49,14 @@ const GalleryPage = () => {
                   alt="Ugradbeni ormari"
                   effect="blur"
                 />
-                  <h2>Ugradbeni ormari</h2>
               </div>
+              <div className="article-about-box-descriptions">
+                <p>Ugradbeni ormari</p>
+
+              </div>
+
             
             </article>
-            <hr />
 
             <article className="article-about">
               <div className="article-about-box">
@@ -59,11 +65,13 @@ const GalleryPage = () => {
                   alt="Zidne obloge"
                   effect="blur"
                 />
-                              <h2>Zidne obloge</h2>
+              </div>
+              <div className="article-about-box-descriptions">
+                <p>Zidne obloge</p>
 
               </div>
+
             </article>
-            <hr />
 
             <article className="article-about">
               <div className="article-about-box">
@@ -72,11 +80,14 @@ const GalleryPage = () => {
                   alt="Dnevni boravci"
                   effect="blur"
                 />
-                              <h2>Dnevni boravci</h2>
 
               </div>
+              <div className="article-about-box-descriptions">
+                <p>Dnevni boravak</p>
+
+              </div>
+
             </article>
-            <hr />
             <article className="article-about">
               <div className="article-about-box">
                 <LazyLoadImage
@@ -84,23 +95,28 @@ const GalleryPage = () => {
                   alt="Dekorativni paneli"
                   effect="blur"
                 />
-                              <h2>Dekorativni paneli</h2>
+              </div>
+              <div className="article-about-box-descriptions">
+                <p>Dekorativni paneli</p>
 
               </div>
+
             </article>
-            <hr />
             <article className="article-about">
               <div className="article-about-box">
                 <LazyLoadImage
                   src={hodniciImage}
                   alt="Hodnici predsoblja"
                   effect="blur"
-                />              <h2>Hodnici predsoblja</h2>
+                />              
 
               </div>
-              <hr />
+              <div className="article-about-box-descriptions">
+                <p>Hodnici i predsoblja</p>
+
+              </div>
+
             </article>
-            <hr />
             <article className="article-about">
               <div className="article-about-box">
                 <LazyLoadImage
@@ -108,12 +124,14 @@ const GalleryPage = () => {
                   alt="Kupaonice"
                   effect="blur"
                 />
-                              <h2>Kupaonice</h2>
 
               </div>
-              <hr />
+              <div className="article-about-box-descriptions">
+                <p>Kupaonice</p>
+
+              </div>
+
             </article>
-            <hr />
             <article className="article-about">
               <div className="article-about-box">
                 <LazyLoadImage
@@ -121,11 +139,14 @@ const GalleryPage = () => {
                   alt="Ostali namještaj"
                   effect="blur"
                 />
-                              <h2>Ostali namještaj</h2>
 
               </div>
+              <div className="article-about-box-descriptions">
+                <p>Ostali namještaj</p>
+
+              </div>
+
             </article>
-            <hr />
           </section>
         </div>
       </main>
