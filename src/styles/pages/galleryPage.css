@@ -29,7 +29,14 @@
   padding: 4rem;
 }
 .gallery-page main .main-container .title-section p {
-  font-size: 1.5rem;
+  font-size: 2rem;
+  color: rgb(253, 0, 0);
+  font-family: "Caveat", sans-serif;
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
 }
 .gallery-page main .main-container .article-about {
   display: flex;
@@ -50,6 +57,22 @@
   flex-direction: column;
   width: 50%;
   padding: 3rem;
+}
+.gallery-page main .main-container .article-about-box-descriptions h2 {
+  color: white;
+  font-size: 2.2rem;
+  font-family: "roboto mono", sans-serif;
+  letter-spacing: 3px;
+  font-weight: 200;
+  margin-bottom: 5rem;
+}
+.gallery-page main .main-container .article-about-box-descriptions p {
+  font-size: 1.3rem;
+  color: white;
+  letter-spacing: 2px;
+  font-family: "roboto mono";
+  line-height: 1.5;
+  font-weight: 300;
 }
 .gallery-page main .main-container .article-about-box {
   display: flex;
