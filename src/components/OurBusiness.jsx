@@ -9,7 +9,7 @@ const OurBusiness = () => {
 
   return (
     <div className="our-business">
-      <div className="container">
+      <div className="container-our-business">
         <div className="row-image">
           <img src={OurBuisnessImage} alt="Kitchen" />
         </div>

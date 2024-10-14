@@ -6,7 +6,7 @@
   display: flex;
   background-color: rgba(0, 0, 0, 0.9);
 }
-.our-business .container {
+.our-business .container-our-business {
   display: flex;
   flex-direction: row;
   height: 100%;
@@ -15,18 +15,18 @@
   align-items: center;
   justify-content: space-between;
 }
-.our-business .container .row-image {
+.our-business .container-our-business .row-image {
   flex: 1;
   height: 400px;
   width: 45%;
 }
-.our-business .container .row-image img {
+.our-business .container-our-business .row-image img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.our-business .container .row-text {
+.our-business .container-our-business .row-text {
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -35,25 +35,25 @@
   height: 400px;
   width: 45%;
 }
-.our-business .container .row-text .title {
+.our-business .container-our-business .row-text .title {
   margin-bottom: 20px;
   font-size: 1.5rem;
 }
-.our-business .container .row-text .title h1 {
+.our-business .container-our-business .row-text .title h1 {
   color: white;
 }
-.our-business .container .row-text .description {
+.our-business .container-our-business .row-text .description {
   margin-bottom: 20px;
 }
-.our-business .container .row-text .description p {
+.our-business .container-our-business .row-text .description p {
   margin: 10px 0;
   line-height: 1.5;
   color: white;
 }
-.our-business .container .row-text span {
+.our-business .container-our-business .row-text span {
   color: red;
 }
-.our-business .container .row-text .button-see-more button {
+.our-business .container-our-business .row-text .button-see-more button {
   padding: 10px 20px;
   background-color: red;
   color: white;
@@ -62,10 +62,10 @@
   cursor: pointer;
   margin-top: 30px;
 }
-.our-business .container .row-text .button-see-more button:hover {
+.our-business .container-our-business .row-text .button-see-more button:hover {
   background-color: #0056b3;
 }
-.our-business .container .row-text .button-see-more button a {
+.our-business .container-our-business .row-text .button-see-more button a {
   text-decoration: none;
   color: white;
   font-size: 1rem;
