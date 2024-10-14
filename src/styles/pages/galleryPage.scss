@@ -86,6 +86,18 @@
             line-height: 1.5;
             font-weight: 300;
           }
+          a{
+            text-decoration: none;
+            margin-top: 2rem;
+            border: 1 solid red;
+            border-radius: .5rem;
+            padding: .5rem ;
+            color: white;
+            background-color: red;
+            width: 10rem;
+            text-align: center;
+
+          }
 
         }
 
