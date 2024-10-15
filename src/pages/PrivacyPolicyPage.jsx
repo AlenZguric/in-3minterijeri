@@ -356,9 +356,9 @@ const PrivacyPolicyPage = () => {
             OIB: 16367764959</p>
             <br />
             <address>
-            Petrinjska 70
+           Gornje Selo 32
             <br />
-            44000 Sisak – Hrvatska
+            44317 Osekovo – Hrvatska
             </address>
           
           <p>
@@ -366,7 +366,7 @@ const PrivacyPolicyPage = () => {
             <br />
             e-mail: <a href="mailto:info.in3m@gmail.com">info.in3m@gmail.com</a>
           </p>
-          <p>Slavonski Brod, 15.10.2024 </p>
+          <p>Osekovo, 15.10.2024 </p>
         </div>
       </main>
     </div>
