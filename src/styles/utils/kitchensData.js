@@ -8,7 +8,7 @@ const importAll = (r) => {
   const thumbnails = importAll(require.context('../../assets/images/fullsize/kuhinja/kuhinja_1', false, /\.(png|jpe?g|svg|jpg)$/));
 
   const images2 = importAll(require.context('../../assets/images/fullsize/kuhinja/kuhinja_2', false, /\.(png|jpe?g|svg|webp)$/));
- //const thumbnails2 = importAll(require.context('../../assets/images/fullsize/kuhinja/kuhinja_2', false, /\.(png|jpe?g|svg|jpg)$/));
+  const images3 = importAll(require.context('../../assets/images/fullsize/kuhinja/kuhinja_3', false, /\.(png|jpe?g|svg|webp)$/));
   
   export const kitchensData = [
       {
@@ -60,12 +60,20 @@ const importAll = (r) => {
         material: "Laminat",
         hardware: "Grass okovi",
         images: [
-          { src: images['kuhinja1.webp'], thumb: thumbnails['kuhinja1-small.jpg'], width: 3000, height: 2000 },
-          { src: images['kuhinja12.webp'], thumb: thumbnails['kuhinja12-small.jpg'], width: 3000, height: 2000 },
-          { src: images['kuhinja13.webp'], thumb: thumbnails['kuhinja13-small.jpg'], width: 3000, height: 2000 },
-          { src: images['kuhinja14.webp'], thumb: thumbnails['kuhinja14-small.jpg'], width: 3000, height: 2000 },
-          { src: images['kuhinja15.webp'], thumb: thumbnails['kuhinja15-small.jpg'], width: 3000, height: 2000 },
+          { src: images3['IMG_1508.webp'], thumb: images3['IMG_1508.webp'], width: 1440, height: 1080 },
+          { src: images3['IMG_1509.webp'], thumb: images3['IMG_1509.webp'], width: 1440, height: 1080 },
+          { src: images3['IMG_1510.webp'], thumb: images3['IMG_1510.webp'], width: 1440, height: 1080 },
+          { src: images3['IMG_1511.webp'], thumb: images3['IMG_1511.webp'], width: 1440, height: 1080 },
+          { src: images3['IMG_1512.webp'], thumb: images3['IMG_1512.webp'], width: 1440, height: 1080 },
+          { src: images3['IMG_1514.webp'], thumb: images3['IMG_1514.webp'], width: 1440, height: 1080 },
+          { src: images3['IMG_1515.webp'], thumb: images3['IMG_1515.webp'], width: 1440, height: 1080 },
+          { src: images3['IMG_1516.webp'], thumb: images3['IMG_1516.webp'], width: 1440, height: 1080 },
+          { src: images3['IMG_1517.webp'], thumb: images3['IMG_1517.webp'], width: 1440, height: 1080 },
+          { src: images3['IMG_1518.webp'], thumb: images3['IMG_1518.webp'], width: 1440, height: 1080 },
+          { src: images3['IMG_1519.webp'], thumb: images3['IMG_1519.webp'], width: 1440, height: 1080 },
+          { src: images3['IMG_1520.webp'], thumb: images3['IMG_1520.webp'], width: 1440, height: 1080 },
         ],
+        
       },
       {
         name: "Kuhinja 4",
