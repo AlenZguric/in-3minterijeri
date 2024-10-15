@@ -1,4 +1,4 @@
-import React,{useEffect} from "react";
+import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Footer from "./components/Footer";
 import HomePage from "./pages/HomePage";
@@ -15,33 +15,24 @@ import PrivacyPolicyPage from "./pages/PrivacyPolicyPage";
 
 import CookieNotice from '../src/components/CookieNotice';
 import { useCookies } from './contexts/CookieContekst';
-import { useLocation,  useNavigate } from 'react-router-dom'; 
+import { useLocation,   } from 'react-router-dom'; 
 
 const AppContent = () => {
-
-  const { cookiesAccepted,  } = useCookies(); // Provjeri je li korisnik prihvatio kolačiće
+  const { cookiesAccepted } = useCookies(); // Provjeri je li korisnik prihvatio kolačiće
   const location = useLocation();           // Dobij trenutnu rutu
-  const navigate = useNavigate();
+
   // Provjeri je li trenutna ruta "/politika-privatnosti"
-  useEffect(() => {
-    // Ako kolačići nisu prihvaćeni i korisnik nije na stranici politika privatnosti
-    if (!cookiesAccepted && location.pathname !== '/politika-privatnosti') {
-      // Preusmjeri ga na stranicu politika privatnosti
-      navigate('/politika-privatnosti');
-    }
-  }, [cookiesAccepted, location.pathname, navigate]); // Ovisnosti useEffecta
-
-
+  const isPrivacyPage = location.pathname === '/politika-privatnosti';
 
   return (
     <>
       {/* Cookie obavijest će se prikazivati ako kolačići nisu prihvaćeni */}
-      {!cookiesAccepted && <CookieNotice />}
-
+      {!cookiesAccepted && !isPrivacyPage && <CookieNotice />}
+      
       <div
         className="container"
-        // Omogući interakciju samo ako su kolačići prihvaćeni
-        style={cookiesAccepted ? {} : { pointerEvents: 'none', opacity: 0.5 }}
+        // Omogući interakciju samo ako su kolačići prihvaćeni ILI ako je korisnik na stranici politika-privatnosti
+        style={cookiesAccepted || isPrivacyPage ? {} : { pointerEvents: 'none', opacity: 0.5 }}
       >
         <div className="App">
           <Routes>

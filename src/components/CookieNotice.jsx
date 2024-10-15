@@ -1,11 +1,17 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { useCookies } from '../contexts/CookieContekst';
 
 const CookieNotice = () => {
   const { cookiesAccepted, acceptCookies } = useCookies();
 
+  const navigate = useNavigate();
+
   if (cookiesAccepted) return null;
+
+  const handlePrivacyClick = () => {
+    navigate('/politika-privatnosti'); // navigacija na stranicu Politike privatnosti
+  };
 
   return (
     <div style={styles.overlay}>
@@ -15,9 +21,12 @@ const CookieNotice = () => {
           <button style={styles.acceptButton} onClick={acceptCookies}>
             Slažem se
           </button>
+          <button style={styles.acceptButton} onClick={handlePrivacyClick}>
           <Link to="/politika-privatnosti" style={styles.privacyLink}>
             Politika privatnosti
           </Link>
+          </button>
+          
         </div>
       </div>
     </div>
@@ -42,8 +51,10 @@ const styles = {
       padding: '20px',
       borderRadius: '5px',
       textAlign: 'center',
-      width: '1000px',
-      justifyContent: 'center',
+      width: '100%',
+      position: 'fixed',
+      bottom: '0',
+     // justifyContent: 'center',
     },
     buttonContainer: {
       marginTop: '10px',
@@ -57,10 +68,13 @@ const styles = {
       cursor: 'pointer',
       borderRadius: '5px',
       marginRight: '10px',
+      textDecoration: 'none',
     },
+    
     privacyLink: {
-      color: '#0000EE',
-      textDecoration: 'underline',
+      color: 'white',
+      border: 'none',
+      textDecoration: 'none',
       cursor: 'pointer',
     },
   };
