@@ -64,7 +64,10 @@ const Questions = () => {
 
   return (
     <div className="faq-component">
+      <div className="faq-component-title">
       <h2>Česta Pitanja</h2>
+
+      </div>
       <div className="faq-list">
         {questions.map((q, index) => (
           <div key={index} className="faq-item" onClick={() => toggleAnswer(index)}>

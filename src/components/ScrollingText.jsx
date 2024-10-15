@@ -4,7 +4,7 @@ import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 
 import '../styles/components/ScrollingText.css';
-import { color } from 'framer-motion';
+//import { color } from 'framer-motion';
 
 const ScrollingText = () => {
   const words = [
@@ -43,7 +43,7 @@ const ScrollingText = () => {
         responsive={responsive}
         infinite={true}
         autoPlay={true}
-        autoPlaySpeed={3000}
+        autoPlaySpeed={4000}
         keyBoardControl={true}
         showDots={false}
         arrows={false}

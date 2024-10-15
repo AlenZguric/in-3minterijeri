@@ -53,9 +53,9 @@ const HomePage = () => {
 
       <main>
         <motion.section
-          initial="hidden"
+         initial="hidden"
           whileInView="show"
-          //variants={scrollAnimations.fadeInDownRight}
+         // variants={scrollAnimations.fadeInDownRight}
           viewport={{ once: true, amount: 0.1 }}
         >
           <Header />
@@ -65,7 +65,7 @@ const HomePage = () => {
           initial="hidden"
           whileInView="show"
           variants={scrollAnimations.fadeInUp}
-          viewport={{ once: true, amount: 0.3 }}
+          viewport={{ once: true, amount: 0.1 }}
         >
           <OurBusiness />
         </motion.section>
@@ -73,8 +73,8 @@ const HomePage = () => {
         <motion.section
           initial="hidden"
           whileInView="show"
-          variants={scrollAnimations.fadeInUp}
-          viewport={{ once: true, amount: 0.3 }}
+          variants={scrollAnimations.rotateIn}
+          viewport={{ once: true, amount: 0.4 }}
         >
           <WhyChooseUs />
         </motion.section>
@@ -83,7 +83,7 @@ const HomePage = () => {
           initial="hidden"
           whileInView="show"
           variants={scrollAnimations.bounceUp}
-          viewport={{ once: true, amount: 0.2 }}
+          viewport={{ once: true, amount: 0.1 }}
         >
           <OurProducts />
         </motion.section>
@@ -92,7 +92,7 @@ const HomePage = () => {
           initial="hidden"
           whileInView="show"
           variants={scrollAnimations.scaleUp}
-          viewport={{ once: true, amount: 0.2 }}
+          viewport={{ once: true, amount: 0.1 }}
         >
           <Questions />
         </motion.section>
@@ -101,7 +101,7 @@ const HomePage = () => {
           initial="hidden"
           whileInView="show"
           variants={scrollAnimations.scaleUp}
-          viewport={{ once: true, amount: 0.2 }}
+          viewport={{ once: true, amount: 0.1 }}
         >
           <ContactForm />
         </motion.section>

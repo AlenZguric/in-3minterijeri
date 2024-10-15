@@ -2,6 +2,7 @@ import React from "react";
 import { Helmet } from "react-helmet";
 import NavBar from "../components/NavBar";
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import { Link } from "react-router-dom";
 import "react-lazy-load-image-component/src/effects/blur.css";
 import "../styles/pages/galleryPage.css";
 
@@ -13,6 +14,65 @@ import dekorativniPaneliImage from "../assets/images/smallsize/dekorativni-panel
 import hodniciImage from "../assets/images/smallsize/hodnici-predsoblje-img.jpg";
 import kupaoniceImage from "../assets/images/smallsize/kupaonice-img.jpg";
 import ostaliNamjestajImage from "../assets/images/smallsize/ostali namješta-img.jpg";
+
+const categories = [
+  {
+    title: "Kuhinje po mjeri",
+    image: kuhinjeImage,
+    description:
+      "Naše kuhinje po mjeri izrađene su od visokokvalitetnih materijala poput MDF-a, iverala i furnira. Prednosti uključuju mogućnost prilagodbe dimenzija, dizajna i funkcionalnosti. Montaža je brza i efikasna, a održavanje jednostavno s osnovnim sredstvima za čišćenje.",
+    url: "/kuhinje",
+  },
+  {
+    title: "Zidne obloge",
+    image: zidneOblogeImage,
+    description:
+      "Zidne obloge unose moderan dizajn i dodatnu zaštitu zidova. Moguće ih je instalirati u svim prostorijama. Izrađuju se od različitih materijala kao što su PVC, drvo i laminat. Lako se održavaju i otporne su na vlagu.",
+    url: "/zidne-obloge",
+  },
+  {
+    title: "Dnevni boravci",
+    image: dnevniBoravciImage,
+    description:
+      "Namještaj za dnevne boravke kombinira udobnost i funkcionalnost. Koristimo materijale kao što su masivno drvo, furnir i tkanine otpornije na mrlje. Montaža je prilagođena vašem prostoru, a čišćenje je jednostavno.",
+    url: "/dnevni-boravci",
+  },
+  {
+    title: "Dekorativni paneli",
+    image: dekorativniPaneliImage,
+    description:
+      "Dekorativni paneli dodaju eleganciju svakom prostoru. Izrađeni od materijala kao što su MDF i PVC, lako se postavljaju na zidove i jednostavno održavaju. Idealni su za poslovne i stambene prostore.",
+    url: "/dekorativni-paneli",
+  },
+  {
+    title: "Hodnici i predsoblja",
+    image: hodniciImage,
+    description:
+      "Naši hodnici i predsoblja su dizajnirani kako bi maksimalno iskoristili prostor. Koristimo materijale poput iverala i MDF-a s mogućnošću ugradnje kliznih vrata. Jednostavno se održavaju i pružaju dugotrajnu upotrebu.",
+    url: "/hodnici",
+  },
+  {
+    title: "Kupaonice",
+    image: kupaoniceImage,
+    description:
+      "Kupaonski namještaj izrađujemo od materijala otpornog na vlagu poput MDF-a, lakiranog ili furniranog drva. Dizajni su prilagođeni svakom prostoru, a montaža brza i pouzdana. Održavanje je minimalno uz otporne materijale.",
+    url: "/kupaonice",
+  },
+  {
+    title: "Ugradbeni ormari",
+    image: ormariImage,
+    description:
+      "Naši ugradbeni ormari omogućuju maksimalnu iskoristivost prostora. Izrađeni su od kvalitetnih materijala poput iverala, MDF-a i stakla. Jednostavni su za montažu, a klizna vrata čine održavanje lakšim.",
+    url: "/ormari",
+  },
+  {
+    title: "Ostali namještaj",
+    image: ostaliNamjestajImage,
+    description:
+      "Izrađujemo namještaj za dječje sobe, spavaće sobe, ostave, pregradbena vrata, klizna vrata i uredski namještaj. Koristimo materijale poput MDF-a, iverala i drva, a svi naši proizvodi prilagodljivi su vašim potrebama i prostoru.",
+    url: "/ostali-namjestaj",
+  },
+];
 
 const GalleryPage = () => {
   return (
@@ -27,173 +87,23 @@ const GalleryPage = () => {
             <p>ODABERITE KVALITETNE PROIZVODE IZ NAŠE KOLEKCIJE</p>
           </section>
           <section>
-            {/* Kuhinje po mjeri */}
-            <article className="article-about">
-              <div className="article-about-box">
-                <LazyLoadImage
-                  src={kuhinjeImage}
-                  alt="Kuhinje po mjeri"
-                  effect="blur"
-                />
-              </div>
-              <div className="article-about-box-descriptions">
-                <h2>Kuhinje po mjeri</h2>
-                <p>
-                  Naše kuhinje po mjeri koriste visokokvalitetne materijale
-                  poput medijapana i iverice s Blum okovima za dugotrajnost.
-                  Svaka kuhinja je prilagođena vašem prostoru, uz napredne
-                  metode montaže koje omogućuju maksimalnu iskoristivost
-                  prostora. Kuhinje su lako održive, otporne na vlagu i
-                  ogrebotine, te se lako čiste.
-                </p>
-              </div>
-            </article>
-
-            {/* Ugradbeni ormari */}
-            <article className="article-about">
-              <div className="article-about-box">
-                <LazyLoadImage
-                  src={ormariImage}
-                  alt="Ugradbeni ormari"
-                  effect="blur"
-                />
-              </div>
-              <div className="article-about-box-descriptions">
-                <h2>Ugradbeni ormari</h2>
-                <p>
-                  Ugradbeni ormari po mjeri koriste laminat ili furnirano drvo,
-                  s prilagodljivim unutarnjim organizatorima. Idealni su za
-                  maksimalnu iskoristivost prostora, pružajući praktična
-                  rješenja za pohranu s policama i ladicama prilagođenim vašim
-                  potrebama. Održavanje je jednostavno, a kvalitetni okovi
-                  osiguravaju dugovječnost.
-                </p>
-              </div>
-            </article>
-
-            {/* Zidne obloge */}
-            <article className="article-about">
-              <div className="article-about-box">
-                <LazyLoadImage
-                  src={zidneOblogeImage}
-                  alt="Zidne obloge"
-                  effect="blur"
-                />
-              </div>
-              <div className="article-about-box-descriptions">
-                <h2>Zidne obloge</h2>
-                <p>
-                  Naše zidne obloge koriste drvene 3D panele, dodajući toplinu i
-                  estetski element vašem prostoru. Ove obloge nude zvučnu
-                  izolaciju, te su jednostavne za održavanje uz minimalno
-                  čišćenje.
-                </p>
-              </div>
-            </article>
-
-            {/* Dnevni boravci */}
-            <article className="article-about">
-              <div className="article-about-box">
-                <LazyLoadImage
-                  src={dnevniBoravciImage}
-                  alt="Dnevni boravci"
-                  effect="blur"
-                />
-              </div>
-              <div className="article-about-box-descriptions">
-                <h2>Dnevni boravak</h2>
-                <p>
-                  Dnevni boravci po mjeri pružaju fleksibilnost s različitim
-                  konfiguracijama, korištenjem masivnog drveta i staklenih
-                  elemenata. Osigurava optimalan prostor za pohranu,
-                  prilagodljive police i ladice, te jednostavno održavanje
-                  drvenih površina.
-                </p>
-              </div>
-            </article>
-
-            {/* Dekorativni paneli */}
-            <article className="article-about">
-              <div className="article-about-box">
-                <LazyLoadImage
-                  src={dekorativniPaneliImage}
-                  alt="Dekorativni paneli"
-                  effect="blur"
-                />
-              </div>
-              <div className="article-about-box-descriptions">
-                <h2>Dekorativni paneli</h2>
-                <p>
-                  Dekorativni paneli od PVC-a, metala ili drva dodaju
-                  dimenzionalni efekt zidovima, pružajući estetski dodatak i
-                  pomažući u izolaciji. Lako se montiraju i održavaju, te su
-                  idealni za svaki interijer.
-                </p>
-              </div>
-            </article>
-
-            {/* Hodnici i predsoblja */}
-            <article className="article-about">
-              <div className="article-about-box">
-                <LazyLoadImage
-                  src={hodniciImage}
-                  alt="Hodnici predsoblja"
-                  effect="blur"
-                />
-              </div>
-              <div className="article-about-box-descriptions">
-                <h2>Hodnici i predsoblja</h2>
-                <p>
-                  Namještaj za hodnike i predsoblja optimizira prostor koristeći
-                  kompaktne i prilagodljive module. S ugrađenim klupama,
-                  ogledalima i vješalicama, pruža funkcionalnost i estetiku u
-                  skučenim prostorima.
-                </p>
-              </div>
-            </article>
-
-            {/* Kupaonice */}
-            <article className="article-about">
-              <div className="article-about-box">
-                <LazyLoadImage
-                  src={kupaoniceImage}
-                  alt="Kupaonice"
-                  effect="blur"
-                />
-              </div>
-              <div className="article-about-box-descriptions">
-                <h2>Kupaonice</h2>
-                <p>
-                  Kupaonice izrađene od vodootpornih materijala poput medijapana
-                  i stakla, nude maksimalnu funkcionalnost i estetiku. Montaža
-                  je prilagođena otpornosti na vlagu, a rješenja za pohranu
-                  optimiziraju prostor. Površine se lako čiste i održavaju.
-                </p>
-              </div>
-            </article>
-
-            {/* Ostali namještaj */}
-            <article className="article-about">
-              <div className="article-about-box">
-                <LazyLoadImage
-                  src={ostaliNamjestajImage}
-                  alt="Ostali namještaj"
-                  effect="blur"
-                />
-              </div>
-              <div className="article-about-box-descriptions">
-                <h2>Dječje sobe, spavaće sobe, i više</h2>
-                <p>
-                  Pružamo prilagođena rješenja za dječje sobe, spavaće sobe, te
-                  ostale prostore poput ostava, pregradbenih i kliznih vrata.
-                  Također nudimo uredski namještaj dizajniran za funkcionalnost
-                  i estetiku. Naši materijali uključuju kvalitetno drvo i
-                  aluminij, a sustavi kliznih vrata omogućuju jednostavno
-                  korištenje i dugotrajnost. Naši dizajni nude maksimalnu
-                  iskoristivost prostora uz jednostavno održavanje.
-                </p>
-              </div>
-            </article>
+            {categories.map((category, index) => (
+              <article key={index} className="article-about">
+                <div className="article-about-box">
+                  <LazyLoadImage
+                    src={category.image}
+                    alt={category.title}
+                    effect="blur"
+                  />
+                </div>
+                <div className="article-about-box-descriptions">
+                  <h2>{category.title}</h2>
+                  <p>{category.description}</p>
+                  <Link to={category.url}>Saznajte više</Link>{" "}
+                  {/* Link za svaki artikl */}
+                </div>
+              </article>
+            ))}
           </section>
         </div>
       </main>

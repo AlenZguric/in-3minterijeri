@@ -7,20 +7,22 @@
   padding: 50px 0;
   background-color: rgba(228, 223, 223, 0.9);
 }
-.faq-component h2 {
+.faq-component .faq-component-title h2 {
   font-size: 2.5rem;
   margin-bottom: 60px;
-  color: #333;
+  color: #000000;
+  font-family: "roboto mono ", sans-serif;
+  font-weight: 200;
+  text-transform: capitalize;
 }
 .faq-component .faq-list {
   width: 80%;
   max-width: 900px;
 }
 .faq-component .faq-list .faq-item {
-  background-color: white;
-  border: 2px solid #ccc;
+  background-color: rgba(228, 223, 223, 0.9);
   border-radius: 10px;
-  padding: 20px;
+  padding: 0.5rem;
   margin-bottom: 20px;
   cursor: pointer;
   transition: box-shadow 0.3s ease, transform 0.3s ease;
@@ -39,6 +41,7 @@
   color: rgb(80, 77, 77);
   margin-bottom: 10px;
   letter-spacing: 1px;
+  font-family: "roboto mono", sans-serif;
 }
 .faq-component .faq-list .faq-item .faq-question .arrow-icon {
   transition: transform 0.3s ease;

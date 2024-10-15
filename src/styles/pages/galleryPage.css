@@ -74,6 +74,17 @@
   line-height: 1.5;
   font-weight: 300;
 }
+.gallery-page main .main-container .article-about-box-descriptions a {
+  text-decoration: none;
+  margin-top: 2rem;
+  border: 1 solid red;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  color: white;
+  background-color: red;
+  width: 10rem;
+  text-align: center;
+}
 .gallery-page main .main-container .article-about-box {
   display: flex;
   flex-direction: column;
