@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import MenuOpenIcon from "@mui/icons-material/MenuOpen";
 import CloseIcon from "@mui/icons-material/Close";
 import "../styles/components/NavBar.scss"; 
-import logo_image from "./../assets/images/thumbnails/logo_image.png";
+import logo_image from "./../assets/images/thumbnails/logo_image.webp";
 
 
 
