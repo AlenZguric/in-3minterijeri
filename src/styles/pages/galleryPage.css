@@ -50,7 +50,8 @@
   flex-direction: row-reverse;
 }
 .gallery-page main .main-container .article-about:nth-child(even) img {
-  border-radius: 10rem 0 0 10rem;
+  -webkit-clip-path: polygon(100% 0, 100% 0, 100% 100%, 0 68%, 0 15%);
+          clip-path: polygon(100% 0, 100% 0, 100% 100%, 0 68%, 0 15%);
 }
 .gallery-page main .main-container .article-about-box-descriptions {
   display: flex;
@@ -101,5 +102,6 @@
   background-attachment: fixed;
   -o-object-fit: cover;
      object-fit: cover;
-  border-radius: 0 10rem 10rem 0;
+  -webkit-clip-path: polygon(0 0, 70% 0, 100% 85%, 85% 100%, 0 100%);
+          clip-path: polygon(0 0, 70% 0, 100% 85%, 85% 100%, 0 100%);
 }/*# sourceMappingURL=galleryPage.css.map */
