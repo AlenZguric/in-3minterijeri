@@ -78,7 +78,6 @@ const HomePage = () => {
         >
           <WhyChooseUs />
         </motion.section>
-<ScrollingText/>
         <motion.section
           initial="hidden"
           whileInView="show"
@@ -86,6 +85,14 @@ const HomePage = () => {
           viewport={{ once: true, amount: 0.1 }}
         >
           <OurProducts />
+        </motion.section>
+        <motion.section
+          initial="hidden"
+          whileInView="show"
+          variants={scrollAnimations.bounceUp}
+          viewport={{ once: true, amount: 0.1 }}
+        >
+        <ScrollingText/>
         </motion.section>
 
         <motion.section
@@ -96,6 +103,7 @@ const HomePage = () => {
         >
           <Questions />
         </motion.section>
+
 
         <motion.section
           initial="hidden"

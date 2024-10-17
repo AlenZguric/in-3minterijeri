@@ -1,21 +1,28 @@
+
 const importAll = (r) => {
     let images = {};
     r.keys().forEach((item) => { images[item.replace('./', '')] = r(item); });
     return images;
   };
-  
+  const okovi = {
+    Grass: <a href="https://www.grass.eu" target="_blank" rel="noopener noreferrer">Grass</a>,
+    Blom : <a href="https://www.grass.eu" target="_blank" rel="noopener noreferrer">Blom</a>,
+  }
   const images = importAll(require.context('../../assets/images/fullsize/kuhinja/kuhinja_1', false, /\.(png|jpe?g|svg|webp)$/));
-  const thumbnails = importAll(require.context('../../assets/images/fullsize/kuhinja/kuhinja_1', false, /\.(png|jpe?g|svg|jpg)$/));
 
   const images2 = importAll(require.context('../../assets/images/fullsize/kuhinja/kuhinja_2', false, /\.(png|jpe?g|svg|webp)$/));
-  const images3 = importAll(require.context('../../assets/images/fullsize/kuhinja/kuhinja_3', false, /\.(png|jpe?g|svg|webp)$/));
+  const images4 = importAll(require.context('../../assets/images/fullsize/kuhinja/kuhinja_4', false, /\.(png|jpe?g|svg|webp)$/));
+  const images5 = importAll(require.context('../../assets/images/fullsize/kuhinja/kuhinja_5', false, /\.(png|jpe?g|svg|webp)$/));
+  const images6 = importAll(require.context('../../assets/images/fullsize/kuhinja/kuhinja_6', false, /\.(png|jpe?g|svg|webp)$/));
+
+
   
   export const kitchensData = [
       {
         name: "Mona Liza",
         material: "Drvo",
-        hardware: "Blum okovi",
-        images: [
+        hardware: okovi.Grass,
+                images: [
           { src: images['IMG_5748.webp'], thumb: images['IMG_5748.webp'], width: 1440, height: 1080 },
           { src: images['IMG_5749.webp'], thumb: images['IMG_5749.webp'], width: 1440, height: 1080 },
           { src: images['IMG_5750.webp'], thumb: images['IMG_5750.webp'], width: 1440, height: 1080 },
@@ -33,8 +40,8 @@ const importAll = (r) => {
       {
         name: "Kuhinja 2",
         material: "MDF",
-        hardware: "Hettich okovi",
-        images: [
+        hardware: okovi.Grass,
+                images: [
           { src: images2['IMG_5499.webp'], thumb: images2['IMG_5499.webp'], width: 1440, height: 1080 },
           { src: images2['IMG_5500.webp'], thumb: images2['IMG_5500.webp'], width: 1440, height: 1080 },
           { src: images2['IMG_5501.webp'], thumb: images2['IMG_5501.webp'], width: 1440, height: 1080 },
@@ -56,48 +63,165 @@ const importAll = (r) => {
         
       },
       {
-        name: "Kuhinja 3",
+        name: "Kuhinja 4",
         material: "Laminat",
-        hardware: "Grass okovi",
-        images: [
-          { src: images3['IMG_1508.webp'], thumb: images3['IMG_1508.webp'], width: 1440, height: 1080 },
-          { src: images3['IMG_1509.webp'], thumb: images3['IMG_1509.webp'], width: 1440, height: 1080 },
-          { src: images3['IMG_1510.webp'], thumb: images3['IMG_1510.webp'], width: 1440, height: 1080 },
-          { src: images3['IMG_1511.webp'], thumb: images3['IMG_1511.webp'], width: 1440, height: 1080 },
-          { src: images3['IMG_1512.webp'], thumb: images3['IMG_1512.webp'], width: 1440, height: 1080 },
-          { src: images3['IMG_1514.webp'], thumb: images3['IMG_1514.webp'], width: 1440, height: 1080 },
-          { src: images3['IMG_1515.webp'], thumb: images3['IMG_1515.webp'], width: 1440, height: 1080 },
-          { src: images3['IMG_1516.webp'], thumb: images3['IMG_1516.webp'], width: 1440, height: 1080 },
-          { src: images3['IMG_1517.webp'], thumb: images3['IMG_1517.webp'], width: 1440, height: 1080 },
-          { src: images3['IMG_1518.webp'], thumb: images3['IMG_1518.webp'], width: 1440, height: 1080 },
-          { src: images3['IMG_1519.webp'], thumb: images3['IMG_1519.webp'], width: 1440, height: 1080 },
-          { src: images3['IMG_1520.webp'], thumb: images3['IMG_1520.webp'], width: 1440, height: 1080 },
+        hardware: okovi.Grass,
+                 images : [
+          { src: images4['IMG_2837.webp'], thumb: images4['IMG_2837.webp'], width: 1440, height: 1080 },
+          { src: images4['IMG_2834.webp'], thumb: images4['IMG_2834.webp'], width: 810, height: 1080 },
+          { src: images4['IMG_2839.webp'], thumb: images4['IMG_2839.webp'], width: 810, height: 1080 },
+          { src: images4['IMG_2841.webp'], thumb: images4['IMG_2841.webp'], width: 810, height: 1080 },
+          { src: images4['IMG_2842.webp'], thumb: images4['IMG_2842.webp'], width: 810, height: 1080 },
+          { src: images4['IMG_2843.webp'], thumb: images4['IMG_2843.webp'], width: 810, height: 1080 },
+          { src: images4['IMG_2844.webp'], thumb: images4['IMG_2844.webp'], width: 1440, height: 1080 },
+          { src: images4['IMG_2845.webp'], thumb: images4['IMG_2845.webp'], width: 810, height: 1080 },
+          { src: images4['IMG_2848.webp'], thumb: images4['IMG_2848.webp'], width: 810, height: 1080 },
+          { src: images4['IMG_2851.webp'], thumb: images4['IMG_2851.webp'], width: 1440, height: 1080 },
+          { src: images4['IMG_2852.webp'], thumb: images4['IMG_2852.webp'], width: 1440, height: 1080 },
+          { src: images4['IMG_2853.webp'], thumb: images4['IMG_2853.webp'], width: 810, height: 1080 },
         ],
         
-      },
-      {
-        name: "Kuhinja 4",
-        material: "Staklo",
-        hardware: "IKEA okovi",
-        images: [
-          { src: images['kuhinja16.webp'], thumb: thumbnails['kuhinja16-small.jpg'], width: 3000, height: 2000 },
-          { src: images['kuhinja17.webp'], thumb: thumbnails['kuhinja17-small.jpg'], width: 3000, height: 2000 },
-          { src: images['kuhinja18.webp'], thumb: thumbnails['kuhinja18-small.jpg'], width: 3000, height: 2000 },
-          { src: images['kuhinja19.webp'], thumb: thumbnails['kuhinja19-small.jpg'], width: 3000, height: 2000 },
-          { src: images['kuhinja20.webp'], thumb: thumbnails['kuhinja20-small.jpg'], width: 3000, height: 2000 },
-        ],
+        
       },
       {
         name: "Kuhinja 5",
         material: "Beton",
-        hardware: "Bosch okovi",
-        images: [
-          { src: images['kuhinja21.webp'], thumb: thumbnails['kuhinja21-small.jpg'], width: 3000, height: 2000 },
-          { src: images['kuhinja22.webp'], thumb: thumbnails['kuhinja22-small.jpg'], width: 3000, height: 2000 },
-          { src: images['kuhinja23.webp'], thumb: thumbnails['kuhinja23-small.jpg'], width: 3000, height: 2000 },
-          { src: images['kuhinja24.webp'], thumb: thumbnails['kuhinja24-small.jpg'], width: 3000, height: 2000 },
-          { src: images['kuhinja25.webp'], thumb: thumbnails['kuhinja25-small.jpg'], width: 3000, height: 2000 },
+        hardware: okovi.Grass,
+         images : [
+          { src: images5['IMG_2614-2.webp'], thumb: images5['IMG_2614-2.webp'], width: 1440, height: 1080 },
+          { src: images5['IMG_2615.webp'], thumb: images5['IMG_2615.webp'], width: 810, height: 1080 },
+          { src: images5['IMG_2616.webp'], thumb: images5['IMG_2616.webp'], width: 810, height: 1080 },
+          { src: images5['IMG_2617.webp'], thumb: images5['IMG_2617.webp'], width: 1440, height: 1080 },
+          { src: images5['IMG_2619.webp'], thumb: images5['IMG_2619.webp'], width: 810, height: 1080 },
+          { src: images5['IMG_2621.webp'], thumb: images5['IMG_2621.webp'], width: 810, height: 1080 },
+          { src: images5['IMG_2622.webp'], thumb: images5['IMG_2622.webp'], width: 1440, height: 1080 },
+          { src: images5['IMG_2623.webp'], thumb: images5['IMG_2623.webp'], width: 810, height: 1080 },
+          { src: images5['IMG_2624.webp'], thumb: images5['IMG_2624.webp'], width: 1440, height: 1080 },
+          { src: images5['IMG_2625.webp'], thumb: images5['IMG_2625.webp'], width: 810, height: 1080 },
         ],
+        
+      },
+      {
+        name: "Kuhinja 6",
+        material: "Beton",
+        hardware: okovi.Grass,
+         images:[
+          { src: images6['IMG_4904 copy.webp'], thumb: images6['IMG_4904 copy.webp'], width: 1440, height: 1080 },
+          { src: images6['IMG_4902 copy.webp'], thumb: images6['IMG_4902 copy.webp'], width: 810, height: 1080 },
+          { src: images6['IMG_4903 copy.webp'], thumb: images6['IMG_4903 copy.webp'], width: 810, height: 1080 },
+         { src: images6['IMG_4906 copy.webp'], thumb: images6['IMG_4906 copy.webp'], width: 810, height: 1080 },
+          { src: images6['IMG_4908 copy.webp'], thumb: images6['IMG_4908 copy.webp'], width: 810, height: 1080 },
+          { src: images6['IMG_4909 copy.webp'], thumb: images6['IMG_4909 copy.webp'], width: 810, height: 1080 },
+          { src: images6['IMG_4912 copy.webp'], thumb: images6['IMG_4912 copy.webp'], width: 810, height: 1080 },
+          { src: images6['IMG_4913 copy.webp'], thumb: images6['IMG_4913 copy.webp'], width: 810, height: 1080 },
+        ],
+        
+        
+      },
+      {
+        name: "Kuhinja 7",
+        material: "Beton",
+        hardware: okovi.Grass,
+         images : [
+          { src: images5['IMG_2614-2.webp'], thumb: images5['IMG_2614-2.webp'], width: 1440, height: 1080 },
+          { src: images5['IMG_2615.webp'], thumb: images5['IMG_2615.webp'], width: 810, height: 1080 },
+          { src: images5['IMG_2616.webp'], thumb: images5['IMG_2616.webp'], width: 810, height: 1080 },
+          { src: images5['IMG_2617.webp'], thumb: images5['IMG_2617.webp'], width: 1440, height: 1080 },
+          { src: images5['IMG_2619.webp'], thumb: images5['IMG_2619.webp'], width: 810, height: 1080 },
+          { src: images5['IMG_2621.webp'], thumb: images5['IMG_2621.webp'], width: 810, height: 1080 },
+          { src: images5['IMG_2622.webp'], thumb: images5['IMG_2622.webp'], width: 1440, height: 1080 },
+          { src: images5['IMG_2623.webp'], thumb: images5['IMG_2623.webp'], width: 810, height: 1080 },
+          { src: images5['IMG_2624.webp'], thumb: images5['IMG_2624.webp'], width: 1440, height: 1080 },
+          { src: images5['IMG_2625.webp'], thumb: images5['IMG_2625.webp'], width: 810, height: 1080 },
+        ],
+        
+      },
+      {
+        name: "Kuhinja 5",
+        material: "Beton",
+        hardware: okovi.Grass,
+         images : [
+          { src: images5['IMG_2614-2.webp'], thumb: images5['IMG_2614-2.webp'], width: 1440, height: 1080 },
+          { src: images5['IMG_2615.webp'], thumb: images5['IMG_2615.webp'], width: 810, height: 1080 },
+          { src: images5['IMG_2616.webp'], thumb: images5['IMG_2616.webp'], width: 810, height: 1080 },
+          { src: images5['IMG_2617.webp'], thumb: images5['IMG_2617.webp'], width: 1440, height: 1080 },
+          { src: images5['IMG_2619.webp'], thumb: images5['IMG_2619.webp'], width: 810, height: 1080 },
+          { src: images5['IMG_2621.webp'], thumb: images5['IMG_2621.webp'], width: 810, height: 1080 },
+          { src: images5['IMG_2622.webp'], thumb: images5['IMG_2622.webp'], width: 1440, height: 1080 },
+          { src: images5['IMG_2623.webp'], thumb: images5['IMG_2623.webp'], width: 810, height: 1080 },
+          { src: images5['IMG_2624.webp'], thumb: images5['IMG_2624.webp'], width: 1440, height: 1080 },
+          { src: images5['IMG_2625.webp'], thumb: images5['IMG_2625.webp'], width: 810, height: 1080 },
+        ],
+        
+      },
+      {
+        name: "Kuhinja 5",
+        material: "Beton",
+        hardware: okovi.Grass,
+         images : [
+          { src: images5['IMG_2614-2.webp'], thumb: images5['IMG_2614-2.webp'], width: 1440, height: 1080 },
+          { src: images5['IMG_2615.webp'], thumb: images5['IMG_2615.webp'], width: 810, height: 1080 },
+          { src: images5['IMG_2616.webp'], thumb: images5['IMG_2616.webp'], width: 810, height: 1080 },
+          { src: images5['IMG_2617.webp'], thumb: images5['IMG_2617.webp'], width: 1440, height: 1080 },
+          { src: images5['IMG_2619.webp'], thumb: images5['IMG_2619.webp'], width: 810, height: 1080 },
+          { src: images5['IMG_2621.webp'], thumb: images5['IMG_2621.webp'], width: 810, height: 1080 },
+          { src: images5['IMG_2622.webp'], thumb: images5['IMG_2622.webp'], width: 1440, height: 1080 },
+          { src: images5['IMG_2623.webp'], thumb: images5['IMG_2623.webp'], width: 810, height: 1080 },
+          { src: images5['IMG_2624.webp'], thumb: images5['IMG_2624.webp'], width: 1440, height: 1080 },
+          { src: images5['IMG_2625.webp'], thumb: images5['IMG_2625.webp'], width: 810, height: 1080 },
+        ],
+        
+      },   {
+        name: "Kuhinja 5",
+        material: "Beton",
+        hardware: okovi.Grass,
+         images : [
+          { src: images5['IMG_2614-2.webp'], thumb: images5['IMG_2614-2.webp'], width: 1440, height: 1080 },
+          { src: images5['IMG_2615.webp'], thumb: images5['IMG_2615.webp'], width: 810, height: 1080 },
+          { src: images5['IMG_2616.webp'], thumb: images5['IMG_2616.webp'], width: 810, height: 1080 },
+          { src: images5['IMG_2617.webp'], thumb: images5['IMG_2617.webp'], width: 1440, height: 1080 },
+          { src: images5['IMG_2619.webp'], thumb: images5['IMG_2619.webp'], width: 810, height: 1080 },
+          { src: images5['IMG_2621.webp'], thumb: images5['IMG_2621.webp'], width: 810, height: 1080 },
+          { src: images5['IMG_2622.webp'], thumb: images5['IMG_2622.webp'], width: 1440, height: 1080 },
+          { src: images5['IMG_2623.webp'], thumb: images5['IMG_2623.webp'], width: 810, height: 1080 },
+          { src: images5['IMG_2624.webp'], thumb: images5['IMG_2624.webp'], width: 1440, height: 1080 },
+          { src: images5['IMG_2625.webp'], thumb: images5['IMG_2625.webp'], width: 810, height: 1080 },
+        ],
+        
+      },   {
+        name: "Kuhinja 5",
+        material: "Beton",
+        hardware: okovi.Grass,
+         images : [
+          { src: images5['IMG_2614-2.webp'], thumb: images5['IMG_2614-2.webp'], width: 1440, height: 1080 },
+          { src: images5['IMG_2615.webp'], thumb: images5['IMG_2615.webp'], width: 810, height: 1080 },
+          { src: images5['IMG_2616.webp'], thumb: images5['IMG_2616.webp'], width: 810, height: 1080 },
+          { src: images5['IMG_2617.webp'], thumb: images5['IMG_2617.webp'], width: 1440, height: 1080 },
+          { src: images5['IMG_2619.webp'], thumb: images5['IMG_2619.webp'], width: 810, height: 1080 },
+          { src: images5['IMG_2621.webp'], thumb: images5['IMG_2621.webp'], width: 810, height: 1080 },
+          { src: images5['IMG_2622.webp'], thumb: images5['IMG_2622.webp'], width: 1440, height: 1080 },
+          { src: images5['IMG_2623.webp'], thumb: images5['IMG_2623.webp'], width: 810, height: 1080 },
+          { src: images5['IMG_2624.webp'], thumb: images5['IMG_2624.webp'], width: 1440, height: 1080 },
+          { src: images5['IMG_2625.webp'], thumb: images5['IMG_2625.webp'], width: 810, height: 1080 },
+        ],
+        
+      },   {
+        name: "Kuhinja 5",
+        material: "Beton",
+        hardware: okovi.Grass,
+         images : [
+          { src: images5['IMG_2614-2.webp'], thumb: images5['IMG_2614-2.webp'], width: 1440, height: 1080 },
+          { src: images5['IMG_2615.webp'], thumb: images5['IMG_2615.webp'], width: 810, height: 1080 },
+          { src: images5['IMG_2616.webp'], thumb: images5['IMG_2616.webp'], width: 810, height: 1080 },
+          { src: images5['IMG_2617.webp'], thumb: images5['IMG_2617.webp'], width: 1440, height: 1080 },
+          { src: images5['IMG_2619.webp'], thumb: images5['IMG_2619.webp'], width: 810, height: 1080 },
+          { src: images5['IMG_2621.webp'], thumb: images5['IMG_2621.webp'], width: 810, height: 1080 },
+          { src: images5['IMG_2622.webp'], thumb: images5['IMG_2622.webp'], width: 1440, height: 1080 },
+          { src: images5['IMG_2623.webp'], thumb: images5['IMG_2623.webp'], width: 810, height: 1080 },
+          { src: images5['IMG_2624.webp'], thumb: images5['IMG_2624.webp'], width: 1440, height: 1080 },
+          { src: images5['IMG_2625.webp'], thumb: images5['IMG_2625.webp'], width: 810, height: 1080 },
+        ],
+        
       },
   ];
   
