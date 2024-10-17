@@ -1,19 +1,15 @@
-@import '../utils/main.scss';
+@import "../utils/main.scss";
 
 .kitchens-page {
+  display: flex;
+  flex-direction: column;
+  background-color: $background_color_div;
+  min-height: 110vh;
+  width: 100%;
+
+  main {
     display: flex;
     flex-direction: column;
-    background-color: $background_color_div;
-    min-height: 110vh;
-    width: 100%;
-   
-    main{
-        display: flex;
-        flex-direction: column;
-        margin-top: 8rem;
-
-      
-  
-   
+    margin-top: 8rem;
   }
 }

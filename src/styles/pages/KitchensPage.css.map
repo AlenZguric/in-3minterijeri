@@ -1,1 +1,1 @@
-{"version":3,"sources":["../utils/fonts.scss","KitchensPage.scss","../utils/colors.scss","KitchensPage.css"],"names":[],"mappings":"AAAQ,4RAAA;AACA,6JAAA;ACCR;EACI,aAAA;EACA,sBAAA;EACA,oCCHmB;EDInB,iBAAA;EACA,WAAA;AECJ;AFCI;EACI,aAAA;EACA,sBAAA;EACA,gBAAA;AECR","file":"KitchensPage.css"}
+{"version":3,"sources":["../utils/fonts.scss","KitchensPage.scss","../utils/colors.scss","KitchensPage.css"],"names":[],"mappings":"AAAQ,4RAAA;AACA,6JAAA;ACCR;EACE,aAAA;EACA,sBAAA;EACA,oCCHqB;EDIrB,iBAAA;EACA,WAAA;AECF;AFCE;EACE,aAAA;EACA,sBAAA;EACA,gBAAA;AECJ","file":"KitchensPage.css"}
