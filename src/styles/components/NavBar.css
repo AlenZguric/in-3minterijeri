@@ -155,6 +155,7 @@ nav .menu svg {
     position: fixed;
     top: 0;
     left: 0;
+    background-color: rgba(0, 0, 0, 0.699);
   }
   nav .logo-img img {
     width: 6rem;

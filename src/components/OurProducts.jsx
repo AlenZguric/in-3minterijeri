@@ -15,49 +15,49 @@ const categories = [
   {
     title: 'Kuhinje po mjeri',
     image: Kuhinja,
-    description: 'Kuhinje po mjeri koje savršeno odgovaraju vašem prostoru.',
+    description: 'Kuhinje po mjeri koje savršeno odgovaraju vašem prostoru',
     url: '/kuhinje'
   },
   {
     title: 'Zidne obloge',
     image: ZidneObloge,
-    description: 'Moderne zidne obloge za stylish izgled.',
+    description: 'Moderne zidne obloge za stylish izgled',
     url: '/zidne-obloge'
   },
   {
     title: 'Dnevni boravci',
     image: Dnevni,
-    description: 'Namještaj za dnevne boravke koji donosi udobnost i stil.',
+    description: 'Namještaj za dnevne boravke koji donosi udobnost i stil',
     url: '/dnevni-boravci'
   },
   {
     title: 'Dekorativni paneli',
     image: DekorativniPaneli,
-    description: 'Dekorativni paneli za poboljšanje vašeg interijera.',
+    description: 'Dekorativni paneli za poboljšanje vašeg interijera',
     url: '/dekorativni-paneli'
   },
   {
     title: 'Hodnici predsoblja',
     image: Hodnik,
-    description: 'Kustomizirani hodnici i ulazi.',
+    description: 'Kustomizirani hodnici i ulazi',
     url: '/hodnici'
   },
   {
     title: 'Kupaonice',
     image: Kupaonice,
-    description: 'Elegantni namještaj za kupaonice po vašim potrebama.',
+    description: 'Elegantni namještaj za kupaonice po vašim potrebama',
     url: '/kupaonice'
   },
   {
     title: 'Ugradbeni ormari',
     image: Ormari,
-    description: 'Ugradbeni ormari prilagođeni vašem prostoru.',
+    description:'Ugradbeni ormari prilagođeni vašem prostoru',
     url: '/ormari'
   },
   {
     title: 'Ostali namještaj',
     image: Ostali,
-    description: 'Različiti drugi komadi namještaja po mjeri.',
+    description: 'Različiti drugi komadi namještaja po mjeri',
     url: '/ostali-namjestaj'
   }
 ];
@@ -84,7 +84,7 @@ const FurnitureCarousel = () => {
 
   return (
     <div className="carousel-container">  
-      <Carousel responsive={responsive} infinite autoPlay autoPlaySpeed={3000}  showDots rtl={true} >
+      <Carousel responsive={responsive} infinite autoPlay autoPlaySpeed={3500}  showDots rtl={true} >
         {categories.map((category, index) => (
           <div
             key={index}
