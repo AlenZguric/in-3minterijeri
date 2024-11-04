@@ -1,9 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
 .our-business {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
   height: 600px;
   width: 100%;
-  display: flex;
+  z-index: 2;
   background-color: rgba(0, 0, 0, 0.9);
 }
 .our-business .container-our-business {
@@ -69,4 +72,75 @@
   text-decoration: none;
   color: white;
   font-size: 1rem;
+}
+
+@media (max-width: 480px) {
+  .our-business {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    min-height: 120vh;
+    z-index: 3;
+    padding-bottom: 3rem;
+    padding-top: 2rem;
+  }
+  .our-business .container-our-business {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .our-business .container-our-business .row-image {
+    display: none;
+  }
+  .our-business .container-our-business .row-text {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0.5rem;
+  }
+  .our-business .container-our-business .row-text .title h1 {
+    font-weight: 300;
+  }
+  .our-business .container-our-business .row-text .description p {
+    line-height: 2;
+  }
+  .our-business .container-our-business .row-text .button-see-more button {
+    margin-top: 0;
+  }
+}
+@media (max-width: 768px) {
+  .our-business {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 70vh;
+  }
+  .our-business .container-our-business {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 1.2rem;
+  }
+  .our-business .container-our-business .row-image {
+    display: none;
+  }
+  .our-business .container-our-business .row-text {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 70vh;
+    justify-content: space-evenly;
+  }
+  .our-business .container-our-business .row-text .title h1 {
+    font-weight: 300;
+  }
+  .our-business .container-our-business .row-text .description p {
+    line-height: 2;
+  }
+}
+@media (min-width: 769px) and (max-width: 991px) {
+  section {
+    display: block;
+  }
 }/*# sourceMappingURL=OurBusiness.css.map */

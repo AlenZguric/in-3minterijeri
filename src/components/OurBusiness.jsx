@@ -30,9 +30,7 @@ const OurBusiness = () => {
               sofisticiranost, stvarajući prostor koji odražava vašu jedinstvenu
               viziju doma iz snova.
             </p>
-            <p>
-              Mogućnost plaćanja na rate: PBZ, ERSTE: 2-12, 13-24, 25-36 rata
-            </p>
+            
           </div>
           <div className="button-see-more">
             <button >

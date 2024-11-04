@@ -5,41 +5,32 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 body {
   font-family: 'Roboto', 'Open Sans', sans-serif;
-  background-color: #f0f0f0a4; /* Boja pozadine izvan kontejnera */
+  background-color: #f0f0f0a4;
   margin: 0;
   padding: 0;
-  display: flex;
- 
-  
 }
 
- .container {
+.container {
   margin: 0 auto;
   width: 100%;
-  position: absolute;
-  background-image: url('../src/assets/images/fullsize/kuhinja/kuhinja_2/IMG_5516.webp');
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  min-height: 100vh; /* Da kontejner zauzme cijelu visinu ekrana */
-  align-content: center;
+  position: relative; /* Promijenio iz absolute u relative */
+ background-color: black;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
+  justify-content: center; /* Ako želiš centriranje vertikalno */
+  align-items: center; /* Ako želiš centriranje horizontalno */
 }
 
-
-
-@media (min-width: 2560px) {
+@media (max-width: 1024px) {
   .container {
-    max-width: 2560px;
+    background-attachment: scroll; /* Povećava performanse na mobilnim uređajima */
   }
 }
 
-.container .pswp__img {
+.pswp__img {
   display: block;
   width: 100%;
   height: auto;

@@ -1,188 +1,226 @@
-@import '../utils/colors.scss';
-@import '../utils/mixins.scss';
+@import '../utils/main.scss';
 
-.header {
+.active {
+  background-color: #cacaca83;
+}
+
+nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
-  background-color: transparent;
-  position: absolute;
+  background-color: #00000017;
+  color: white;
+  position: sticky;
   top: 0;
-  left: 0;
-  z-index: 2;
   width: 100%;
+  z-index: 1000;
+  height: 5rem;
 
-  .logo {a{
-      
+  .logo-img {
     img {
-      width: 150px;
-      clip-path: circle(33%);
-      transform: translateX(-15px);
-      background-color: transparent;
-      
+      width: 6rem;
+      margin: 1rem;
+      font-weight: bold;
+      text-decoration: none;
+      color: white;
+      clip-path: circle(70%);
     }
-  }}
-
-  .hamburger {
-    display: none;
-    font-size: 2rem;
-    cursor: pointer;
-    z-index: 1001;
-
-   
   }
 
-  .nav {
-    transform: translateX(-230px);
+  ul {
+    display: flex;
+    align-self: center;
+    padding-right: 5%;
+
+    li {
+      list-style: none;
+      padding-left: 1rem;
+
+      a {
+        font-size: 1.25rem;
+        letter-spacing: 2px;
+        font-weight: 200;
+        display: block;
+        text-decoration: none;
+        color: white;
+        padding: 0.5rem;
+        margin: 0 0.5rem;
+        border-radius: 0.5rem;
+        font-family: 'Roboto Mono';
+        &:not(.active):hover {
+          background-color: #cacaca27;
+        }
+      }
+    }
+  }
+
+  .menu {
+    display: none; // Prikazujemo samo na manjim ekranima
+    position: absolute;
+    top: 0.75rem;
+    right: 0.5rem;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 2.25rem;
+    height: 2rem;
+    cursor: pointer;
+
+    svg {
+      font-size: 2rem;
+    }
+  }
+}
+
+// Small mobile (max-width: 480px)
+@media (max-width: 480px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.699);
+    width: 100%;
+    height: 4rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  
+
+    .logo-img {
+      display: flex;
+
+      img {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 3.5rem; // Smanji veličinu logotipa za small mobile
+      }
+    }
+
+    .menu {
+      display: flex; // Prikaži ikonu menija na malim ekranima
+    }
+
+    ul {
+      display: none; // Sakrij li elemente dok se meni ne otvori
+      flex-direction: column;
+      width: 100%;
+      margin-bottom: 0.25rem;
+
+      &.open {
+        display: flex; // Prikazivanje li elemenata kada je meni otvoren
+        background-color: rgba(0, 0, 0, 0.699);
+        padding: 0;
+        margin-top: 4rem;
+
+      }
+
+      li {
+        width: 100%;
+        text-align: center;
+
+        a {
+          margin: 0.2rem 0.5rem;
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}
+
+// Midle mobile (481px - 767px)
+@media (min-width: 481px) and (max-width: 767px) {
+  nav {
+    display: flex ;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0.699);
+    
+    height: 4rem; // Automatska visina za sadržaj
+
+    .logo-img {
+      img {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 4rem; // Prilagodi veličinu logotipa
+      }
+    }
+
+    .menu {
+      display: flex;
+      position: fixed;
+    }
+
+    ul {
+      display: none; // Sakrij li elemente dok meni nije otvoren
+      flex-direction: column;
+      align-content: center;
+      width: 100%;
+      margin: 0; // Ukloni nepotrebne margine koje mogu pomaknuti elemente van ekrana
+
+      &.open {
+        display: flex;
+        width: 50%; // Prikazivanje kada je meni otvoren
+       // background-color: black;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+      }
+
+      li {
+        width: 100%;
+        text-align: center;
+        padding: 0.5rem 0; // Dovoljno prostora između elemenata
+
+        a {
+          font-size: 1rem; // Smanji font kako bi stalo sve na ekran
+          padding: 0.75rem; // Dovoljno paddinga da se elementi ne preklapaju
+        }
+      }
+    }
+  }
+}
+
+
+// Tablet (768px - 991px)
+@media (min-width: 768px) and (max-width: 991px) {
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    .logo-img {
+      img {
+        width: 6rem; // Održavaj veće dimenzije logotipa za tablet
+      }
+    }
+
+    .menu {
+      display: none; // Sakrij menu ikonu na većim uređajima
+    }
 
     ul {
       display: flex;
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      background-color: transparent;
-
-      li {
-        margin-left: 3rem;
-        padding: 2px;
-
-        a {
-          color: $text-color;
-          text-decoration: none;
-          font-weight: 200;
+       li{
+        a{
           font-size: 1rem;
-          background: transparent;
-          padding: 1px 10px;
-                    @include hover-effect;
+          margin: 0;
         }
-      }
-    }
-  }
-
-}
-
-// Mobile size
-@media (max-width: 768px) {
-  .header {
-
-    .hamburger {
-      display: block;
-    
-    }
-
-    .nav {
-      position: fixed;
-      right: 0;
-      top: 0;
-      height: 100%;
-      width: 250px;
-      background-color: #3333335b;
-      transform: translateX(100%);
-      transition: transform 0.9s ease-in-out;
-      z-index: 1000;
-
-      ul {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        height: 100%;
-
-        li {
-          margin: 1rem 0;
-        }
-      }
-    }
-
-    .nav.open {
-      transform: translateX(0);
-      background-color: $navbar_background-color;
-      ul li a{
-        color: white;
-      }
+       }
     }
   }
 }
 
-// Tablet portrait
-@media (min-width: 768px) and (max-width: 991px) {
-  .header {
-    .hamburger {
-      display: block;
-    }
-
-    .nav {
-      position: fixed;
-      right: 0;
-      top: 0;
-      height: 100%;
-      width: 350px;
-      background-color: #3333335b;
-      transform: translateX(100%);
-      transition: transform 0.9s ease-in-out;
-      z-index: 1000;
-
-      ul {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        height: 100%;
-
-        li {
-          margin: 1rem 0;
-        }
-      }
-    }
-
-    .nav.open {
-      transform: translateX(0);
-      background-color: $navbar_background-color;
-      ul li a{
-        color: white;
-      }
-    }
-  }
-}
-
-
-// Tablet landscape, Laptop, Desktop
+// Laptop/desktop (992px and up)
 @media (min-width: 992px) {
-  .header {
-    .hamburger {
-      display: none;
+  nav {
+    ul {
+      display: flex; // Prikaži li elemente
     }
 
-    .nav {
-      position: relative;
-      transform: translateX(0);
-      display: flex;
-      align-items: center;
-
-      ul {
-        flex-direction: row;
-
-        li {
-          margin-left: 3rem;
-          padding: 6px;
-
-          a {
-            font-size: 2rem;
-          }
-        }
-      }
-    }
-  }
-}
-
-// Large Desktop, TV etc.
-@media (min-width: 1200px) {
-  .header {
-    .nav {
-      transform: translateX(0);
-
-      ul li a {
-        font-size: 2.1rem;
-      }
+    .menu {
+      display: none; // Sakrij ikonu menija
     }
   }
 }

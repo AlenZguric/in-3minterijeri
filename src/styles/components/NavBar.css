@@ -1,147 +1,183 @@
-.header {
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+.active {
+  background-color: rgba(202, 202, 202, 0.5137254902);
+}
+
+nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
-  background-color: transparent;
-  position: absolute;
+  background-color: rgba(0, 0, 0, 0.0901960784);
+  color: white;
+  position: sticky;
   top: 0;
-  left: 0;
-  z-index: 2;
   width: 100%;
+  z-index: 1000;
+  height: 5rem;
 }
-.header .logo a img {
-  width: 150px;
-  -webkit-clip-path: circle(33%);
-          clip-path: circle(33%);
-  transform: translateX(-15px);
-  background-color: transparent;
-}
-.header .hamburger {
-  display: none;
-  font-size: 2rem;
-  cursor: pointer;
-  z-index: 1001;
-}
-.header .nav {
-  transform: translateX(-230px);
-}
-.header .nav ul {
-  display: flex;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  background-color: transparent;
-}
-.header .nav ul li {
-  margin-left: 3rem;
-  padding: 2px;
-}
-.header .nav ul li a {
-  color: rgba(255, 255, 255, 0.781);
+nav .logo-img img {
+  width: 6rem;
+  margin: 1rem;
+  font-weight: bold;
   text-decoration: none;
-  font-weight: 200;
-  font-size: 1rem;
-  background: transparent;
-  padding: 1px 10px;
+  color: white;
+  -webkit-clip-path: circle(70%);
+          clip-path: circle(70%);
 }
-.header .nav ul li a:hover {
-  background-color: rgba(255, 255, 255, 0.781);
-  color: black;
-  border-radius: 10px;
-  transition: 0.5s ease-in-out all;
+nav ul {
+  display: flex;
+  align-self: center;
+  padding-right: 5%;
+}
+nav ul li {
+  list-style: none;
+  padding-left: 1rem;
+}
+nav ul li a {
+  font-size: 1.25rem;
+  letter-spacing: 2px;
+  font-weight: 200;
+  display: block;
+  text-decoration: none;
+  color: white;
+  padding: 0.5rem;
+  margin: 0 0.5rem;
+  border-radius: 0.5rem;
+  font-family: "Roboto Mono";
+}
+nav ul li a:not(.active):hover {
+  background-color: rgba(202, 202, 202, 0.1529411765);
+}
+nav .menu {
+  display: none;
+  position: absolute;
+  top: 0.75rem;
+  right: 0.5rem;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 2.25rem;
+  height: 2rem;
+  cursor: pointer;
+}
+nav .menu svg {
+  font-size: 2rem;
 }
 
-@media (max-width: 768px) {
-  .header .hamburger {
-    display: block;
-  }
-  .header .nav {
-    position: fixed;
-    right: 0;
-    top: 0;
-    height: 100%;
-    width: 250px;
-    background-color: rgba(51, 51, 51, 0.3568627451);
-    transform: translateX(100%);
-    transition: transform 0.9s ease-in-out;
-    z-index: 1000;
-  }
-  .header .nav ul {
+@media (max-width: 480px) {
+  nav {
+    display: flex;
     flex-direction: column;
     align-items: center;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.699);
+    width: 100%;
+    height: 4rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  nav .logo-img {
+    display: flex;
+  }
+  nav .logo-img img {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 3.5rem;
+  }
+  nav .menu {
+    display: flex;
+  }
+  nav ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 0.25rem;
+  }
+  nav ul.open {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.699);
+    padding: 0;
+    margin-top: 4rem;
+  }
+  nav ul li {
+    width: 100%;
+    text-align: center;
+  }
+  nav ul li a {
+    margin: 0.2rem 0.5rem;
+    font-size: 1rem;
+  }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  nav {
+    display: flex;
+    position: fixed;
+    align-items: center;
     justify-content: center;
-    height: 100%;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0.699);
+    height: 4rem;
   }
-  .header .nav ul li {
-    margin: 1rem 0;
+  nav .logo-img img {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 4rem;
   }
-  .header .nav.open {
-    transform: translateX(0);
-    background-color: rgba(51, 51, 51, 0.7176470588);
+  nav .menu {
+    display: flex;
+    position: fixed;
   }
-  .header .nav.open ul li a {
-    color: white;
+  nav ul {
+    display: none;
+    flex-direction: column;
+    align-content: center;
+    width: 100%;
+    margin: 0;
+  }
+  nav ul.open {
+    display: flex;
+    width: 50%;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+  }
+  nav ul li {
+    width: 100%;
+    text-align: center;
+    padding: 0.5rem 0;
+  }
+  nav ul li a {
+    font-size: 1rem;
+    padding: 0.75rem;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
-  .header .hamburger {
-    display: block;
-  }
-  .header .nav {
+  nav {
     position: fixed;
-    right: 0;
     top: 0;
-    height: 100%;
-    width: 350px;
-    background-color: rgba(51, 51, 51, 0.3568627451);
-    transform: translateX(100%);
-    transition: transform 0.9s ease-in-out;
-    z-index: 1000;
+    left: 0;
   }
-  .header .nav ul {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
+  nav .logo-img img {
+    width: 6rem;
   }
-  .header .nav ul li {
-    margin: 1rem 0;
+  nav .menu {
+    display: none;
   }
-  .header .nav.open {
-    transform: translateX(0);
-    background-color: rgba(51, 51, 51, 0.7176470588);
+  nav ul {
+    display: flex;
   }
-  .header .nav.open ul li a {
-    color: white;
+  nav ul li a {
+    font-size: 1rem;
+    margin: 0;
   }
 }
 @media (min-width: 992px) {
-  .header .hamburger {
-    display: none;
-  }
-  .header .nav {
-    position: relative;
-    transform: translateX(0);
+  nav ul {
     display: flex;
-    align-items: center;
   }
-  .header .nav ul {
-    flex-direction: row;
-  }
-  .header .nav ul li {
-    margin-left: 3rem;
-    padding: 6px;
-  }
-  .header .nav ul li a {
-    font-size: 2rem;
-  }
-}
-@media (min-width: 1200px) {
-  .header .nav {
-    transform: translateX(0);
-  }
-  .header .nav ul li a {
-    font-size: 2.1rem;
+  nav .menu {
+    display: none;
   }
 }/*# sourceMappingURL=NavBar.css.map */

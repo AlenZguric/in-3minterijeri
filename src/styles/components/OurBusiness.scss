@@ -1,9 +1,12 @@
 @import '../utils/main.scss';
 
 .our-business {
+  display: flex;
+  flex-direction: column;
+   margin: auto;
     height: 600px;
     width: 100%;
-    display: flex;
+   z-index: 2;
     background-color: $background_color_div;
     
     .container-our-business {
@@ -80,4 +83,101 @@
       }
     }}
   }
+  // Small mobile (max-width: 480px)
+@media (max-width: 480px) {
+  .our-business{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    min-height:120vh ;
+    z-index: 3;
+    padding-bottom: 3rem;
+    padding-top: 2rem;
+    .container-our-business{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+     // padding: 0 1.2rem;
+      .row-image{
+        display: none;
+      }
+      .row-text{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: .5rem;
+      // height: 100%;
+
+        .title{
+          h1{
+            font-weight: 300;
+          }
+        }
+        .description{
+          p{
+         line-height: 2;
+        }}
+        .button-see-more{
+          button{
+            margin-top: 0;
+          }
+        }
+      }
+
+    }
+  }
+}
+
+  // Mobile
+  @media (max-width: 768px) {
+    .our-business{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      min-height:70vh ;
+      .container-our-business{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 0 1.2rem;
+        .row-image{
+          display: none;
+        }
+        .row-text{
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          height: 70vh;
+          justify-content: space-evenly;
+          .title{
+            h1{
+              font-weight: 300;
+            }
+          }
+          .description{
+            p{
+              line-height: 2;
+            }
+          }
+        }
   
+      }
+    }
+}
+
+    // Tablet portrait
+    
+    @media (min-width: 769px) and (max-width: 991px) {
+      section{
+        display: block;
+      }
+    }
+    
+    // Tablet landscape, Laptop, Desktop
+    
+    @media (min-width: 992px) {}
+    
+    // Large Desktop, TV etc.
+    
+    @media (min-width: 1200px) {}
