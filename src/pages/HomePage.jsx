@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import { Helmet } from "react-helmet";
 import Header from "../components/Header";
-import NavBar from "../components/NavBar";
 import WhyChooseUs from "../components/WhyChooseUs ";
 import OurProducts from "../components/OurProducts";
 import Questions from "../components/Questions";
@@ -10,6 +9,8 @@ import { motion } from "framer-motion";
 import { scrollAnimations } from "../styles/utils/animations/animations";
 import OurBusiness from "../components/OurBusiness";
 import ScrollingText from "../components/ScrollingText";
+
+import '../styles/pages/HomePage.css';
 
 const HomePage = () => {
   useEffect(() => {
@@ -47,16 +48,13 @@ const HomePage = () => {
         />
         <meta name="twitter:image" content="URL_TWITTER_IMAGE" />
       </Helmet>
-      <header>
-        <NavBar />
-      </header>
 
       <main>
         <motion.section
          initial="hidden"
           whileInView="show"
-         // variants={scrollAnimations.fadeInDownRight}
-          viewport={{ once: true, amount: 0.1 }}
+          variants={scrollAnimations.fadeInDownRight}
+          viewport={{ once: true, amount: 0.05 }}
         >
           <Header />
         </motion.section>
@@ -65,7 +63,7 @@ const HomePage = () => {
           initial="hidden"
           whileInView="show"
           variants={scrollAnimations.fadeInUp}
-          viewport={{ once: true, amount: 0.1 }}
+          viewport={{ once: true, amount: 0.05 }}
         >
           <OurBusiness />
         </motion.section>
@@ -73,8 +71,8 @@ const HomePage = () => {
         <motion.section
           initial="hidden"
           whileInView="show"
-          variants={scrollAnimations.rotateIn}
-          viewport={{ once: true, amount: 0.4 }}
+          variants={scrollAnimations.bounceUp}
+          viewport={{ once: true, amount: 0.05 }}
         >
           <WhyChooseUs />
         </motion.section>
@@ -82,7 +80,7 @@ const HomePage = () => {
           initial="hidden"
           whileInView="show"
           variants={scrollAnimations.bounceUp}
-          viewport={{ once: true, amount: 0.1 }}
+          viewport={{ once: true, amount: 0.05 }}
         >
           <OurProducts />
         </motion.section>
@@ -90,29 +88,28 @@ const HomePage = () => {
           initial="hidden"
           whileInView="show"
           variants={scrollAnimations.bounceUp}
-          viewport={{ once: true, amount: 0.1 }}
+          viewport={{ once: true, amount: 0.05 }}
         >
-        <ScrollingText/>
+          <ScrollingText />
         </motion.section>
 
         <motion.section
           initial="hidden"
           whileInView="show"
           variants={scrollAnimations.scaleUp}
-          viewport={{ once: true, amount: 0.1 }}
+          viewport={{ once: true, amount: 0.05 }}
         >
           <Questions />
         </motion.section>
 
-
         <motion.section
           initial="hidden"
           whileInView="show"
           variants={scrollAnimations.scaleUp}
-          viewport={{ once: true, amount: 0.1 }}
+          viewport={{ once: true, amount: 0.05 }}
         >
           <ContactForm />
-        </motion.section>
+        </motion.section> 
       </main>
     </div>
   );

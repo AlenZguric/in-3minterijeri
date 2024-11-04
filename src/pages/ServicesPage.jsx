@@ -1,5 +1,4 @@
 import React from "react";
-import NavBar from "../components/NavBar";
 import { Helmet } from "react-helmet";
 import '../styles/pages/servicesPage.css';
 import ContactForm from '../components/ContactForm';
@@ -15,9 +14,6 @@ const Services = () => {
           content="Saznajte više o uslugama profesionalnog dizajna, projektiranja i izrade namještaja po mjeri, uključujući 3D nacrte, CNC obradu i montažu."
         />
       </Helmet>
-      <header className="header">
-        <NavBar />
-      </header>
       <main >   
         <section>
           <article>

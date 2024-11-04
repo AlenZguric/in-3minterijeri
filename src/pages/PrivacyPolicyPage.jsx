@@ -1,5 +1,4 @@
 import React from "react";
-import NavBar from "../components/NavBar";
 import { Helmet } from "react-helmet";
 
 import "../styles/pages/PrivacyPolicyPage.css";
@@ -11,9 +10,6 @@ const PrivacyPolicyPage = () => {
         <title>Privacy Policy</title>
         <meta name="description" content="Our privacy policy" />
       </Helmet>
-      <header>
-        <NavBar />
-      </header>
       <main className="main-privacy-Policy-Page">
         <div className="main-privacy-Policy-Page-title">
           <h2>Izjava o zaštiti privatnosti</h2>

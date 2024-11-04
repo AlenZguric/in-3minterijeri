@@ -1,6 +1,5 @@
 import React from "react";
 import { Helmet } from "react-helmet";
-import NavBar from "../components/NavBar";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { Link } from "react-router-dom";
 import "react-lazy-load-image-component/src/effects/blur.css";
@@ -77,10 +76,7 @@ const categories = [
 const GalleryPage = () => {
   return (
     <div className="gallery-page">
-      <header>
         <Helmet></Helmet>
-        <NavBar />
-      </header>
       <main>
         <div className="main-container">
           <section className="title-section">

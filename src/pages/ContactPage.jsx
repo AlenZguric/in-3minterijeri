@@ -13,9 +13,6 @@ const ContactPage = () => {
   return (
     <div className="contact-page">
       <Helmet></Helmet>
-      <header>
-        <NavBar />
-      </header>
       <main>
         <section>
           <div className="title-contact-page">

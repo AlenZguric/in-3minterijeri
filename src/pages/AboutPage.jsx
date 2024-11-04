@@ -1,6 +1,5 @@
 import React from "react";
 import { Helmet } from "react-helmet";
-import NavBar from "../components/NavBar";
 
 import "../styles/pages/aboutPage.css";
 
@@ -10,10 +9,6 @@ const AboutPage = () => {
       <Helmet>
         
       </Helmet>
-      <header >
-  <NavBar  />
-</header>
-
       <main style={{ paddingTop: '180px' }}>
         <section>
           <article>

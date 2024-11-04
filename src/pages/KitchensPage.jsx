@@ -1,7 +1,6 @@
 import React from "react";
 import KitchenComponent from "../components/KitchenComponent";
 import { kitchensData } from "../styles/utils/kitchensData";
-import NavBar from "../components/NavBar";
 import { Helmet } from "react-helmet";
 import LazyLoad from "react-lazyload";
 import { motion } from "framer-motion";
@@ -15,7 +14,6 @@ const KitchensPage = () => {
       <Helmet>
         <title>Kuhinje</title>
       </Helmet>
-      <NavBar />
       <main>
         {kitchensData.map((kitchen, index) => (
           <LazyLoad key={index} height={200} offset={100}>
