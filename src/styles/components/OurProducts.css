@@ -35,10 +35,4 @@
   font-size: 1rem;
   color: #666;
   padding: 1rem;
-}
-
-@media (max-width: 480px) {
-  .carousel-container {
-    display: flex;
-  }
 }/*# sourceMappingURL=OurProducts.css.map */
