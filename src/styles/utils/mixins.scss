@@ -8,4 +8,6 @@
       transition: 0.5s ease-in-out all; }
       
   }
-  
+  @mixin fluid-font($min-size, $max-size) {
+    font-size: clamp(#{$min-size}, 1rem + 1vw, #{$max-size});
+  }

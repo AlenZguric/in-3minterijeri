@@ -91,6 +91,29 @@
     display: none;
   }
 }
+@media (min-width: 481px) and (max-width: 767px) {
+  .header-component {
+    display: flex;
+  }
+  .header-component .box {
+    display: flex;
+    flex-direction: column;
+  }
+  .header-component .box p {
+    width: 100%;
+  }
+  .header-component .box p span i {
+    font-size: clamp(2rem, 1rem + 1vw, 4rem);
+    letter-spacing: 0.7rem;
+  }
+  .header-component .box h2 {
+    font-size: clamp(1rem, 1rem + 1vw, 1.5rem);
+    transform: translate(0);
+    padding-left: 1rem;
+    font-weight: 200;
+    letter-spacing: 1px;
+  }
+}
 @media (min-width: 768px) and (max-width: 991px) {
   .header-component {
     display: flex;

@@ -96,6 +96,32 @@ z-index: 1;
   }
 }
 
+// Midle mobile (481px - 767px)
+@media (min-width: 481px) and (max-width: 767px) {
+  .header-component {
+    display: flex;
+    .box{
+      display: flex;
+      flex-direction: column;
+      p{
+        width: 100%;
+        span {
+          i {            
+            @include fluid-font(2rem, 4rem);
+            letter-spacing: .7rem;
+          }
+        }
+      }
+      h2{
+        @include fluid-font(1rem, 1.5rem);
+        transform: translate(0);
+        padding-left: 1rem;
+        font-weight: 200;
+        letter-spacing: 1px;
+      }
+    }
+  }
+}
 // Tablet portrait
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -113,6 +139,7 @@ z-index: 1;
       width: 100%;
       p {
         width: 100%;
+
         span {
           i {
             font-size: 3rem;
