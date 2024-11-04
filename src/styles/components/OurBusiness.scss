@@ -169,8 +169,54 @@
     // Tablet portrait
     
     @media (min-width: 769px) and (max-width: 991px) {
-      section{
-        display: block;
+      .our-business{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        min-height:90vh ;
+        justify-content: center;
+        .container-our-business{
+          display: flex;
+          flex-direction: row;
+          width: 100%;
+          padding: 0 1.2rem;
+          .row-image{
+            display: flex;
+            padding-right: 2rem;
+
+            img{
+              display: flex;
+             height: 100%;
+             clip-path: polygon(0 0, 100% 0, 100% 50%, 85% 100%, 0 100%);
+             box-shadow: 3px 3px 5px rgba(255, 255, 255, 0.3), 6px 6px 15px rgba(185, 185, 185, 0.15);
+
+                        }
+
+          }
+          .row-text{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 70vh;
+            justify-content: space-evenly;
+            .title{
+              margin-bottom: 0;
+              h1{
+                font-weight: 300;
+                font-size: 2rem;
+              }
+            }
+            .description{
+              p{
+                line-height: 1.5;
+                font-weight: 300;
+                margin:0;
+                font-size: 1.15rem;
+              }
+            }
+          }
+    
+        }
       }
     }
     

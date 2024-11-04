@@ -140,7 +140,48 @@
   }
 }
 @media (min-width: 769px) and (max-width: 991px) {
-  section {
-    display: block;
+  .our-business {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 90vh;
+    justify-content: center;
+  }
+  .our-business .container-our-business {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 0 1.2rem;
+  }
+  .our-business .container-our-business .row-image {
+    display: flex;
+    padding-right: 2rem;
+  }
+  .our-business .container-our-business .row-image img {
+    display: flex;
+    height: 100%;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 50%, 85% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 50%, 85% 100%, 0 100%);
+    box-shadow: 3px 3px 5px rgba(255, 255, 255, 0.3), 6px 6px 15px rgba(185, 185, 185, 0.15);
+  }
+  .our-business .container-our-business .row-text {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 70vh;
+    justify-content: space-evenly;
+  }
+  .our-business .container-our-business .row-text .title {
+    margin-bottom: 0;
+  }
+  .our-business .container-our-business .row-text .title h1 {
+    font-weight: 300;
+    font-size: 2rem;
+  }
+  .our-business .container-our-business .row-text .description p {
+    line-height: 1.5;
+    font-weight: 300;
+    margin: 0;
+    font-size: 1.15rem;
   }
 }/*# sourceMappingURL=OurBusiness.css.map */
