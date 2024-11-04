@@ -30,7 +30,7 @@ const ScrollingText = () => {
     },
     mobile: {
       breakpoint: { max: 464, min: 0 },
-      items: 1
+      items: 2
     }
   };
 
@@ -40,14 +40,16 @@ const ScrollingText = () => {
         <h2>Naši partneri</h2>
       </div>
       <Carousel
-        responsive={responsive}
-        infinite={true}
-        autoPlay={true}
-        autoPlaySpeed={4000}
-        keyBoardControl={true}
-        showDots={false}
-        arrows={false}
-      >
+  responsive={responsive}
+  infinite={true}
+  autoPlay={true}
+  autoPlaySpeed={1}  // Smanjeni interval za neprekidno klizanje
+  customTransition="transform 10000ms linear" // Postavlja glatki prijelaz
+  transitionDuration={10000} // Brzina prijelaza
+  keyBoardControl={true}
+  showDots={false}
+  arrows={false}
+>
         {words.map((word, index) => (
           <div key={index} className="scroll-item">
             <Typography style={{color: word.color}}>

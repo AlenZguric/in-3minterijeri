@@ -1,4 +1,4 @@
-@import'../utils/main.scss';
+@import "../utils/main.scss";
 
 .scrolling-component {
   display: flex;
@@ -20,19 +20,21 @@
       letter-spacing: 2px;
     }
   }
-  .react-multi-carousel-list  {
-    ul{li{
-      p{
-        a{
-          text-decoration: none;
-          color: black;
-          font-family: 'roboto mono', sans-serif;
-          font-size: 2rem;
-          font-weight: 600;
-          font-style: italic;
+  .react-multi-carousel-list {
+    ul {
+      li {
+        p {
+          a {
+            text-decoration: none;
+            color: black;
+            font-family: "roboto mono", sans-serif;
+            font-size: 2rem;
+            font-weight: 600;
+            font-style: italic;
+          }
         }
       }
-    }}
+    }
   }
 
   .scrolling-text {
