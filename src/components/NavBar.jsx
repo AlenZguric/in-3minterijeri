@@ -1,61 +1,44 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
-import MenuOpenIcon from "@mui/icons-material/MenuOpen";
-import CloseIcon from "@mui/icons-material/Close";
-import "../styles/components/NavBar.scss"; 
+import { Link, NavLink } from "react-router-dom";
+import "../styles/components/NavBar.scss";
 import logo_image from "./../assets/images/thumbnails/logo_image.webp";
 
-
+import MenuIcon from '@mui/icons-material/Menu'; 
+import CloseIcon from '@mui/icons-material/Close'; 
 
 const NavBar = () => {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  };
+  const [menuOpen, setMenuOpen] = useState(false);
+  const closeMenu = ()=>{
+    setMenuOpen(false);
+  }
 
   return (
-    
-     
-      <header className="header">
-      
-        <div className="logo">
-          <Link to="/"> <img src={logo_image} alt="logo in-3m interijeri" /></Link>
-        </div>
-        <div className="hamburger" onClick={toggleMenu}>
-          {isOpen ? <CloseIcon fontSize="35px" /> : <MenuOpenIcon fontSize="30px"/>}
-        </div>
-        <nav className={isOpen ? "nav open" : "nav"}>
-          <ul>
-            <li>
-              <Link to="/" onClick={toggleMenu}>
-                Naslovnica
-              </Link>
-            </li>
-            <li>
-              <Link to="/proizvodi" onClick={toggleMenu}>
-                Proizvodi
-              </Link>
-            </li>
-            <li>
-              <Link to="/usluge" onClick={toggleMenu}>
-                Usluge
-              </Link>
-            </li>
-            <li>
-              <Link to="/o-nama" onClick={toggleMenu}>
-                O Nama
-              </Link>
-            </li>
-            <li>
-              <Link to="/kontakt" onClick={toggleMenu}>
-                Kontakt
-              </Link>
-            </li>
-          </ul>
-        </nav>
-      </header>
-    
+    <nav>
+      <Link to="/" className="logo-img">
+        {" "}
+        <img src={logo_image} alt="logo in-3m interijeri" />
+      </Link>
+      <div className="menu" onClick={() => setMenuOpen(!menuOpen)}>
+      {menuOpen ? <CloseIcon style={{ color: "#fff" }} /> : <MenuIcon style={{ color: "#fff" }} />}
+      </div>
+      <ul className={menuOpen ? "open" : ""}>
+        <li>
+          <NavLink to="/" onClick={closeMenu}>Naslovnica</NavLink>
+        </li>
+        <li>
+          <NavLink to="/proizvodi" onClick={closeMenu}>Proizvodi</NavLink>
+        </li>
+        <li>
+          <NavLink to="/usluge" onClick={closeMenu}>Usluge</NavLink>
+        </li>
+        <li>
+          <NavLink to="/o-nama" onClick={closeMenu}>O Nama</NavLink>
+        </li>
+        <li>
+          <NavLink to="kontakt" onClick={closeMenu}>Kontakt</NavLink>
+        </li>
+      </ul>
+    </nav>
   );
 };
 
