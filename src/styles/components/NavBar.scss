@@ -81,8 +81,7 @@ nav {
     background-color: rgba(0, 0, 0, 0.699);
     width: 100%;
     height: 4rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
+
   
 
     .logo-img {
@@ -130,53 +129,52 @@ nav {
 // Midle mobile (481px - 767px)
 @media (min-width: 481px) and (max-width: 767px) {
   nav {
-    display: flex ;
-    position: fixed;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    padding: 0;
+    position: fixed;
     background-color: rgba(0, 0, 0, 0.699);
-    
-    height: 4rem; // Automatska visina za sadržaj
+    width: 100%;
+    height: 4rem;
+
+  
 
     .logo-img {
+      display: flex;
+
       img {
         position: fixed;
         top: 0;
         left: 0;
-        width: 4rem; // Prilagodi veličinu logotipa
+        width: 3.5rem; // Smanji veličinu logotipa za small mobile
       }
     }
 
     .menu {
-      display: flex;
-      position: fixed;
+      display: flex; // Prikaži ikonu menija na malim ekranima
     }
 
     ul {
-      display: none; // Sakrij li elemente dok meni nije otvoren
+      display: none; // Sakrij li elemente dok se meni ne otvori
       flex-direction: column;
-      align-content: center;
       width: 100%;
-      margin: 0; // Ukloni nepotrebne margine koje mogu pomaknuti elemente van ekrana
+      margin-bottom: 0.25rem;
 
       &.open {
-        display: flex;
-        width: 50%; // Prikazivanje kada je meni otvoren
-       // background-color: black;
+        display: flex; // Prikazivanje li elemenata kada je meni otvoren
+        background-color: rgba(0, 0, 0, 0.699);
         padding: 0;
-        justify-content: center;
-        align-items: center;
+        margin-top: 4rem;
+
       }
 
       li {
         width: 100%;
         text-align: center;
-        padding: 0.5rem 0; // Dovoljno prostora između elemenata
 
         a {
-          font-size: 1rem; // Smanji font kako bi stalo sve na ekran
-          padding: 0.75rem; // Dovoljno paddinga da se elementi ne preklapaju
+          margin: 0.2rem 0.5rem;
+          font-size: 1rem;
         }
       }
     }
