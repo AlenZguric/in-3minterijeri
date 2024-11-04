@@ -13,28 +13,39 @@ import Services from "./pages/ServicesPage";
 import WallPanelsPage from "./pages/WallPanelsPage";
 import PrivacyPolicyPage from "./pages/PrivacyPolicyPage";
 
-import CookieNotice from '../src/components/CookieNotice';
-import { useCookies } from './contexts/CookieContekst';
-import { useLocation,   } from 'react-router-dom'; 
+import CookieNotice from "../src/components/CookieNotice";
+import { useCookies } from "./contexts/CookieContekst";
+import { useLocation } from "react-router-dom";
+import NavBar from "./components/NavBar";
+
+import './App.css';
 
 const AppContent = () => {
   const { cookiesAccepted } = useCookies(); // Provjeri je li korisnik prihvatio kolačiće
-  const location = useLocation();           // Dobij trenutnu rutu
+  const location = useLocation(); // Dobij trenutnu rutu
 
   // Provjeri je li trenutna ruta "/politika-privatnosti"
-  const isPrivacyPage = location.pathname === '/politika-privatnosti';
+  const isPrivacyPage = location.pathname === "/politika-privatnosti";
 
   return (
     <>
       {/* Cookie obavijest će se prikazivati ako kolačići nisu prihvaćeni */}
       {!cookiesAccepted && !isPrivacyPage && <CookieNotice />}
-      
+
       <div
         className="container"
         // Omogući interakciju samo ako su kolačići prihvaćeni ILI ako je korisnik na stranici politika-privatnosti
-        style={cookiesAccepted || isPrivacyPage ? {} : { pointerEvents: 'none', opacity: 0.5 }}
+        style={
+          cookiesAccepted || isPrivacyPage
+            ? {}
+            : { pointerEvents: "none", opacity: 0.5 }
+        }
       >
         <div className="App">
+          <header>
+          <NavBar/>
+
+          </header>
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/o-nama" element={<AboutPage />} />
@@ -43,10 +54,15 @@ const AppContent = () => {
             <Route path="/kontakt" element={<ContactPage />} />
             <Route path="/kuhinje" element={<KitchensPage />} />
             <Route path="/zidne-obloge" element={<WallPanelsPage />} />
-            <Route path="/politika-privatnosti" element={<PrivacyPolicyPage />} />
+            <Route
+              path="/politika-privatnosti"
+              element={<PrivacyPolicyPage />}
+            />
           </Routes>
 
-          <Footer />
+          <footer>
+            <Footer />
+          </footer>
         </div>
       </div>
     </>
