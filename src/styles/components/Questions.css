@@ -5,22 +5,21 @@
   flex-direction: column;
   align-items: center;
   padding: 50px 0;
-  background-color: rgba(228, 223, 223, 0.9);
+  background-color: rgb(0, 0, 0);
 }
 .faq-component .faq-component-title h2 {
   font-size: 2.5rem;
   margin-bottom: 60px;
-  color: #000000;
-  font-family: "roboto mono ", sans-serif;
-  font-weight: 200;
-  text-transform: capitalize;
+  color: #ffffff;
+  font-family: "roboto mono", sans-serif;
+  font-weight: 400;
 }
 .faq-component .faq-list {
   width: 80%;
   max-width: 900px;
 }
 .faq-component .faq-list .faq-item {
-  background-color: rgba(228, 223, 223, 0.9);
+  background-color: rgba(255, 255, 255, 0.027);
   border-radius: 10px;
   padding: 0.5rem;
   margin-bottom: 20px;
@@ -28,7 +27,7 @@
   transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 .faq-component .faq-list .faq-item:hover {
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 15px rgba(255, 255, 255, 0.507);
   transform: translateY(-5px);
 }
 .faq-component .faq-list .faq-item .faq-question {
@@ -37,22 +36,40 @@
   align-items: center;
 }
 .faq-component .faq-list .faq-item .faq-question h3 {
-  font-size: 1.3rem;
-  color: rgb(80, 77, 77);
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.747);
   margin-bottom: 10px;
   letter-spacing: 1px;
   font-family: "roboto mono", sans-serif;
+  font-weight: 200;
 }
 .faq-component .faq-list .faq-item .faq-question .arrow-icon {
   transition: transform 0.3s ease;
   font-size: 2rem;
-  color: #333;
+  color: rgba(255, 255, 255, 0.747);
 }
 .faq-component .faq-list .faq-item .faq-question .rotate {
   transform: rotate(180deg);
 }
 .faq-component .faq-list .faq-item p {
   font-size: 1rem;
-  color: #333;
+  color: whitesmoke;
   margin-top: 10px;
+  letter-spacing: 1.5px;
+}
+
+@media (max-width: 480px) {
+  .faq-component {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+  }
+  .faq-component .faq-component-title h2 {
+    font-size: 1.5rem;
+    margin-bottom: 60px;
+    color: #ffffff;
+    font-family: "roboto mono", sans-serif;
+    font-weight: 400;
+  }
 }/*# sourceMappingURL=Questions.css.map */

@@ -65,7 +65,7 @@ const Questions = () => {
   return (
     <div className="faq-component">
       <div className="faq-component-title">
-      <h2>Česta Pitanja</h2>
+        <h2>Pitanja i odgovori</h2>
 
       </div>
       <div className="faq-list">

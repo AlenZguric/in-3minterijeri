@@ -5,15 +5,15 @@
     flex-direction: column;
     align-items: center;
     padding: 50px 0;
-    background-color: $background_color_div_light;
-  .faq-component-title{
+    background-color: rgb(0, 0, 0);
+    .faq-component-title{
     h2 {
       font-size: 2.5rem;
       margin-bottom: 60px;
-      color: #000000;
-      font-family: 'roboto mono ',sans-serif;
-      font-weight: 200;
-      text-transform: capitalize;
+      color: #ffffff;
+      font-family: 'roboto mono',sans-serif;
+      font-weight: 400;
+      //text-transform: capitalize;
     }
   }
     .faq-list {
@@ -21,7 +21,7 @@
       max-width: 900px;
   
       .faq-item {
-        background-color:$background_color_div_light;
+        background-color:rgba(255, 255, 255, 0.027);
         //border: 2px solid #ccc;
         border-radius: 10px;
         padding: .5rem;
@@ -30,7 +30,7 @@
         transition: box-shadow 0.3s ease, transform 0.3s ease;
   
         &:hover {
-          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 5px 15px rgba(255, 255, 255, 0.507);
           transform: translateY(-5px);
         }
   
@@ -40,17 +40,18 @@
           align-items: center;
   
           h3 {
-            font-size: 1.3rem;
-            color: rgb(80, 77, 77);
+            font-size: 1.1rem;
+            color: rgba(255, 255, 255, 0.747);
             margin-bottom: 10px;
             letter-spacing: 1px;
             font-family: 'roboto mono',sans-serif;
+            font-weight: 200;
           }
   
           .arrow-icon {
             transition: transform 0.3s ease;
             font-size: 2rem;
-            color: #333;
+            color: rgba(255, 255, 255, 0.747);
           }
   
           .rotate {
@@ -60,10 +61,39 @@
   
         p {
           font-size: 1rem;
-          color: #333;
+          color: whitesmoke;
           margin-top: 10px;
+          letter-spacing: 1.5px
         }
       }
     }
   }
-  
+  // Small mobile (max-width: 480px)
+@media (max-width: 480px) {
+.faq-component{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+  .faq-component-title{
+    h2 {
+      font-size: 1.5rem;
+      margin-bottom: 60px;
+      color: #ffffff;
+      font-family: 'roboto mono',sans-serif;
+      font-weight: 400;
+      //text-transform: capitalize;
+    }
+  }
+}
+
+}
+
+// Midle mobile (481px - 767px)
+
+@media (min-width: 481px) and (max-width: 767px) {
+}
+// Tablet (768px - 991px)
+
+@media (min-width: 768px) and (max-width: 991px) {
+}
