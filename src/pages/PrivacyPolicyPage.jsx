@@ -1,9 +1,12 @@
 import React from "react";
 import { Helmet } from "react-helmet";
+import { useCookies } from '../contexts/CookieContekst';
 
 import "../styles/pages/PrivacyPolicyPage.css";
 
 const PrivacyPolicyPage = () => {
+  const { cookiesAccepted, acceptCookies } = useCookies();
+
   return (
     <div className="privacy-Policy-Page">
       <Helmet>
@@ -13,6 +16,13 @@ const PrivacyPolicyPage = () => {
       <main className="main-privacy-Policy-Page">
         <div className="main-privacy-Policy-Page-title">
           <h2>Izjava o zaštiti privatnosti</h2>
+          {!cookiesAccepted && (
+        <div style={styles.buttonContainer}>
+          <button style={styles.acceptButton} onClick={acceptCookies}>
+            Prihvaćam kolačiće
+          </button>
+        </div>
+      )}
           <p>
             Ovom se izjavom obvezujemo štititi privatnost korisnika i
             posjetitelja naših mrežnih stranica <a href="http://https://in3m-interijeri.web.app/">https://in3m-interijeri.web.app/</a> uz
@@ -368,5 +378,20 @@ const PrivacyPolicyPage = () => {
     </div>
   );
 };
-
+const styles = {
+  buttonContainer: {
+    marginTop: '20px',
+    marginBottom: '20px',
+    display: 'flex',
+    justifyContent: 'start',
+  },
+  acceptButton: {
+    backgroundColor: '#4CAF50',
+    color: 'white',
+    border: 'none',
+    padding: '10px 20px',
+    cursor: 'pointer',
+    borderRadius: '5px',
+  },
+};
 export default PrivacyPolicyPage;
