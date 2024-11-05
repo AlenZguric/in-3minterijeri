@@ -75,7 +75,7 @@
     display: flex;
     flex-direction: column;
     padding-left: 1rem;
-    padding-right: 0.5rem;
+    padding-right: 2rem;
     margin-top: auto;
     border-radius: 0;
     width: 100%;
@@ -97,6 +97,12 @@
     font-size: 1rem;
     color: white;
     font-weight: 200;
+    display: flex;
+    flex-direction: column;
+    text-wrap: wrap;
+  }
+  .privacy-Policy-Page .main-privacy-Policy-Page .main-privacy-Policy-Page-title address {
+    color: white;
   }
 }
 @media (min-width: 481px) and (max-width: 767px) {
@@ -108,7 +114,7 @@
     display: flex;
     flex-direction: column;
     padding-left: 1rem;
-    padding-right: 1rem;
+    padding-right: 2rem;
     margin-top: auto;
     border-radius: 0;
     width: 100%;
@@ -130,5 +136,8 @@
     font-size: 1rem;
     color: white;
     font-weight: 200;
+  }
+  .privacy-Policy-Page .main-privacy-Policy-Page .main-privacy-Policy-Page-title address {
+    color: white;
   }
 }/*# sourceMappingURL=PrivacyPolicyPage.css.map */
