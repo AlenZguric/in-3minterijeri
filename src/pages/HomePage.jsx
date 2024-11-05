@@ -62,7 +62,7 @@ const HomePage = () => {
         <motion.section
           initial="hidden"
           whileInView="show"
-          variants={scrollAnimations.fadeInUp}
+          variants={scrollAnimations.bounceUp}
           viewport={{ once: true, amount: 0.05 }}
         >
           <OurBusiness />

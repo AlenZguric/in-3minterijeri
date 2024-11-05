@@ -262,8 +262,162 @@
   // Midle mobile (481px - 767px)
   
   @media (min-width: 481px) and (max-width: 767px) {
+    .contact-container{
+    
+      .contact-container-box{
+        padding: .5rem;
+        .title{
+          display: flex;
+          flex-direction: column;
+          h2{
+            font-size: 1.7rem;
+            line-height: 2;
+          }
+        }
+        .contact-box{
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+         
+          margin: 0;
+          padding-left: 1rem;
+          padding-right: 1rem;
+          align-items: center;
+          .contact-info-box{
+            display: flex;
+            flex-direction: column;
+           width: 80%;
+            padding: 1rem 1rem;
+            margin-bottom: 2rem;
+            .title-contact-info{
+              h4{
+                font-size: 1.2rem;
+                padding-top: 1rem;
+                padding-bottom: 1rem;
+                margin-bottom: 2rem;
+              }
+             
+            }
+            .contact-info{
+              address{
+                dl{
+                  dd{
+                    font-size: 1rem;
+                    border-radius: 2rem;
+                    margin-bottom: 2rem;
+                  }
+                }
+              }
+             
+            }
+            .social-icons{
+              display: flex;
+              flex-direction: column;
+              .icons-social{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                a  svg{
+                  font-size: 2.5rem;
+  
+                }
+              }
+            }
+          }
+          .contact-form{
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+            background-color: transparent;
+            margin-bottom: 2rem;
+            padding: 2rem 2rem;
+            .MuiButton-containedPrimary{
+              background-color: rgba(255, 0, 0, 0.747);
+              color: whitesmoke;
+            }
+          }
+        }
+      }
+    }
   }
   // Tablet (768px - 991px)
   
   @media (min-width: 768px) and (max-width: 991px) {
+    .contact-container{
+    
+      .contact-container-box{
+        padding: .5rem;
+        .title{
+          display: flex;
+          flex-direction: column;
+          h2{
+            font-size: 1.7rem;
+            line-height: 2;
+          }
+        }
+        .contact-box{
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+         
+          margin: 0;
+          padding-left: 1rem;
+          padding-right: 1rem;
+          align-items: center;
+          .contact-info-box{
+            display: flex;
+            flex-direction: column;
+           width: 80%;
+            padding: 1rem 1rem;
+            margin-bottom: 2rem;
+            .title-contact-info{
+              h4{
+                font-size: 1.2rem;
+                padding-top: 1rem;
+                padding-bottom: 1rem;
+                margin-bottom: 2rem;
+              }
+             
+            }
+            .contact-info{
+              address{
+                dl{
+                  dd{
+                    font-size: 1rem;
+                    border-radius: 2rem;
+                    margin-bottom: 2rem;
+                  }
+                }
+              }
+             
+            }
+            .social-icons{
+              display: flex;
+              flex-direction: column;
+              .icons-social{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                a  svg{
+                  font-size: 2.5rem;
+  
+                }
+              }
+            }
+          }
+          .contact-form{
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+            background-color: transparent;
+            margin-bottom: 2rem;
+            padding: 2rem 2rem;
+            .MuiButton-containedPrimary{
+              background-color: rgba(255, 0, 0, 0.747);
+              color: whitesmoke;
+            }
+          }
+        }
+      }
+    }
   }

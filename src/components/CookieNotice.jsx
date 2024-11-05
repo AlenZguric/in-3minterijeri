@@ -42,16 +42,19 @@ const styles = {
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
-    zIndex: 1000,
+    zIndex: 1001,
   },
   cookieContainer: {
     backgroundColor: 'white',
     padding: '20px',
     borderRadius: '5px',
     textAlign: 'center',
-    width: '80%', // prilagođeno za različite veličine ekrana
-    maxWidth: '500px',
+    width: '100%', // prilagođeno za različite veličine ekrana
+    //maxWidth: '500px',
     boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.2)',
+    position: 'fixed',
+    left: 0,
+    bottom: 0,
   },
   buttonContainer: {
     marginTop: '10px',
