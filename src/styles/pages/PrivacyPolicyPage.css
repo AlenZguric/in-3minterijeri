@@ -64,4 +64,71 @@
 }
 .privacy-Policy-Page .main-privacy-Policy-Page .main-privacy-Policy-Page-title ul li a:hover {
   color: rgb(95, 95, 95);
+}
+
+@media (max-width: 480px) {
+  .privacy-Policy-Page {
+    display: flex;
+    flex-direction: column;
+  }
+  .privacy-Policy-Page .main-privacy-Policy-Page {
+    display: flex;
+    flex-direction: column;
+    padding-left: 1rem;
+    padding-right: 0.5rem;
+    margin-top: auto;
+    border-radius: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.486);
+  }
+  .privacy-Policy-Page .main-privacy-Policy-Page .main-privacy-Policy-Page-title {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    margin-top: 6rem;
+  }
+  .privacy-Policy-Page .main-privacy-Policy-Page .main-privacy-Policy-Page-title h2 {
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 3rem;
+  }
+  .privacy-Policy-Page .main-privacy-Policy-Page .main-privacy-Policy-Page-title p, .privacy-Policy-Page .main-privacy-Policy-Page .main-privacy-Policy-Page-title ul > li {
+    font-size: 1rem;
+    color: white;
+    font-weight: 200;
+  }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  .privacy-Policy-Page {
+    display: flex;
+    flex-direction: column;
+  }
+  .privacy-Policy-Page .main-privacy-Policy-Page {
+    display: flex;
+    flex-direction: column;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-top: auto;
+    border-radius: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.486);
+  }
+  .privacy-Policy-Page .main-privacy-Policy-Page .main-privacy-Policy-Page-title {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    margin-top: 6rem;
+  }
+  .privacy-Policy-Page .main-privacy-Policy-Page .main-privacy-Policy-Page-title h2 {
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 3rem;
+  }
+  .privacy-Policy-Page .main-privacy-Policy-Page .main-privacy-Policy-Page-title p, .privacy-Policy-Page .main-privacy-Policy-Page .main-privacy-Policy-Page-title ul > li {
+    font-size: 1rem;
+    color: white;
+    font-weight: 200;
+  }
 }/*# sourceMappingURL=PrivacyPolicyPage.css.map */

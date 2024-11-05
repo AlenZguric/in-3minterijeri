@@ -82,6 +82,7 @@
     flex-direction: column;
     width: 100%;
     min-height: 100vh;
+    align-items: center;
   }
   .why-choose-us .title h2 {
     font-size: clamp(2rem, 1rem + 1vw, 3rem);
