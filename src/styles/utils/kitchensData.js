@@ -286,7 +286,7 @@ const importAll = (r) => {
         images: [
           { src: images11['6.webp'], thumb: images11['6.webp'], width: 1440, height: 1080 },
           { src: images11['1.webp'], thumb: images11['1.webp'], width: 810, height: 1080 },
-          { src: images11['2.webp'], thumb: images11['2.webp'], width: 810, height: 1080 },
+          // { src: images11['2.webp'], thumb: images11['2.webp'], width: 810, height: 1080 },
           { src: images11['3.webp'], thumb: images11['3.webp'], width: 810, height: 1080 },
           { src: images11['4.webp'], thumb: images11['4.webp'], width: 810, height: 1080 },
           { src: images11['5.webp'], thumb: images11['5.webp'], width: 810, height: 1080 },
@@ -299,7 +299,7 @@ const importAll = (r) => {
           { src: images11['13.webp'], thumb: images11['13.webp'], width: 810, height: 1080 },
           { src: images11['14.webp'], thumb: images11['14.webp'], width: 810, height: 1080 },
           { src: images11['15.webp'], thumb: images11['15.webp'], width: 810, height: 1080 },
-          { src: images11['16.webp'], thumb: images11['16.webp'], width: 810, height: 1080 },
+          // { src: images11['16.webp'], thumb: images11['16.webp'], width: 810, height: 1080 },
           { src: images11['17.webp'], thumb: images11['17.webp'], width: 810, height: 1080 },
           { src: images11['18.webp'], thumb: images11['18.webp'], width: 810, height: 1080 },
         ],

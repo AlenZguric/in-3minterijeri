@@ -12,7 +12,7 @@ const KitchensPage = () => {
   return (
     <div className="kitchens-page">
       <Helmet>
-        <title>Kuhinje</title>
+        <title>Kuhinje po mjeri</title>
       </Helmet>
       <main>
         {kitchensData.slice().reverse().map((kitchen, index) => (

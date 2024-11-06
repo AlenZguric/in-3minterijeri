@@ -3,12 +3,21 @@
 .kitchens-page {
   display: flex;
   flex-direction: column;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: black;
   min-height: 110vh;
   width: 100%;
 }
 .kitchens-page main {
   display: flex;
   flex-direction: column;
-  margin-top: 8rem;
+}
+.kitchens-page main .lazyload-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  padding-top: 2rem;
+}
+.kitchens-page main .lazyload-wrapper:nth-child(even) {
+  background-color: rgba(73, 71, 71, 0.658);
 }/*# sourceMappingURL=KitchensPage.css.map */

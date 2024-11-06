@@ -26,9 +26,9 @@ const KitchenComponent = ({ kitchen }) => {
     <div className="kitchen">
       <div className="kitchen-box">
         <div className="title-kitchen">
-          {/* <h2>{kitchen.name}</h2> */}
+           {/* <h2>{kitchen.name}</h2>  */}
           <p title={kitchen.material}>
-            Materijal: <>{kitchen.material}</>
+          <br></br> <>{kitchen.material}<br></br></>
             <>{kitchen.description}</>
           </p>
           <p title={kitchen.radna}>

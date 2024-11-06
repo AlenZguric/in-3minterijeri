@@ -4,8 +4,8 @@
 .kitchen {
   display: flex;
   flex-direction: column;
-  padding-left: 8rem;
-  padding-right: 8rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
   width: 100%;
   height: 110vh;
   justify-content: center;
@@ -22,11 +22,11 @@
   flex-direction: column;
   justify-content: center;
   width: 100%;
-  height: 80%;
+  height: 100%;
 }
 .kitchen .kitchen-box .title-kitchen {
   padding-bottom: 3rem;
-  color: white;
+  color: rgb(221, 218, 218);
 }
 .kitchen .kitchen-box .title-kitchen h2 {
   margin: 0;
@@ -34,15 +34,29 @@
   padding-bottom: 2rem;
 }
 .kitchen .kitchen-box .title-kitchen p {
-  margin: 5px 0;
   font-size: 1.2rem;
   line-height: 1.5;
-  font-weight: 500;
+  font-weight: 400;
 }
 .kitchen .kitchen-box .title-kitchen p span {
   font-style: italic;
-  margin-left: 20px;
   font-weight: 200;
+  font-family: "roboto mono", sans-serif;
+}
+.kitchen .kitchen-box .title-kitchen p a {
+  text-decoration: none;
+  color: rgb(221, 218, 218);
+  padding-left: 1rem;
+  font-style: italic;
+  font-weight: 200;
+  font-family: "roboto mono", sans-serif;
+}
+.kitchen .kitchen-box .title-kitchen p a:hover {
+  text-decoration: underline;
+}
+.kitchen .kitchen-box .title-kitchen p:nth-child(4) {
+  font-style: italic;
+  font-size: 1.2rem;
 }
 .kitchen .kitchen-box .gallery {
   display: flex;
