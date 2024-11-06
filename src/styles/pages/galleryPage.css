@@ -5,8 +5,8 @@
   flex-direction: column;
   width: 100%;
   min-height: 100vh;
-  background: #000000; /* fallback for old browsers */ /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, rgba(67, 67, 67, 0.7803921569), #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #000000;
+  background: linear-gradient(to right, rgba(67, 67, 67, 0.7803921569), #000000);
 }
 .gallery-page main {
   display: flex;
@@ -53,29 +53,29 @@
   -webkit-clip-path: polygon(100% 0, 100% 0, 100% 100%, 0 68%, 0 15%);
           clip-path: polygon(100% 0, 100% 0, 100% 100%, 0 68%, 0 15%);
 }
-.gallery-page main .main-container .article-about-box-descriptions {
+.gallery-page main .main-container .article-about .article-about-box-descriptions {
   display: flex;
   flex-direction: column;
   width: 50%;
   padding: 3rem;
 }
-.gallery-page main .main-container .article-about-box-descriptions h2 {
+.gallery-page main .main-container .article-about .article-about-box-descriptions h2 {
   color: white;
   font-size: 2.2rem;
-  font-family: "roboto mono", sans-serif;
+  font-family: "Roboto Mono", sans-serif;
   letter-spacing: 3px;
   font-weight: 200;
   margin-bottom: 5rem;
 }
-.gallery-page main .main-container .article-about-box-descriptions p {
+.gallery-page main .main-container .article-about .article-about-box-descriptions p {
   font-size: 1.3rem;
   color: white;
   letter-spacing: 2px;
-  font-family: "roboto mono";
+  font-family: "Roboto Mono";
   line-height: 1.5;
   font-weight: 300;
 }
-.gallery-page main .main-container .article-about-box-descriptions a {
+.gallery-page main .main-container .article-about .article-about-box-descriptions a {
   text-decoration: none;
   margin-top: 2rem;
   border: 1 solid red;
@@ -86,7 +86,7 @@
   width: 10rem;
   text-align: center;
 }
-.gallery-page main .main-container .article-about-box {
+.gallery-page main .main-container .article-about .article-about-box {
   display: flex;
   flex-direction: column;
   width: 50%;
@@ -95,7 +95,7 @@
   margin-bottom: 10rem;
   overflow: hidden;
 }
-.gallery-page main .main-container .article-about-box img {
+.gallery-page main .main-container .article-about .article-about-box img {
   display: flex;
   width: 100%;
   height: 600px;
@@ -104,4 +104,101 @@
      object-fit: cover;
   -webkit-clip-path: polygon(0 0, 70% 0, 100% 85%, 85% 100%, 0 100%);
           clip-path: polygon(0 0, 70% 0, 100% 85%, 85% 100%, 0 100%);
+}
+
+@media (max-width: 480px) {
+  .gallery-page main {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+  .gallery-page main .main-container .title-section {
+    padding: 2rem;
+  }
+  .gallery-page main .main-container .title-section p {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+  .gallery-page main .main-container .article-about {
+    flex-direction: column;
+    height: auto;
+    margin-bottom: 4rem;
+  }
+  .gallery-page main .main-container .article-about .article-about-box-descriptions,
+  .gallery-page main .main-container .article-about .article-about-box {
+    width: 100%;
+    padding: 1rem;
+  }
+  .gallery-page main .main-container .article-about .article-about-box-descriptions h2,
+  .gallery-page main .main-container .article-about .article-about-box h2 {
+    font-size: 1.8rem;
+  }
+  .gallery-page main .main-container .article-about .article-about-box-descriptions p,
+  .gallery-page main .main-container .article-about .article-about-box p {
+    font-size: 1rem;
+  }
+  .gallery-page main .main-container .article-about .article-about-box img {
+    height: 300px;
+  }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  .gallery-page main {
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+  }
+  .gallery-page main .main-container .title-section {
+    padding: 3rem;
+  }
+  .gallery-page main .main-container .title-section p {
+    font-size: 1.8rem;
+  }
+  .gallery-page main .main-container .article-about {
+    flex-direction: column;
+    height: auto;
+    margin-bottom: 6rem;
+  }
+  .gallery-page main .main-container .article-about .article-about-box-descriptions,
+  .gallery-page main .main-container .article-about .article-about-box {
+    width: 100%;
+    padding: 2rem;
+  }
+  .gallery-page main .main-container .article-about .article-about-box-descriptions h2,
+  .gallery-page main .main-container .article-about .article-about-box h2 {
+    font-size: 2rem;
+  }
+  .gallery-page main .main-container .article-about .article-about-box-descriptions p,
+  .gallery-page main .main-container .article-about .article-about-box p {
+    font-size: 1.1rem;
+  }
+  .gallery-page main .main-container .article-about .article-about-box img {
+    height: 400px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .gallery-page main {
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+  }
+  .gallery-page main .main-container .title-section {
+    padding: 3.5rem;
+  }
+  .gallery-page main .main-container .title-section p {
+    font-size: 1.9rem;
+  }
+  .gallery-page main .main-container .article-about .article-about-box-descriptions,
+  .gallery-page main .main-container .article-about .article-about-box {
+    width: 100%;
+    padding: 2.5rem;
+  }
+  .gallery-page main .main-container .article-about .article-about-box-descriptions h2,
+  .gallery-page main .main-container .article-about .article-about-box h2 {
+    font-size: 2.1rem;
+  }
+  .gallery-page main .main-container .article-about .article-about-box-descriptions p,
+  .gallery-page main .main-container .article-about .article-about-box p {
+    font-size: 1.2rem;
+  }
+  .gallery-page main .main-container .article-about .article-about-box img {
+    height: 500px;
+  }
 }/*# sourceMappingURL=galleryPage.css.map */
