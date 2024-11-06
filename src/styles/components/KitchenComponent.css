@@ -153,4 +153,74 @@
   -o-object-position: center;
      object-position: center; /* Slika ispunjava prostor bez izobličenja */
   border-radius: 5px; /* Opcionalno, za zaobljene ivice */
+}
+
+@media (max-width: 480px) {
+  .kitchen {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    height: auto;
+  }
+  .kitchen .kitchen-box .title-kitchen h2 {
+    font-size: 1.5rem;
+  }
+  .kitchen .kitchen-box .title-kitchen p {
+    font-size: 1rem;
+  }
+  .kitchen .kitchen-box .gallery {
+    flex-direction: column;
+  }
+  .kitchen .kitchen-box .gallery .large-image {
+    min-width: 100%;
+    height: 300px;
+  }
+  .kitchen .kitchen-box .gallery .small-images a {
+    max-width: 80px;
+    max-height: 80px;
+  }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  .kitchen {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    height: auto;
+  }
+  .kitchen .kitchen-box .title-kitchen h2 {
+    font-size: 1.8rem;
+  }
+  .kitchen .kitchen-box .title-kitchen p {
+    font-size: 1.1rem;
+  }
+  .kitchen .kitchen-box .gallery .large-image {
+    min-width: 400px;
+    height: 400px;
+  }
+  .kitchen .kitchen-box .gallery .small-images a {
+    max-width: 100px;
+    max-height: 100px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .kitchen {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    height: auto;
+  }
+  .kitchen .kitchen-box .title-kitchen {
+    padding-top: 2rem;
+  }
+  .kitchen .kitchen-box .title-kitchen h2 {
+    font-size: 2rem;
+  }
+  .kitchen .kitchen-box .title-kitchen p {
+    font-size: 1rem;
+  }
+  .kitchen .kitchen-box .gallery .large-image {
+    min-width: 350px;
+    height: 450px;
+  }
+  .kitchen .kitchen-box .gallery .small-images a {
+    max-width: 100px;
+    max-height: 100px;
+  }
 }/*# sourceMappingURL=KitchenComponent.css.map */
