@@ -10,13 +10,12 @@
 .contact-page main {
   display: flex;
   flex-direction: column;
-  margin-top: 150px;
 }
 .contact-page main .title-contact-page {
   display: flex;
   flex-direction: column;
-  transform: translateX(250px);
   justify-content: center;
+  align-items: center;
   width: 80%;
   height: 70vh;
 }
@@ -75,4 +74,10 @@
 .contact-page main .title-contact-page .title-box2 .button button a:hover {
   color: black;
   transition: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+@media (max-width: 480px) {
+  .contact-page main .title-contact-page .title-box1 h2 {
+    font-size: 2rem;
+  }
 }/*# sourceMappingURL=ContactPage.css.map */
