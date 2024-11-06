@@ -26,12 +26,19 @@ const KitchenComponent = ({ kitchen }) => {
     <div className="kitchen">
       <div className="kitchen-box">
         <div className="title-kitchen">
-          <h2>{kitchen.name}</h2>
+          {/* <h2>{kitchen.name}</h2> */}
           <p title={kitchen.material}>
-            Materijal: <span>{kitchen.material}</span>
+            Materijal: <>{kitchen.material}</>
+            <>{kitchen.description}</>
+          </p>
+          <p title={kitchen.radna}>
+            <>{kitchen.radna}</>
           </p>
           <p title={kitchen.hardware}>
-            Okovi: <span>{kitchen.hardware}</span>
+            Okovi: <>{kitchen.hardware}</>
+          </p>
+          <p title={`kuhinje u ${kitchen.location}`}>
+            Lokacija: <>{kitchen.location}</>
           </p>
         </div>
 

@@ -8,6 +8,41 @@ const importAll = (r) => {
     Grass: <a href="https://www.grass.eu" target="_blank" rel="noopener noreferrer">Grass</a>,
     Blom : <a href="https://www.grass.eu" target="_blank" rel="noopener noreferrer">Blom</a>,
   }
+  const materijal = {
+    MDF: { 
+      mat: {
+        title: <span>Mat</span>,
+        description: <span>Površine kod kojih nema refleksije svjetlosti, sa izuzetnim svojstvima bez otisaka prstiju, ogrebotina i tragova. Pružaju jedinstven izgled i taktilan osjećaj, a boje mata imaju posebnu dubinu i intenzivnost. Nosiva ploča može biti iverica ili MDF.</span>
+      },
+      super_mat: {
+        title: <span>Super Mat </span>,
+        description: <span>PerfectSense Premium lakirane MDF ploče (ploče vlaknatice srednje gustoće) Matt odlikuje mat, baršunasto topao izgled i taktilnost i na njima ne ostaju otisci prstiju. Inovativni proces proizvodnje osigurava veliku izdržljivost i dugotrajnost površine, koja se može koristiti za horizontalne površine. Nosiva ploča MDF jamči vrlo glatku površinu koja poziva da je dotaknete.</span>
+      },
+      visoki_sjaj: {
+        title: <span>Visoki sjaj </span>,
+        description: <span>Dekori acryla i visokog sjaja pružaju sjajnu, glatku površinu. Nosiva ploča i kod visokog sjaja i kod acryla je MDF. Acryl ploče imaju odlike najvišeg sjaja sa efektom ogledala, gdje se sve oslikava na površini ploče. Površine visokog sjaja lakirane su s više slojeva laka i pružaju sjajan i dubok izgled. Prikladne su za profinjen i moderan namještaj jer mu daju ekskluzivan i sofisticiran izgled.</span>
+      },
+      pet_mat: {
+        title: <span>Pet mat</span>,
+        description: <span>Osnova za PET mat je visokovrijedna folija velike žilavosti, tlačne i vlačne čvrstoće koja se u debljinama od 0.2 do 0.7 mm laminira na nosivu ploču od MDF-a ili iverice i odlično se ponaša, kako u fazama proizvodnje ploča, tako i njihovoj obradi prilikom proizvodnje namještaja i konačno u eksploataciji, kao dio gotovog namještaja.</span>
+      }
+    }, 
+    iver: {
+      title: <span>Oplemenjeni Iveral</span>,
+      description: <span>Još poznata pod nazivom iveral. Iverica oplemenjena dekor papirima koji su prethodno impregnirani melaminskim smolama. U procesu oplemenjeivanja formira se struktura na dekorima, a ona se kod npr. Egger dekora prepoznaje po oznaci ST. Raspostranjen materijal, dolazi u velikom broju različitih boja i dekora. Lako se obrađuje i montira i koristi se u širokoj primjeni za izradu namještaja, opremanje i uređenje interijera.</span>
+    }
+  };
+  const radna_ploca= {
+    EGGER_compact: <span>Radna ploča EGGER compact</span>,
+    EGGER_38mm: <span>Radna ploča EGGER 38 mm</span>,
+    IVER_38mm: <span>Radna ploča Iveral 38 mm</span>,
+    QUARTZ_20mm: <span>Radna ploča Quartz 20 mm</span>,
+
+  }
+ 
+
+  
+
   const images = importAll(require.context('../../assets/images/fullsize/kuhinja/kuhinja_1', false, /\.(png|jpe?g|svg|webp)$/));
 
   const images2 = importAll(require.context('../../assets/images/fullsize/kuhinja/kuhinja_2', false, /\.(png|jpe?g|svg|webp)$/));
@@ -33,6 +68,11 @@ const importAll = (r) => {
   const images23 = importAll(require.context('../../assets/images/fullsize/kuhinja/kuhinja_23', false, /\.(png|jpe?g|svg|webp)$/));
   const images24 = importAll(require.context('../../assets/images/fullsize/kuhinja/kuhinja_24', false, /\.(png|jpe?g|svg|webp)$/));
   const images25 = importAll(require.context('../../assets/images/fullsize/kuhinja/kuhinja_25', false, /\.(png|jpe?g|svg|webp)$/));
+  const images26 = importAll(require.context('../../assets/images/fullsize/kuhinja/kuhinja_26', false, /\.(png|jpe?g|svg|webp)$/));
+  const images27 = importAll(require.context('../../assets/images/fullsize/kuhinja/kuhinja_27', false, /\.(png|jpe?g|svg|webp)$/));
+  const images28 = importAll(require.context('../../assets/images/fullsize/kuhinja/kuhinja_28', false, /\.(png|jpe?g|svg|webp)$/));
+  const images29 = importAll(require.context('../../assets/images/fullsize/kuhinja/kuhinja_29', false, /\.(png|jpe?g|svg|webp)$/));
+
 
 
 
@@ -40,8 +80,11 @@ const importAll = (r) => {
   export const kitchensData = [
       {
         name: "Mona Liza",
-        material: "Drvo",
+        material:materijal.MDF.visoki_sjaj.title,
+        description: materijal.MDF.visoki_sjaj.description,
+        radna: radna_ploca.EGGER_compact,
         hardware: okovi.Grass,
+        location: 'Zagreb',
                 images: [
           { src: images['IMG_5748.webp'], thumb: images['IMG_5748.webp'], width: 1440, height: 1080 },
           { src: images['IMG_5749.webp'], thumb: images['IMG_5749.webp'], width: 1440, height: 1080 },
@@ -59,8 +102,12 @@ const importAll = (r) => {
       },
       {
         name: "Kuhinja 2",
-        material: "MDF",
+        material: materijal.MDF.mat.title,
+        description: materijal.MDF.mat.description,
+        radna: radna_ploca.EGGER_38mm,
         hardware: okovi.Grass,
+        location: 'Rovinj',
+
                 images: [
           { src: images2['IMG_5499.webp'], thumb: images2['IMG_5499.webp'], width: 1440, height: 1080 },
           { src: images2['IMG_5500.webp'], thumb: images2['IMG_5500.webp'], width: 1440, height: 1080 },
@@ -84,8 +131,13 @@ const importAll = (r) => {
       },
       {
         name: "Kuhinja 4",
-        material: "Laminat",
+        material: materijal.MDF.visoki_sjaj.title,
+        description: materijal.MDF.visoki_sjaj.description,
+        radna: radna_ploca.EGGER_38mm,
+
         hardware: okovi.Grass,
+        location: 'Zagreb',
+
                  images : [
           { src: images4['IMG_2837.webp'], thumb: images4['IMG_2837.webp'], width: 1440, height: 1080 },
           { src: images4['IMG_2834.webp'], thumb: images4['IMG_2834.webp'], width: 810, height: 1080 },
@@ -105,8 +157,12 @@ const importAll = (r) => {
       },
       {
         name: "Kuhinja 5",
-        material: "Beton",
+        material: materijal.MDF.mat.title,
+        description: materijal.MDF.mat.description,
+        radna: radna_ploca.EGGER_38mm,
         hardware: okovi.Grass,
+        location: 'Zagreb',
+
          images : [
           { src: images5['IMG_2614-2.webp'], thumb: images5['IMG_2614-2.webp'], width: 1440, height: 1080 },
           { src: images5['IMG_2615.webp'], thumb: images5['IMG_2615.webp'], width: 810, height: 1080 },
@@ -123,8 +179,11 @@ const importAll = (r) => {
       },
       {
         name: "Kuhinja 6",
-        material: "Beton",
+        material: materijal.MDF.pet_mat.title,
+        description: materijal.MDF.pet_mat.description,
+        radna: radna_ploca.EGGER_38mm,
         hardware: okovi.Grass,
+        location: 'Zagreb',
          images:[
           { src: images6['IMG_4904 copy.webp'], thumb: images6['IMG_4904 copy.webp'], width: 1440, height: 1080 },
           { src: images6['IMG_4902 copy.webp'], thumb: images6['IMG_4902 copy.webp'], width: 810, height: 1080 },
@@ -140,8 +199,11 @@ const importAll = (r) => {
       },
       {
         name: "Kuhinja 7",
-        material: "Beton",
+        material: materijal.iver.title,
+        description: materijal.iver.description,
+        radna: radna_ploca.EGGER_38mm,
         hardware: okovi.Grass,
+        location: 'Zagreb',
         images: [
           { src: images7['2.webp'], thumb: images7['2.webp'], width: 1440, height: 1080 },
 
@@ -159,8 +221,11 @@ const importAll = (r) => {
       
       {
         name: "Kuhinja 8",
-        material: "Beton",
+        material: materijal.MDF.mat.title,
+        description: materijal.MDF.mat.description,
+        radna: radna_ploca.IVER_38mm,
         hardware: okovi.Grass,
+        location: 'Zagreb',
         images: [
           { src: images8['5.webp'], thumb: images8['5.webp'], width: 1440, height: 1080 },
           { src: images8['2.webp'], thumb: images8['2.webp'], width: 810, height: 1080 },
@@ -177,8 +242,11 @@ const importAll = (r) => {
       },
       {
         name: "Kuhinja 9",
-        material: "Beton",
+        material: materijal.MDF.pet_mat.title,
+        description: materijal.MDF.pet_mat.description,
+        radna: radna_ploca.EGGER_38mm,
         hardware: okovi.Grass,
+        location: 'Zagreb',
         images: [
           { src: images9['2.webp'], thumb: images9['2.webp'], width: 1440, height: 1080 },
           { src: images9['1.webp'], thumb: images9['1.webp'], width: 810, height: 1080 },
@@ -193,8 +261,11 @@ const importAll = (r) => {
       
       {
         name: "Kuhinja 10",
-        material: "Beton",
+        material: materijal.MDF.visoki_sjaj.title,
+        description: materijal.MDF.visoki_sjaj.description,
+        radna: radna_ploca.EGGER_38mm,
         hardware: okovi.Grass,
+        location: 'Prelog',
         images: [
           { src: images10['1.webp'], thumb: images10['1.webp'], width: 810, height: 1080 },
           { src: images10['2.webp'], thumb: images10['2.webp'], width: 810, height: 1080 },
@@ -207,8 +278,11 @@ const importAll = (r) => {
       
       {
         name: "Kuhinja 11",
-        material: "Beton",
+        material: materijal.iver.title,
+        description: materijal.iver.description,
+        radna: radna_ploca.EGGER_38mm,
         hardware: okovi.Grass,
+        location: 'Zagreb',
         images: [
           { src: images11['6.webp'], thumb: images11['6.webp'], width: 1440, height: 1080 },
           { src: images11['1.webp'], thumb: images11['1.webp'], width: 810, height: 1080 },
@@ -233,8 +307,11 @@ const importAll = (r) => {
 
         {
   name: "Kuhinja 13",
-  material: "Beton",
+  material: materijal.iver.title,
+  description: materijal.iver.description,
+  radna: radna_ploca.EGGER_38mm,
   hardware: okovi.Grass,
+  location: 'Zaprešić',
   images: [
     { src: images13['7.webp'], thumb: images13['7.webp'], width: 1440, height: 1080 },
 
@@ -255,8 +332,11 @@ const importAll = (r) => {
 },
 {
   name: "Kuhinja 14",
-  material: "Beton",
-  hardware: okovi.Grass,
+  material: materijal.MDF.visoki_sjaj.title,
+        description: materijal.MDF.visoki_sjaj.description,
+        radna: radna_ploca.EGGER_38mm,
+        hardware: okovi.Grass,
+        location: 'Zagreb',
   images: [
     { src: images14['1.webp'], thumb: images14['1.webp'], width: 810, height: 1080 },
     { src: images14['2.webp'], thumb: images14['2.webp'], width: 810, height: 1080 },
@@ -269,8 +349,11 @@ const importAll = (r) => {
 },
 {
   name: "Kuhinja 15",
-  material: "Beton",
+  material: materijal.MDF.visoki_sjaj.title,
+  description: materijal.MDF.visoki_sjaj.description,
+  radna: radna_ploca.EGGER_compact,
   hardware: okovi.Grass,
+  location: 'Zagreb',
   images: [
     { src: images15['6.webp'], thumb: images15['6.webp'], width: 1440, height: 1080 },
     { src: images15['1.webp'], thumb: images15['1.webp'], width: 810, height: 1080 },
@@ -284,8 +367,11 @@ const importAll = (r) => {
 },
 {
   name: "Kuhinja 16",
-  material: "Beton",
-  hardware: okovi.Grass,
+  material: materijal.iver.title,
+        description: materijal.iver.description,
+        radna: radna_ploca.EGGER_38mm,
+        hardware: okovi.Grass,
+        location: 'Županja',
   images: [
     { src: images16['11.webp'], thumb: images16['11.webp'], width: 810, height: 1080 },
 
@@ -303,8 +389,11 @@ const importAll = (r) => {
 },
 {
   name: "Kuhinja 17",
-  material: "Beton",
-  hardware: okovi.Grass,
+  material: materijal.iver.title,
+        description: materijal.iver.description,
+        radna: radna_ploca.QUARTZ_20mm,
+        hardware: okovi.Grass,
+        location: 'Novska',
   images: [
     { src: images17['4.webp'], thumb: images17['4.webp'], width: 1440, height: 1080 },
 
@@ -327,8 +416,11 @@ const importAll = (r) => {
 },
 {
   name: "Kuhinja 18",
-  material: "Beton",
+  material: materijal.MDF.super_mat.title,
+  description: materijal.MDF.super_mat.description,
+  radna: radna_ploca.EGGER_compact,
   hardware: okovi.Grass,
+  location: 'Zaprešić',
   images: [
     { src: images18['6.webp'], thumb: images18['6.webp'], width: 1440, height: 1080 },
     { src: images18['1.webp'], thumb: images18['1.webp'], width: 810, height: 1080 },
@@ -346,8 +438,11 @@ const importAll = (r) => {
 
 {
   name: "Kuhinja 19",
-  material: "Beton",
-  hardware: okovi.Grass,
+  material: materijal.iver.title,
+        description: materijal.iver.description,
+        radna: radna_ploca.EGGER_38mm,
+        hardware: okovi.Grass,
+        location: 'Bjelovar',
   images: [
     { src: images19['1.webp'], thumb: images19['1.webp'], width: 810, height: 1080 },
     { src: images19['6.webp'], thumb: images19['6.webp'], width: 1440, height: 1080 },
@@ -364,8 +459,11 @@ const importAll = (r) => {
 },
 {
   name: "Kuhinja 20",
-  material: "Beton",
+  material: materijal.MDF.visoki_sjaj.title,
+  description: materijal.MDF.visoki_sjaj.description,
+  radna: radna_ploca.EGGER_38mm,
   hardware: okovi.Grass,
+  location: 'Hižanovec',
   images: [
     { src: images20['6.webp'], thumb: images20['6.webp'], width: 1440, height: 1080 },
     { src: images20['1.webp'], thumb: images20['1.webp'], width: 810, height: 1080 },
@@ -384,8 +482,11 @@ const importAll = (r) => {
 },
 {
   name: "Kuhinja 21",
-  material: "Beton",
+  material: materijal.MDF.visoki_sjaj.title,
+  description: materijal.MDF.visoki_sjaj.description,
+  radna: radna_ploca.EGGER_38mm,
   hardware: okovi.Grass,
+  location: 'Donja Gračenica',
   images: [
     { src: images21['8.webp'], thumb: images21['8.webp'], width: 1440, height: 1080 },
     { src: images21['1.webp'], thumb: images21['1.webp'], width: 810, height: 1080 },
@@ -399,8 +500,11 @@ const importAll = (r) => {
 },
 {
   name: "Kuhinja 22",
-  material: "Beton",
+  material: materijal.iver.title,
+  description: materijal.iver.description,
+  radna: radna_ploca.EGGER_38mm,
   hardware: okovi.Grass,
+  location: 'Pisarovina',
   images: [
     { src: images22['10.webp'], thumb: images22['10.webp'], width: 1440, height: 1080 },
     { src: images22['7.webp'], thumb: images22['7.webp'], width: 1080, height: 1080 },
@@ -420,8 +524,11 @@ const importAll = (r) => {
 },
 {
   name: "Kuhinja 23",
-  material: "Beton",
+  material: materijal.MDF.visoki_sjaj.title,
+  description: materijal.MDF.visoki_sjaj.description,
+  radna: radna_ploca.EGGER_38mm,
   hardware: okovi.Grass,
+  location: 'Graberje Ivanićko',
   images: [
     { src: images23['2.webp'], thumb: images23['2.webp'], width: 1440, height: 1080 },
     { src: images23['1.webp'], thumb: images23['1.webp'], width: 810, height: 1080 },
@@ -436,8 +543,11 @@ const importAll = (r) => {
 },
 {
   name: "Kuhinja 24",
-  material: "Beton",
+  material: materijal.iver.title,
+  description: materijal.iver.description,
+  radna: radna_ploca.EGGER_38mm,
   hardware: okovi.Grass,
+  location: 'Jaruge',
   images: [
     { src: images24['7.webp'], thumb: images24['7.webp'], width: 1440, height: 1080 },
     { src: images24['1.webp'], thumb: images24['1.webp'], width: 810, height: 1080 },
@@ -456,8 +566,11 @@ const importAll = (r) => {
 
 {
   name: "Kuhinja 25",
-  material: "Beton",
+  material: materijal.MDF.visoki_sjaj.title,
+  description: materijal.MDF.visoki_sjaj.description,
+  radna: radna_ploca.EGGER_38mm,
   hardware: okovi.Grass,
+  location: 'Biograd na Moru',
   images: [
     { src: images25['6.webp'], thumb: images25['6.webp'], width: 1440, height: 1080 },
     { src: images25['1.webp'], thumb: images25['1.webp'], width: 810, height: 1080 },
@@ -473,6 +586,85 @@ const importAll = (r) => {
     { src: images25['12.webp'], thumb: images25['12.webp'], width: 810, height: 1080 },
   ],
 },
+{
+  name: "Kuhinja 26",
+  material: materijal.iver.title,
+  description: materijal.iver.description,
+  radna: radna_ploca.EGGER_38mm,
+  hardware: okovi.Grass,
+  location: 'Zagreb',
+  images: [
+    { src: images26['10.webp'], thumb: images26['10.webp'], width: 1440, height: 1080 },
+
+    { src: images26['1.webp'], thumb: images26['1.webp'], width: 810, height: 1080 },
+    { src: images26['4.webp'], thumb: images26['4.webp'], width: 810, height: 1080 },
+    { src: images26['5.webp'], thumb: images26['5.webp'], width: 810, height: 1080 },
+    { src: images26['6.webp'], thumb: images26['6.webp'], width: 810, height: 1080 },
+    { src: images26['7.webp'], thumb: images26['7.webp'], width: 810, height: 1080 },
+    { src: images26['8.webp'], thumb: images26['8.webp'], width: 810, height: 1080 },
+    { src: images26['11.webp'], thumb: images26['11.webp'], width: 810, height: 1080 },
+    { src: images26['12.webp'], thumb: images26['12.webp'], width: 810, height: 1080 },
+  ],
+},
+{
+  name: "Kuhinja 27",
+  material: materijal.iver.title,
+  description: materijal.iver.description,
+  radna: radna_ploca.EGGER_38mm,
+  hardware: okovi.Grass,
+  location: 'Zaprešić',
+  images: [
+    { src: images27['1.webp'], thumb: images27['1.webp'], width: 810, height: 1080 },
+    { src: images27['2.webp'], thumb: images27['2.webp'], width: 810, height: 1080 },
+    { src: images27['3.webp'], thumb: images27['3.webp'], width: 810, height: 1080 },
+    { src: images27['4.webp'], thumb: images27['4.webp'], width: 810, height: 1080 },
+    { src: images27['5.webp'], thumb: images27['5.webp'], width: 810, height: 1080 },
+    { src: images27['6.webp'], thumb: images27['6.webp'], width: 810, height: 1080 },
+    { src: images27['7.webp'], thumb: images27['7.webp'], width: 810, height: 1080 },
+    { src: images27['8.webp'], thumb: images27['8.webp'], width: 810, height: 1080 },
+    { src: images27['9.webp'], thumb: images27['9.webp'], width: 810, height: 1080 },
+  ],
+},
+{
+  name: "Kuhinja 28",
+  material: materijal.iver.title,
+  description: materijal.iver.description,
+  radna: radna_ploca.EGGER_38mm,
+  hardware: okovi.Grass,
+  location: 'Karlovac',
+  images: [
+    { src: images28['6.webp'], thumb: images28['6.webp'], width: 1440, height: 1080 },
+
+    { src: images28['1.webp'], thumb: images28['1.webp'], width: 810, height: 1080 },
+    { src: images28['2.webp'], thumb: images28['2.webp'], width: 810, height: 1080 },
+    { src: images28['3.webp'], thumb: images28['3.webp'], width: 810, height: 1080 },
+    { src: images28['4.webp'], thumb: images28['4.webp'], width: 1440, height: 1080 },
+    { src: images28['5.webp'], thumb: images28['5.webp'], width: 810, height: 1080 },
+  ],
+},
+{
+  name: "Kuhinja 29",
+  material: materijal.MDF.pet_mat.title,
+  description: materijal.MDF.pet_mat.description,
+  radna: radna_ploca.EGGER_38mm,
+  hardware: okovi.Grass,
+  location: 'Kaštel Sućurac',
+  images: [
+    { src: images29['1.webp'], thumb: images29['1.webp'], width: 1440, height: 1080 },
+    { src: images29['2.webp'], thumb: images29['2.webp'], width: 1440, height: 1080 },
+    { src: images29['3.webp'], thumb: images29['3.webp'], width: 810, height: 1080 },
+    { src: images29['4.webp'], thumb: images29['4.webp'], width: 1440, height: 1080 },
+    { src: images29['5.webp'], thumb: images29['5.webp'], width: 1440, height: 1080 },
+    { src: images29['6.webp'], thumb: images29['6.webp'], width: 810, height: 1080 },
+    { src: images29['7.webp'], thumb: images29['7.webp'], width: 1440, height: 1080 },
+    { src: images29['8.webp'], thumb: images29['8.webp'], width: 1440, height: 1080 },
+    { src: images29['9.webp'], thumb: images29['9.webp'], width: 1440, height: 1080 },
+    { src: images29['10.webp'], thumb: images29['10.webp'], width: 1440, height: 1080 },
+    { src: images29['11.webp'], thumb: images29['11.webp'], width: 810, height: 1080 },
+    { src: images29['12.webp'], thumb: images29['12.webp'], width: 810, height: 1080 },
+  ],
+},
+
 
   ];
   

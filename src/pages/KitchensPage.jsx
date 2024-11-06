@@ -15,7 +15,7 @@ const KitchensPage = () => {
         <title>Kuhinje</title>
       </Helmet>
       <main>
-        {kitchensData.map((kitchen, index) => (
+        {kitchensData.slice().reverse().map((kitchen, index) => (
           <LazyLoad key={index} height={200} offset={100}>
             <motion.section
               initial="hidden"
