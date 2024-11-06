@@ -6,7 +6,8 @@ import AboutPage from "./pages/AboutPage";
 import GalleryPage from "./pages/GalleryPage";
 import ContactPage from "./pages/ContactPage";
 import KitchensPage from "./pages/KitchensPage";
-//import NavBar from './components/NavBar';
+import NotFoundPage from "./pages/NotFoundPage";
+
 
 import "../src/styles/utils/main.css";
 import Services from "./pages/ServicesPage";
@@ -58,6 +59,7 @@ const AppContent = () => {
               path="/politika-privatnosti"
               element={<PrivacyPolicyPage />}
             />
+          <Route path="*" element={<NotFoundPage />} />
           </Routes>
 
           <footer>

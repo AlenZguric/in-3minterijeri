@@ -1,0 +1,42 @@
+.not-found-page {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+  background-image: url("../../assets//images/fullsize/404Page.webp");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.not-found-page .not-found {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.838);
+  color: white;
+  text-align: center;
+  width: 100%;
+  min-height: 100vh;
+}
+.not-found-page .not-found .not-found-content {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 10px;
+}
+.not-found-page .not-found .not-found-content p {
+  font-size: 3rem;
+  font-family: "roborica", arial, helvetica;
+  margin-bottom: 2rem;
+}
+.not-found-page .not-found .not-found-content a {
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+  text-decoration: none;
+  color: whitesmoke;
+}
+.not-found-page .not-found .not-found-content a:hover {
+  color: #f7f7f7;
+  transform: scale(1.1);
+}/*# sourceMappingURL=NotFoundPage.css.map */
