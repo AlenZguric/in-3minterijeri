@@ -6,72 +6,69 @@ import "react-lazy-load-image-component/src/effects/blur.css";
 import "../styles/pages/galleryPage.css";
 
 import kuhinjeImage from "../assets/images/fullsize/kuhinja/kuhinja_1/IMG_5748.webp";
-import ormariImage from "../assets/images/smallsize/ormari-img.jpg";
-import zidneOblogeImage from "../assets/images/smallsize/zidni-paneli-first-img.jpg";
-import dnevniBoravciImage from "../assets/images/smallsize/dnevni- boravak-img.jpg";
-import dekorativniPaneliImage from "../assets/images/smallsize/dekorativni-paneli-img.png";
-import hodniciImage from "../assets/images/smallsize/hodnici-predsoblje-img.jpg";
-import kupaoniceImage from "../assets/images/smallsize/kupaonice-img.jpg";
-import ostaliNamjestajImage from "../assets/images/smallsize/ostali namješta-img.jpg";
+import ormariImage from "../assets/images/fullsize/ormari/51.webp";
+import zidneOblogeImage from "../assets/images/fullsize/Paneli/9.webp";
+import hodniciImage from "../assets/images/fullsize/predsoblje/29.webp";
+import kupaoniceImage from "../assets/images/fullsize/kupaonice/3.webp";
+import ugradbeniOrmari from "../assets/images/fullsize/klizni ormari/1.webp";
+
+import dječjeSobe from "../assets/images/fullsize/dječje sobe/19.webp";
 
 const categories = [
   {
     title: "Kuhinje po mjeri",
     image: kuhinjeImage,
     description:
-      "Naše kuhinje po mjeri izrađene su od visokokvalitetnih materijala poput MDF-a, iverala i furnira. Prednosti uključuju mogućnost prilagodbe dimenzija, dizajna i funkcionalnosti. Montaža je brza i efikasna, a održavanje jednostavno s osnovnim sredstvima za čišćenje.",
+      "Naše kuhinje po mjeri omogućuju vam stvaranje prostora koji se savršeno uklapa u vaš dom. Izrađene su od vrhunskih materijala kao što su MDF, iveral i furnir, prilagođene su vašim dimenzijama i potrebama, s modernim i praktičnim dizajnom. Montaža je brza i jednostavna, a održavanje lako zahvaljujući otpornim materijalima.",
     url: "/kuhinje",
-  },
-  {
-    title: "Zidne obloge",
-    image: zidneOblogeImage,
-    description:
-      "Zidne obloge unose moderan dizajn i dodatnu zaštitu zidova. Moguće ih je instalirati u svim prostorijama. Izrađuju se od različitih materijala kao što su PVC, drvo i laminat. Lako se održavaju i otporne su na vlagu.",
-    url: "/zidne-obloge",
-  },
-  {
-    title: "Dnevni boravci",
-    image: dnevniBoravciImage,
-    description:
-      "Namještaj za dnevne boravke kombinira udobnost i funkcionalnost. Koristimo materijale kao što su masivno drvo, furnir i tkanine otpornije na mrlje. Montaža je prilagođena vašem prostoru, a čišćenje je jednostavno.",
-    url: "/dnevni-boravci",
-  },
-  {
-    title: "Dekorativni paneli",
-    image: dekorativniPaneliImage,
-    description:
-      "Dekorativni paneli dodaju eleganciju svakom prostoru. Izrađeni od materijala kao što su MDF i PVC, lako se postavljaju na zidove i jednostavno održavaju. Idealni su za poslovne i stambene prostore.",
-    url: "/dekorativni-paneli",
-  },
-  {
-    title: "Hodnici i predsoblja",
-    image: hodniciImage,
-    description:
-      "Naši hodnici i predsoblja su dizajnirani kako bi maksimalno iskoristili prostor. Koristimo materijale poput iverala i MDF-a s mogućnošću ugradnje kliznih vrata. Jednostavno se održavaju i pružaju dugotrajnu upotrebu.",
-    url: "/hodnici",
   },
   {
     title: "Kupaonice",
     image: kupaoniceImage,
     description:
-      "Kupaonski namještaj izrađujemo od materijala otpornog na vlagu poput MDF-a, lakiranog ili furniranog drva. Dizajni su prilagođeni svakom prostoru, a montaža brza i pouzdana. Održavanje je minimalno uz otporne materijale.",
+      "Naš kupaonski namještaj izrađen je od materijala otpornog na vlagu, poput MDF-a i lakiranog drva, koji jamče dugotrajnost i jednostavno održavanje. Dizajn prilagođavamo specifičnim dimenzijama vaše kupaonice, a montaža je profesionalna i brza.",
     url: "/kupaonice",
   },
   {
+    title: "Hodnici i predsoblja",
+    image: hodniciImage,
+    description:
+      "Naši hodnici i predsoblja optimiziraju raspoloživi prostor, pružajući funkcionalnost i stil. Koristimo kvalitetne materijale kao što su iveral i MDF. Dizajn je prilagođen vašim željama, a namještaj je jednostavan za održavanje i dugotrajan.",
+    url: "/hodnici",
+  },
+  {
     title: "Ugradbeni ormari",
+    image: ugradbeniOrmari,
+    description:
+      "Naši ugradbeni ormari omogućuju optimalno korištenje prostora i organizaciju. Izrađeni su od visokokvalitetnih materijala poput MDF-a i stakla, a klizna vrata osiguravaju lako održavanje i praktičnost u svakodnevnoj uporabi.",
+    url: "/ugradbeni-ormari",
+  },
+  {
+    title: "Ormari",
     image: ormariImage,
     description:
-      "Naši ugradbeni ormari omogućuju maksimalnu iskoristivost prostora. Izrađeni su od kvalitetnih materijala poput iverala, MDF-a i stakla. Jednostavni su za montažu, a klizna vrata čine održavanje lakšim.",
+      "Naši ormari pružaju maksimalnu iskoristivost prostora. Izrađeni su od izdržljivih materijala poput MDF-a i iverala, jednostavni su za montažu i održavanje te idealni za organizaciju vašeg doma.",
     url: "/ormari",
   },
   {
-    title: "Ostali namještaj",
-    image: ostaliNamjestajImage,
+    title: "Dječje sobe",
+    image: dječjeSobe,
     description:
-      "Izrađujemo namještaj za dječje sobe, spavaće sobe, ostave, pregradbena vrata, klizna vrata i uredski namještaj. Koristimo materijale poput MDF-a, iverala i drva, a svi naši proizvodi prilagodljivi su vašim potrebama i prostoru.",
-    url: "/ostali-namjestaj",
+      "Naš namještaj za dječje sobe dizajniran je s naglaskom na sigurnost, funkcionalnost i prilagodbu potrebama vašeg djeteta. Koristimo materijale kao što su MDF, iveral i drvo, a svaki komad namještaja prilagođavamo vašim prostorima i željama.",
+    url: "/djecje-sobe",
   },
+  {
+    title: "Zidne obloge",
+    image: zidneOblogeImage,
+    description:
+      "Naše zidne obloge pružaju elegantan izgled i dodatnu zaštitu zidova u vašem domu. Idealne su za sve prostorije, a izrađene su od visokokvalitetnih materijala poput PVC-a, drva i laminata, otpornih na vlagu i jednostavnih za održavanje.",
+    url: "/zidne-obloge",
+  },
+
+  
+
 ];
+
 
 const GalleryPage = () => {
   return (

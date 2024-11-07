@@ -7,7 +7,7 @@ import GalleryPage from "./pages/GalleryPage";
 import ContactPage from "./pages/ContactPage";
 import KitchensPage from "./pages/KitchensPage";
 import NotFoundPage from "./pages/NotFoundPage";
-
+import BathRoomPage from "./pages/BathRoomPage";
 
 import "../src/styles/utils/main.css";
 import Services from "./pages/ServicesPage";
@@ -19,7 +19,7 @@ import { useCookies } from "./contexts/CookieContekst";
 import { useLocation } from "react-router-dom";
 import NavBar from "./components/NavBar";
 
-import './App.css';
+import "./App.css";
 
 const AppContent = () => {
   const { cookiesAccepted } = useCookies(); // Provjeri je li korisnik prihvatio kolačiće
@@ -44,8 +44,7 @@ const AppContent = () => {
       >
         <div className="App">
           <header>
-          <NavBar/>
-
+            <NavBar />
           </header>
           <Routes>
             <Route path="/" element={<HomePage />} />
@@ -54,12 +53,13 @@ const AppContent = () => {
             <Route path="/usluge" element={<Services />} />
             <Route path="/kontakt" element={<ContactPage />} />
             <Route path="/kuhinje" element={<KitchensPage />} />
+            <Route path="/kupaonice" element={<BathRoomPage />} />
             <Route path="/zidne-obloge" element={<WallPanelsPage />} />
             <Route
               path="/politika-privatnosti"
               element={<PrivacyPolicyPage />}
             />
-          <Route path="*" element={<NotFoundPage />} />
+            <Route path="*" element={<NotFoundPage />} />
           </Routes>
 
           <footer>

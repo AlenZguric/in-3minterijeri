@@ -1,0 +1,61 @@
+// BathRoomPage.scss
+
+// Base styles for the page
+.wall-panels-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: black;
+  }
+  
+  .bath-main {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  // Gallery container with flexbox
+  .gallery-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 0;
+  }
+  
+  // Gallery item
+  .gallery-item {
+    flex: 1 1 calc(33.333% - 20px); /* 3 items per row, with space between them */
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  
+    &:hover {
+      transform: scale(1.05);
+    }
+  
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
+  }
+  
+//   // Media queries for responsiveness
+//   @media (max-width: 1024px) {
+//     .gallery-item {
+//       flex: 1 1 calc(50% - 20px); /* 2 items per row on medium screens */
+//     }
+//   }
+  
+//   @media (max-width: 768px) {
+//     .gallery-item {
+//       flex: 1 1 calc(100% - 20px); /* 1 item per row on smaller screens */
+//     }
+//   }
+  
