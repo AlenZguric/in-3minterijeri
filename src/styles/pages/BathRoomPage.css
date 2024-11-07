@@ -1,40 +1,77 @@
-.wall-panels-page {
+.bathroom-page {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(178deg, rgb(0, 0, 0) 45%, rgb(66, 66, 66) 100%);
+}
+.bathroom-page .bath-main {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5rem;
+}
+.bathroom-page .gallery-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+.bathroom-page .gallery-grid .gallery-item {
+  flex: 1 1 calc(33.33% - 20px);
+  max-width: calc(33.33% - 20px);
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px;
-  background-color: black;
+  margin: 1rem;
 }
-
-.bath-main {
+.bathroom-page .gallery-grid .gallery-item img {
   width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
-
-.gallery-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 2rem;
-  padding: 0;
+.bathroom-page .gallery-grid .gallery-item a {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
-
-.gallery-item {
-  flex: 1 1 calc(33.333% - 20px); /* 3 items per row, with space between them */
-  position: relative;
-  overflow: hidden;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease-in-out;
-}
-.gallery-item:hover {
-  transform: scale(1.05);
-}
-.gallery-item img {
+.bathroom-page .gallery-grid .gallery-item .gallery-image {
   width: 100%;
   height: auto;
-  border-radius: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
+}
+.bathroom-page .gallery-grid .gallery-item .gallery-image:hover {
+  transform: scale(1.05);
+}
+@media (max-width: 480px) {
+  .bathroom-page .gallery-grid .gallery-item {
+    flex: 1 1 100%;
+    max-width: 100%;
+    margin: 0;
+  }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  .bathroom-page .gallery-grid .gallery-item {
+    flex: 1 1 calc(50% - 20px);
+    max-width: calc(50% - 20px);
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .bathroom-page .gallery-grid .gallery-item {
+    flex: 1 1 calc(33.33% - 20px);
+    max-width: calc(33.33% - 20px);
+  }
+}
+@media (min-width: 992px) {
+  .bathroom-page .gallery-grid .gallery-item {
+    flex: 1 1 calc(25% - 20px);
+    max-width: calc(25% - 20px);
+  }
 }/*# sourceMappingURL=BathRoomPage.css.map */

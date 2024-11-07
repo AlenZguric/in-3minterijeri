@@ -20,8 +20,8 @@ const KitchensPage = () => {
             <motion.section
               initial="hidden"
               whileInView="show"
-              variants={index % 2 === 0 ? scrollAnimations.fadeInDownRight : scrollAnimations.fadeInUp}
-              viewport={{ once: true, amount: .35 }}
+              variants={index % 2 === 0 ? scrollAnimations.bounceUp : scrollAnimations.fadeInUp}
+              viewport={{ once: true, amount: .2 }}
             >
               <KitchenComponent kitchen={kitchen} />
             </motion.section>

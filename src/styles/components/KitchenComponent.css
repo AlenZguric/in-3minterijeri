@@ -160,6 +160,7 @@
     padding-left: 1rem;
     padding-right: 1rem;
     height: auto;
+    margin-top: 2rem;
   }
   .kitchen .kitchen-box .title-kitchen h2 {
     font-size: 1.5rem;
@@ -184,6 +185,7 @@
     padding-left: 2rem;
     padding-right: 2rem;
     height: auto;
+    margin-top: 2rem;
   }
   .kitchen .kitchen-box .title-kitchen h2 {
     font-size: 1.8rem;
@@ -205,6 +207,7 @@
     padding-left: 1rem;
     padding-right: 1rem;
     height: auto;
+    margin-top: 4rem;
   }
   .kitchen .kitchen-box .title-kitchen {
     padding-top: 2rem;
