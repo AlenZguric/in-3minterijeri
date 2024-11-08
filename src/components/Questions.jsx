@@ -13,7 +13,7 @@ const Questions = () => {
     {
       question: "Koliko traje izrada namještaja po mjeri?",
       answer:
-        "Vrijeme izrade ovisi o složenosti projekta. Prosječno trajanje je između 4 do 6 tjedana.",
+        "Vrijeme izrade ovisi o složenosti projekta. Prosječno trajanje je između 5 do 8 tjedana.",
     },
     {
       question: "Kako se vrši mjerenje prostora?",
@@ -33,8 +33,7 @@ const Questions = () => {
     {
       question: "Možemo li vidjeti uzorke materijala prije narudžbe?",
       answer:
-        "Da, uzorke materijala možete vidjeti u našem izložbenom prostoru ili ćemo ih donijeti prilikom mjerenja.",
-    },
+      "Da,uzorke materijala možete vidjeti u izložbenim salonima naših partnera ili u našim katalozima,uzorcima koje vam donosimo prilikom detaljne izmjere prostora."    },
     {
       question: "Nudite li garanciju na proizvode?",
       answer:
@@ -43,8 +42,7 @@ const Questions = () => {
     {
       question: "Koje su mogućnosti plaćanja?",
       answer:
-        "Prihvaćamo gotovinu, kartice i bankovne prijenose. Također nudimo mogućnosti plaćanja u ratama.",
-    },
+  "Mogućnosti plaćanja su po ponudi bankovni prijenos ili gotovina"    },
     {
       question: "Mogu li naručiti dizajn po vlastitoj ideji?",
       answer:
