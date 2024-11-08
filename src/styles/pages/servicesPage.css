@@ -112,8 +112,109 @@
     display: flex;
     flex-direction: column;
     width: 100%;
+    align-items: self-start;
+  }
+  .services-page main .services-description .description-row .left-side ul li, .services-page main .services-description .description-row .right-side ul li {
+    padding-left: 0.7rem;
   }
   .services-page .contact-form {
     margin-top: 2rem;
+  }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  .services-page {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+    /* ContactForm styling for middle mobile */
+  }
+  .services-page main {
+    display: flex;
+    flex-direction: column;
+    margin-top: 4rem;
+  }
+  .services-page main .services-description {
+    min-height: 100vh;
+  }
+  .services-page main .services-description .title {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5rem;
+    padding-left: 1rem;
+    margin-bottom: 1rem;
+  }
+  .services-page main .services-description .title .title-motion h2 {
+    font-size: 2rem;
+  }
+  .services-page main .services-description .description-row {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+  }
+  .services-page main .services-description .description-row .left-side, .services-page main .services-description .description-row .right-side {
+    width: 100%;
+    height: auto;
+  }
+  .services-page main .services-description .description-row .left-side ul, .services-page main .services-description .description-row .right-side ul {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .services-page .contact-form {
+    margin-top: 2rem;
+    padding: 1rem; /* Dodan padding za bolje prikazivanje */
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .services-page {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+    /* ContactForm styling for tablets */
+  }
+  .services-page main {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5rem;
+  }
+  .services-page main .services-description {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+  .services-page main .services-description .title {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    padding-left: 2rem;
+  }
+  .services-page main .services-description .title .title-motion h2 {
+    font-size: 2.2rem;
+  }
+  .services-page main .services-description .description-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 90%;
+    margin-top: 2rem;
+  }
+  .services-page main .services-description .description-row .left-side, .services-page main .services-description .description-row .right-side {
+    width: 45%;
+    height: auto;
+    padding: 1rem;
+  }
+  .services-page main .services-description .description-row .left-side ul, .services-page main .services-description .description-row .right-side ul {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .services-page .contact-form {
+    margin-top: 2rem;
+    padding: 1.5rem; /* Padding for tablet view */
   }
 }/*# sourceMappingURL=servicesPage.css.map */

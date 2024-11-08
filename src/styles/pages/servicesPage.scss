@@ -126,6 +126,10 @@
                             display: flex;
                             flex-direction: column;
                             width: 100%;
+                            align-items: self-start;
+                            li{
+                                padding-left: .7rem;
+                            }
                         }
                     }
                 }
@@ -135,6 +139,127 @@
         /* Ispravak za ContactForm */
         .contact-form {
             margin-top: 2rem;
+        }
+    }
+}
+
+// Midle mobile (481px - 767px)
+@media (min-width: 481px) and (max-width: 767px) {
+    .services-page {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        min-height: 100vh;
+
+        main {
+            display: flex;
+            flex-direction: column;
+            margin-top: 4rem;
+
+            .services-description {
+                min-height: 100vh;
+
+                .title {
+                    display: flex;
+                    flex-direction: column;
+                    margin-top: 1.5rem;
+                    padding-left: 1rem;
+                    margin-bottom: 1rem;
+
+                    .title-motion {
+                        h2 {
+                            font-size: 2rem;
+                        }
+                    }
+                }
+
+                .description-row {
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                    height: auto;
+
+                    .left-side, .right-side {
+                        width: 100%;
+                        height: auto;
+
+                        ul {
+                            display: flex;
+                            flex-direction: column;
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+
+        /* ContactForm styling for middle mobile */
+        .contact-form {
+            margin-top: 2rem;
+            padding: 1rem; /* Dodan padding za bolje prikazivanje */
+        }
+    }
+}
+
+// Tablet (768px - 991px)
+@media (min-width: 768px) and (max-width: 991px) {
+    .services-page {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        min-height: 100vh;
+
+        main {
+            display: flex;
+            flex-direction: column;
+            margin-top: 5rem;
+
+            .services-description {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                align-items: center;
+
+                .title {
+                    display: flex;
+                    flex-direction: column;
+                    margin-top: 2rem;
+                    margin-bottom: 1rem;
+                    padding-left: 2rem;
+
+                    .title-motion {
+                        h2 {
+                            font-size: 2.2rem;
+                        }
+                    }
+                }
+
+                .description-row {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-evenly;
+                    width: 90%;
+                    margin-top: 2rem;
+
+                    .left-side, .right-side {
+                        width: 45%;
+                        height: auto;
+                        padding: 1rem;
+                        
+                        ul {
+                            display: flex;
+                            flex-direction: column;
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+
+        /* ContactForm styling for tablets */
+        .contact-form {
+            margin-top: 2rem;
+            padding: 1.5rem; /* Padding for tablet view */
         }
     }
 }
