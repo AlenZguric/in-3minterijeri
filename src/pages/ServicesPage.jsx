@@ -1,5 +1,6 @@
 import React from "react";
 import { Helmet } from "react-helmet";
+import { motion } from "framer-motion";
 import '../styles/pages/servicesPage.css';
 import ContactForm from '../components/ContactForm';
 
@@ -14,18 +15,31 @@ const Services = () => {
           content="Saznajte više o uslugama profesionalnog dizajna, projektiranja i izrade namještaja po mjeri, uključujući 3D nacrte, CNC obradu i montažu."
         />
       </Helmet>
-      <main >   
+      <main>
         <section>
           <article>
             <div className="services-description">
               <div className="title">
+                <motion.div
+                className="title-motion"
+                initial={{ y: '-100vh' }} // Početna pozicija lijevo izvan ekrana
+                animate={{ y: 0 }} // Pozicija pri animaciji
+                transition={{ delay: .2, duration: 1.2 }}>
                 <h2>
-                  Usluge{" "}
-                  <span>- kako izgleda proces izrade namještaja po mjeri</span>
-                </h2>
+                 
+                 <span>Kako izgleda </span><br />
+                 proces izrade namještaja po mjeri
+               </h2>
+                </motion.div>
+              
               </div>
               <div className="description-row">
-                <div className="left-side">
+                <motion.div
+                  className="left-side"
+                  initial={{ x: '-100vw' }} // Početna pozicija lijevo izvan ekrana
+                  animate={{ x: 0 }} // Pozicija pri animaciji
+                  transition={{ delay: .2, duration: 1.5 }} // Animacija počinje nakon 1.5 sekunde i traje 3 sekunde
+                >
                   <ul>
                     <li>
                       Profesionalno savjetovanje o dizajnu i opremanju
@@ -40,8 +54,13 @@ const Services = () => {
                     <li>Izrada namještaja po mjeri</li>
                     <li>Dostava, montaža i ugradnja proizvoda</li>
                   </ul>
-                </div>
-                <div className="right-side">
+                </motion.div>
+                <motion.div
+                  className="right-side"
+                  initial={{ x: '100vw' }} // Početna pozicija desno izvan ekrana
+                  animate={{ x: 0 }} // Pozicija pri animaciji
+                  transition={{ delay: 1.1, duration: 2 }} // Animacija počinje nakon 1.5 sekunde i traje 3 sekunde
+                >
                   <ul>
                     <li>Kantiranje rubova do 54 mm</li>
                     <li>Rezanje pod kutom +46/-46°</li>
@@ -53,16 +72,13 @@ const Services = () => {
                     <li>Serijska montaža namještaja</li>
                     <li>Ugradnja aparata i ploča.</li>
                   </ul>
-                </div>
+                </motion.div>
               </div>
             </div>
           </article>
         </section>
-        
-         
-         
       </main>
-      <ContactForm/>
+      <ContactForm />
     </div>
   );
 };
