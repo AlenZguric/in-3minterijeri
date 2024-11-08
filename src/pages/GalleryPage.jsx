@@ -12,7 +12,7 @@ import hodniciImage from "../assets/images/fullsize/predsoblje/29.webp";
 import kupaoniceImage from "../assets/images/fullsize/kupaonice/3.webp";
 import ugradbeniOrmari from "../assets/images/fullsize/klizni ormari/1.webp";
 
-import dječjeSobe from "../assets/images/fullsize/dječje sobe/19.webp";
+import dječjeSobe from "../assets/images/fullsize/djecjeSobe/19.webp";
 
 const categories = [
   {

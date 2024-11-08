@@ -22,6 +22,8 @@ import NavBar from "./components/NavBar";
 import "./App.css";
 import EntryHallPage from "./pages/EntryHallPage";
 import BuiltInWardrobesPage from "./pages/BuiltInWardrobesPage";
+import WardrobePage from "./pages/WardrobePage";
+import KidsRoomsPage from "./pages/KidsRoomsPage";
 
 const AppContent = () => {
   const { cookiesAccepted } = useCookies(); // Provjeri je li korisnik prihvatio kolačiće
@@ -58,6 +60,10 @@ const AppContent = () => {
             <Route path="/kupaonice" element={<BathRoomPage />} />
             <Route path="/hodnici-i-predsoblja" element={<EntryHallPage />} />
             <Route path="/ugradbeni-ormari" element={<BuiltInWardrobesPage />} />
+            <Route path="/ormari" element={<WardrobePage />} />
+            <Route path="/djecje-sobe" element={<KidsRoomsPage />} />
+
+
 
 
             <Route path="/zidne-obloge" element={<WallPanelsPage />} />
