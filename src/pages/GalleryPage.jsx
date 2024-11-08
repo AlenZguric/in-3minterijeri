@@ -34,7 +34,7 @@ const categories = [
     image: hodniciImage,
     description:
       "Naši hodnici i predsoblja optimiziraju raspoloživi prostor, pružajući funkcionalnost i stil. Koristimo kvalitetne materijale kao što su iveral i MDF. Dizajn je prilagođen vašim željama, a namještaj je jednostavan za održavanje i dugotrajan.",
-    url: "/hodnici",
+    url: "/hodnici-i-predsoblja",
   },
   {
     title: "Ugradbeni ormari",
