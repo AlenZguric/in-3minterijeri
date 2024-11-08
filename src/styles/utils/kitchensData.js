@@ -33,7 +33,7 @@ const importAll = (r) => {
     }
   };
   const radna_ploca= {
-    EGGER_compact: <span>Radna ploča EGGER compact</span>,
+    EGGER_compact: <span>Radna ploča compact</span>,
     EGGER_38mm: <span>Radna ploča EGGER 38 mm</span>,
     IVER_38mm: <span>Radna ploča Iveral 38 mm</span>,
     QUARTZ_20mm: <span>Radna ploča Quartz 20 mm</span>,
