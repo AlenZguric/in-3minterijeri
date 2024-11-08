@@ -9,7 +9,7 @@ import kuhinjeImage from "../assets/images/fullsize/kuhinja/kuhinja_1/IMG_5748.w
 import ormariImage from "../assets/images/fullsize/ormari/51.webp";
 import zidneOblogeImage from "../assets/images/fullsize/Paneli/9.webp";
 import hodniciImage from "../assets/images/fullsize/predsoblje/29.webp";
-import kupaoniceImage from "../assets/images/fullsize/kupaonice/3.webp";
+import kupaoniceImage from "../assets/images/fullsize/kupaonice/9.webp";
 import ugradbeniOrmari from "../assets/images/fullsize/klizni ormari/1.webp";
 
 import dječjeSobe from "../assets/images/fullsize/djecjeSobe/19.webp";
@@ -92,7 +92,7 @@ const GalleryPage = () => {
                 <div className="article-about-box-descriptions">
                   <h2>{category.title}</h2>
                   <p>{category.description}</p>
-                  <Link to={category.url}>Saznajte više</Link>{" "}
+                  <Link to={category.url}>Vidi galeriju</Link>{" "}
                   {/* Link za svaki artikl */}
                 </div>
               </article>

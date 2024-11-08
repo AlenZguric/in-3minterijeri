@@ -359,7 +359,7 @@ const PrivacyPolicyPage = () => {
           <p>
           <strong> In-3m Interijeri.</strong>          </p>
           <p>
-            OIB: 16367764959</p>
+            OIB: 01482090940</p>
             <br />
             <address>
            Gornje Selo 32
@@ -372,7 +372,7 @@ const PrivacyPolicyPage = () => {
             <br />
             e-mail: <a href="mailto:info.in3m@gmail.com">info.in3m@gmail.com</a>
           </p>
-          <p>Osekovo, 15.10.2024 </p>
+          <p>Osekovo, 15.11.2024 </p>
         </div>
       </main>
     </div>

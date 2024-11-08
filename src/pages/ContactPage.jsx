@@ -21,13 +21,13 @@ const ContactPage = () => {
             </div>
             <div className="title-box2">
               <p>
-                OIB: <span>12345678901</span>
+                OIB: <span>01482090940</span>
               </p>
               <p>
-                MB: <span>12345678901</span>
+                MBO: <span>98471236</span>
               </p>
               <p>
-                IBAN: <span>hr467467412345678901</span>
+                IBAN: <span>HR9123400091160694286</span>
               </p>
               <br />
               <p>TEL:

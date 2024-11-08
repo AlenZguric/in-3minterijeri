@@ -20,8 +20,9 @@
 .gallery-page main .main-container {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  max-width: 1400px;
   height: 100%;
+  align-content: center;
 }
 .gallery-page main .main-container .title-section {
   display: flex;
@@ -126,6 +127,9 @@
     position: relative;
     height: 100%;
   }
+  .gallery-page main .main-container .article-about .article-about-box-descriptions p {
+    letter-spacing: normal;
+  }
   .gallery-page main .main-container .article-about .article-about-box-descriptions,
   .gallery-page main .main-container .article-about .article-about-box {
     width: 100%;
@@ -144,6 +148,10 @@
     left: 0;
     width: 100%;
     height: 100%;
+    -o-object-fit: fill;
+       object-fit: fill;
+    -webkit-clip-path: none !important;
+            clip-path: none !important;
   }
   .gallery-page main .main-container .article-about .article-about-box-descriptions h2,
   .gallery-page main .main-container .article-about .article-about-box h2 {
