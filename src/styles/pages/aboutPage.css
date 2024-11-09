@@ -28,6 +28,7 @@
 .aboutUs-page main section article {
   display: flex;
   flex-direction: column;
+  padding: 1rem;
 }
 .aboutUs-page main section article .title-aboutus h2 {
   font-size: 2.5rem;

@@ -40,9 +40,37 @@ const WardrobePage = () => {
   return (
     <div className="wardrobe-page">
       <Helmet>
-        <title>Wardrobe Collection</title>
-      </Helmet>
-      <main className="wardrobe-main">
+        <title>Wardrobe Collection | Ormari po mjeri</title>
+        <meta
+          name="description"
+          content="Pogledajte našu kolekciju ormara po mjeri, s jedinstvenim dizajnom i visokokvalitetnim obrtništvom."
+        />
+        <meta
+          name="keywords"
+          content="ormari po mjeri, dizajn ormara, moderni ormari, bespoke ormari"
+        />
+        <meta name="robots" content="index, follow" />
+
+        {/* Open Graph metatagi */}
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Wardrobe Collection | Ormari po mjeri" />
+        <meta
+          property="og:description"
+          content="Pogledajte našu kolekciju ormara po mjeri, s jedinstvenim dizajnom i visokokvalitetnim obrtništvom."
+        />
+        <meta property="og:image" content="https://in3m-interijeri.web.app/social.webp" /> {/* Zamijeniti sa stvarnom slikom */}
+        <meta property="og:url" content="https://www.in3em-interijeri.com/wardrobe-collection" />
+
+        {/* Twitter Card metatagi */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Wardrobe Collection | Ormari po mjeri" />
+        <meta
+          name="twitter:description"
+          content="Pogledajte našu kolekciju ormara po mjeri, s jedinstvenim dizajnom i visokokvalitetnim obrtništvom."
+        />
+        <meta name="twitter:image" content="https://in3m-interijeri.web.app/social.webp" /> {/* Zamijeniti sa stvarnom slikom */}
+        <meta name="twitter:url" content="https://www.in3em-interijeri.com/wardrobe-collection" />
+      </Helmet>      <main className="wardrobe-main">
         <div id="gallery" className="gallery-grid">
           {wardrobesData.images.map((image, index) => (
             <motion.div

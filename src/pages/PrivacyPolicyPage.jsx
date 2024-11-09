@@ -9,9 +9,11 @@ const PrivacyPolicyPage = () => {
 
   return (
     <div className="privacy-Policy-Page">
-      <Helmet>
-        <title>Privacy Policy</title>
-        <meta name="description" content="Our privacy policy" />
+       <Helmet>
+        <title>Izjava o zaštiti privatnosti</title>
+        <meta name="description" content="Pročitajte našu izjavu o zaštiti privatnosti i saznajte kako štitimo vaše osobne podatke." />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://in3m-interijeri.web.app/privacy-policy" />
       </Helmet>
       <main className="main-privacy-Policy-Page">
         <div className="main-privacy-Policy-Page-title">
@@ -25,7 +27,7 @@ const PrivacyPolicyPage = () => {
       )}
           <p>
             Ovom se izjavom obvezujemo štititi privatnost korisnika i
-            posjetitelja naših mrežnih stranica <a href="http://https://in3m-interijeri.web.app/">https://in3m-interijeri.web.app/</a> uz
+            posjetitelja naših mrežnih stranica <a href="https://in3m-interijeri.web.app/">https://in3m-interijeri.web.app/</a> uz
             sigurnost osobnih podataka primljenih u interakciji bilo kakve
             vrste.
           </p>

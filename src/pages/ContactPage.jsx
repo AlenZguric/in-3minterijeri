@@ -11,7 +11,33 @@ import "../styles/pages/ContactPage.css";
 const ContactPage = () => {
   return (
     <div className="contact-page">
-      <Helmet></Helmet>
+<Helmet>
+  {/* Osnovni meta tagovi za SEO */}
+  <title>Kontakt - In-3m Interijeri</title>
+  <meta name="description" content="Kontaktirajte nas za sve informacije o proizvodima i uslugama tvrtke In-3M Interijeri. Ovdje smo za sve vaše upite!" />
+  <meta name="keywords" content="kontakt, In-3M Interijeri, namještaj, prilagođeni namještaj, interijeri" />
+  <meta name="robots" content="index, follow" /> {/* Preporučuje se za bolje SEO indeksiranje */}
+
+  {/* Open Graph za društvene mreže */}
+  <meta property="og:title" content="Kontakt - In-3M Interijeri" />
+  <meta property="og:description" content="Kontaktirajte nas za sve informacije o proizvodima i uslugama tvrtke In-3M Interijeri." />
+  <meta property="og:url" content="https://in3m-interijeri.web.app/kontakt" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://in3m-interijeri.web.app/social.webp" /> {/* Zamijenite s pravom URL adresom slike */}
+
+  {/* Twitter Card za dijeljenje na Twitteru */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Kontakt - In-3M Interijeri" />
+  <meta name="twitter:description" content="Kontaktirajte nas za sve informacije o proizvodima i uslugama tvrtke In-3M Interijeri." />
+  <meta name="twitter:image" content="https://in3m-interijeri.web.app/social.webp" /> {/* Zamijenite s pravom URL adresom slike */}
+
+  {/* Kanonska veza za izbjegavanje dupliciranog sadržaja */}
+  <link rel="canonical" href="https://in3m-interijeri.web.app/kontakt" />
+
+  {/* Dodatni meta tag za jezik */}
+  <meta http-equiv="Content-Language" content="hr" /> {/* Ovisno o jeziku stranice */}
+</Helmet>
+
       <main>
         <section>
           <div className="title-contact-page">

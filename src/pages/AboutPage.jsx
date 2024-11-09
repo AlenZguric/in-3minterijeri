@@ -6,8 +6,49 @@ import "../styles/pages/aboutPage.css";
 const AboutPage = () => {
   return (
     <div className="aboutUs-page">
-      <Helmet></Helmet>
-      <main>
+<Helmet>
+  {/* Osnovni meta tagovi za SEO */}
+  <title>O nama | In-3M Interijeri</title>
+  <meta
+    name="description"
+    content="In-3M Interijeri je firma specijalizirana za izradu jedinstvenog namještaja po mjeri. Naša strast i ustrajnost u radu osiguravaju visoku kvalitetu i zadovoljstvo klijenata."
+  />
+  <meta
+    name="keywords"
+    content="In-3M Interijeri, namještaj po mjeri, kvalitetni materijali, personalizirani dizajn, kuhinje, ormari, dječje sobe, kupaonski namještaj"
+  />
+  <meta name="robots" content="index, follow" /> {/* Preporučuje se za SEO optimizaciju */}
+
+  {/* Open Graph za društvene mreže */}
+  <meta property="og:title" content="O nama | In-3M Interijeri" />
+  <meta
+    property="og:description"
+    content="In-3M Interijeri pruža jedinstvene usluge u izradi personaliziranog namještaja koristeći kvalitetne materijale i 3D prikaz za vizualizaciju klijentovih ideja."
+  />
+  <meta
+    property="og:image"
+    content="https://in3m-interijeri.web.app/social.webp" /> {/* Zamijenite s pravom URL adresom slike */}
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://in3m-interijeri.web.app/o-nama" /> {/* Provjerite URL */}
+  
+  {/* Twitter Card za dijeljenje na Twitteru */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="O nama | In-3M Interijeri" />
+  <meta
+    name="twitter:description"
+    content="In-3M Interijeri pruža jedinstvene usluge u izradi personaliziranog namještaja koristeći kvalitetne materijale i 3D prikaz za vizualizaciju klijentovih ideja."
+  />
+  <meta
+    name="twitter:image"
+    content="https://in3m-interijeri.web.app/social.webp" /> {/* Zamijenite s pravom URL adresom slike */}
+
+  {/* Kanonska veza za izbjegavanje dupliciranog sadržaja */}
+  <link rel="canonical" href="https://in3m-interijeri.web.app/o-nama" />
+  
+  {/* Dodatni meta tag za jezik */}
+  <meta http-equiv="Content-Language" content="hr" /> {/* Ovisno o jeziku stranice */}
+</Helmet>
+        <main>
         <section>
           <article>
             <div className="title-aboutus">

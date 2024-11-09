@@ -73,8 +73,38 @@ const categories = [
 const GalleryPage = () => {
   return (
     <div className="gallery-page">
-        <Helmet></Helmet>
-      <main>
+ <Helmet>
+        <title>Galerija - Namještaj po mjeri | In3em Interijeri</title>
+        <meta
+          name="description"
+          content="Pogledajte našu kolekciju namještaja po mjeri, uključujući kuhinje, kupaonice, hodnike, ormariće i više. Kvaliteta i dizajn na dohvat ruke."
+        />
+        <meta
+          name="keywords"
+          content="namještaj po mjeri, kuhinje, kupaonice, ormari, hodnici, zidne obloge, ugradbeni ormari, dječje sobe, interijeri"
+        />
+        <meta name="robots" content="index, follow" />
+
+        {/* Open Graph meta tags */}
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Galerija - Namještaj po mjeri | In3em Interijeri" />
+        <meta
+          property="og:description"
+          content="Pogledajte našu kolekciju namještaja po mjeri, uključujući kuhinje, kupaonice, hodnike, ormariće i više. Kvaliteta i dizajn na dohvat ruke."
+        />
+        <meta property="og:image" content={kuhinjeImage} /> {/* Prikazivanje slike prilikom dijeljenja */}
+        <meta property="og:url" content="https://www.in3em-interijeri.com/galerija" />
+
+        {/* Twitter Card meta tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Galerija - Namještaj po mjeri | In3em Interijeri" />
+        <meta
+          name="twitter:description"
+          content="Pogledajte našu kolekciju namještaja po mjeri, uključujući kuhinje, kupaonice, hodnike, ormariće i više. Kvaliteta i dizajn na dohvat ruke."
+        />
+        <meta name="twitter:image" content={kuhinjeImage} /> {/* Prikazivanje slike na Twitteru */}
+        <meta name="twitter:url" content="https://www.in3em-interijeri.com/galerija" />
+      </Helmet>      <main>
         <div className="main-container">
           <section className="title-section">
             <p>ODABERITE KVALITETNE PROIZVODE IZ NAŠE KOLEKCIJE</p>

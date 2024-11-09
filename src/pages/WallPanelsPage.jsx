@@ -40,9 +40,37 @@ const WallPanelsPage = () => {
   return (
     <div className="wall-panels-page">
       <Helmet>
-        <title>Zidni Paneli</title>
-      </Helmet>
-      <main className="panels-main">
+        <title>Zidni Paneli | In3em Interijeri</title>
+        <meta
+          name="description"
+          content="Pogledajte našu kolekciju zidnih panela koji će vašem prostoru dati sofisticiran i moderan izgled."
+        />
+        <meta
+          name="keywords"
+          content="zidni paneli, moderni zidni paneli, interijeri, dekoracija zidova"
+        />
+        <meta name="robots" content="index, follow" />
+
+        {/* Open Graph metatagi */}
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Zidni Paneli | In3em Interijeri" />
+        <meta
+          property="og:description"
+          content="Pogledajte našu kolekciju zidnih panela koji će vašem prostoru dati sofisticiran i moderan izgled."
+        />
+        <meta property="og:image" content="https://in3m-interijeri.web.app/social.webp" /> {/* Zamijeniti sa stvarnom slikom */}
+        <meta property="og:url" content="https://www.in3em-interijeri.com/zidni-paneli" />
+
+        {/* Twitter Card metatagi */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Zidni Paneli | In3em Interijeri" />
+        <meta
+          name="twitter:description"
+          content="Pogledajte našu kolekciju zidnih panela koji će vašem prostoru dati sofisticiran i moderan izgled."
+        />
+        <meta name="twitter:image" content="https://in3m-interijeri.web.app/social.webp" /> {/* Zamijeniti sa stvarnom slikom */}
+        <meta name="twitter:url" content="https://www.in3em-interijeri.com/zidni-paneli" />
+      </Helmet>      <main className="panels-main">
         <div id="gallery" className="gallery-grid">
           {wallPanelsData.images.map((image, index) => (
             <motion.div

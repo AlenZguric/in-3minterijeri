@@ -39,10 +39,38 @@ const EntryHallPage = () => {
 
   return (
     <div className="entryhall-page">
-      <Helmet>
-        <title>Hodnici i Predsoblja</title>
-      </Helmet>
-      <main className="entryhall-main">
+<Helmet>
+        <title>Hodnici i Predsoblja | In3em Interijeri</title>
+        <meta
+          name="description"
+          content="Pogledajte našu kolekciju hodnika i predsoblja po mjeri, s modernim i funkcionalnim dizajnom koji će vašem prostoru dati sofisticirani izgled."
+        />
+        <meta
+          name="keywords"
+          content="hodnici, predsoblja, ugradbeni namještaj, interijeri, moderni hodnici, dizajn predsoblja"
+        />
+        <meta name="robots" content="index, follow" />
+
+        {/* Open Graph metatagi */}
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Hodnici i Predsoblja | In3em Interijeri" />
+        <meta
+          property="og:description"
+          content="Pogledajte našu kolekciju hodnika i predsoblja po mjeri, s modernim i funkcionalnim dizajnom koji će vašem prostoru dati sofisticirani izgled."
+        />
+        <meta property="og:image" content={entryHallData.images[0].thumb} />
+        <meta property="og:url" content="https://www.in3em-interijeri.com/hodnici-predsoblja" />
+
+        {/* Twitter Card metatagi */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Hodnici i Predsoblja | In3em Interijeri" />
+        <meta
+          name="twitter:description"
+          content="Pogledajte našu kolekciju hodnika i predsoblja po mjeri, s modernim i funkcionalnim dizajnom koji će vašem prostoru dati sofisticirani izgled."
+        />
+        <meta name="twitter:image" content={entryHallData.images[0].thumb} />
+        <meta name="twitter:url" content="https://www.in3em-interijeri.com/hodnici-predsoblja" />
+      </Helmet>      <main className="entryhall-main">
         <div id="gallery" className="gallery-grid">
           {entryHallData.images.map((image, index) => (
             <motion.div

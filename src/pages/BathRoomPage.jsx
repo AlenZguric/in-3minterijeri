@@ -39,10 +39,39 @@ const BathRoomPage = () => {
 
   return (
     <div className="bathroom-page">
-      <Helmet>
-        <title>Kupaonski Namještaj</title>
-      </Helmet>
-      <main className="bath-main">
+   <Helmet>
+        <title>Kupaonski Namještaj | In3em Interijeri</title>
+        <meta
+          name="description"
+          content="Pogledajte našu kolekciju kupaonskog namještaja po mjeri, uključujući ormariće, police, lavabo i druge komponente. Kvaliteta, funkcionalnost i dizajn."
+        />
+        <meta
+          name="keywords"
+          content="kupaonski namještaj, kupaonica, ormarići, police, lavabo, interijeri, po mjeri"
+        />
+        <meta name="robots" content="index, follow" />
+
+        {/* Open Graph meta tags */}
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Kupaonski Namještaj | In3em Interijeri" />
+        <meta
+          property="og:description"
+          content="Pogledajte našu kolekciju kupaonskog namještaja po mjeri, uključujući ormariće, police, lavabo i druge komponente. Kvaliteta, funkcionalnost i dizajn."
+        />
+        <meta property="og:image" content={bathRoomData.images[0].thumb} /> {/* Prikazivanje slike prilikom dijeljenja */}
+        <meta property="og:url" content="https://www.in3em-interijeri.com/kupaonice" />
+
+        {/* Twitter Card meta tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Kupaonski Namještaj | In3em Interijeri" />
+        <meta
+          name="twitter:description"
+          content="Pogledajte našu kolekciju kupaonskog namještaja po mjeri, uključujući ormariće, police, lavabo i druge komponente. Kvaliteta, funkcionalnost i dizajn."
+        />
+        <meta name="twitter:image" content={bathRoomData.images[0].thumb} /> {/* Prikazivanje slike na Twitteru */}
+        <meta name="twitter:url" content="https://www.in3em-interijeri.com/kupaonice" />
+      </Helmet>  
+          <main className="bath-main">
         <div id="gallery" className="gallery-grid">
           {bathRoomData.images.map((image, index) => (
             <motion.div

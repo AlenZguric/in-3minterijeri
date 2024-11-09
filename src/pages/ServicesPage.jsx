@@ -8,12 +8,37 @@ const Services = () => {
 
   return (
     <div className="services-page">
-      <Helmet>
-        <title>Naše Usluge - Proces Izrade Namještaja po Mjeri</title>
+          <Helmet>
+        <title>Naše Usluge - Proces Izrade Namještaja po Mjeri | In3em Interijeri</title>
         <meta
           name="description"
           content="Saznajte više o uslugama profesionalnog dizajna, projektiranja i izrade namještaja po mjeri, uključujući 3D nacrte, CNC obradu i montažu."
         />
+        <meta
+          name="keywords"
+          content="usluge dizajna, izrada namještaja po mjeri, 3D nacrti, CNC obrada, montaža namještaja, projektiranje interijera"
+        />
+        <meta name="robots" content="index, follow" />
+
+        {/* Open Graph metatagi */}
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Naše Usluge - Proces Izrade Namještaja po Mjeri | In3em Interijeri" />
+        <meta
+          property="og:description"
+          content="Saznajte više o uslugama profesionalnog dizajna, projektiranja i izrade namještaja po mjeri, uključujući 3D nacrte, CNC obradu i montažu."
+        />
+        <meta property="og:image" content="https://in3m-interijeri.web.app/social.webp" /> {/* Zamijeniti sa stvarnom slikom */}
+        <meta property="og:url" content="https://www.in3em-interijeri.com/usluge" />
+
+        {/* Twitter Card metatagi */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Naše Usluge - Proces Izrade Namještaja po Mjeri | In3em Interijeri" />
+        <meta
+          name="twitter:description"
+          content="Saznajte više o uslugama profesionalnog dizajna, projektiranja i izrade namještaja po mjeri, uključujući 3D nacrte, CNC obradu i montažu."
+        />
+        <meta name="twitter:image" content="https://in3m-interijeri.web.app/social.webp" /> {/* Zamijeniti sa stvarnom slikom */}
+        <meta name="twitter:url" content="https://www.in3em-interijeri.com/usluge" />
       </Helmet>
       <main>
         <section>

@@ -19,7 +19,7 @@ const HomePage = () => {
 
   return (
     <div className="home-page">
-      <Helmet>
+ <Helmet>
         <title>In-3M Interijeri - Namještaj po mjeri za vaš dom</title>
         <meta
           name="description"
@@ -29,26 +29,28 @@ const HomePage = () => {
           name="keywords"
           content="namještaj po mjeri, kuhinje po mjeri, kupaonice, ormar, predsoblje, interijer, personalizirani namještaj"
         />
-        <meta name="author" content="Alen Zgurić" />
         <meta name="robots" content="index, follow" />
-        <meta property="og:title" content="In-3M Interijeri" />
+
+        {/* Open Graph metatagi */}
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="In-3M Interijeri - Namještaj po mjeri za vaš dom" />
         <meta
           property="og:description"
-          content="Personaliziran namještaj po mjeri za dom ili ured. Pogledajte našu ponudu i radove."
+          content="Izradite namještaj po mjeri za svoj dom ili ured. Nudimo personalizirane kuhinje, kupaonice, ormare i predsoblja vrhunske kvalitete."
         />
         <meta property="og:image" content="URL_OG_IMAGE" />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://in3m-interijeri.web.app" />
-        <link rel="canonical" href="https://in3m-interijeri.web.app" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="In-3M Interijeri" />
+        <meta property="og:url" content="https://www.in3em-interijeri.com" />
+
+        {/* Twitter Card metatagi */}
+        <meta name="twitter:card" content="https://in3m-interijeri.web.app/social.webp" />
+        <meta name="twitter:title" content="In-3M Interijeri - Namještaj po mjeri za vaš dom" />
         <meta
           name="twitter:description"
-          content="Najbolji namještaj po mjeri za dom i ured."
+          content="Izradite namještaj po mjeri za svoj dom ili ured. Nudimo personalizirane kuhinje, kupaonice, ormare i predsoblja vrhunske kvalitete."
         />
-        <meta name="twitter:image" content="URL_TWITTER_IMAGE" />
+        <meta name="twitter:image" content="https://in3m-interijeri.web.app/social.webp" />
+        <meta name="twitter:url" content="https://www.in3em-interijeri.com" />
       </Helmet>
-
       <main>
         <motion.section
          initial="hidden"
