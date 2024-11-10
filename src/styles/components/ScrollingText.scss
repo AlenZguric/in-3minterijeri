@@ -58,3 +58,63 @@
     }
   }
 }
+@media (max-width: 580px) {
+  .scrolling-component {
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    width: 100%;
+    justify-content: center;
+    background-color: rgba(228, 223, 223, 0.9);
+  
+    .title-scroll-text {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 2rem;
+  
+      h2 {
+        color: #333333;
+        text-transform: uppercase;
+        font-weight: 400;
+        letter-spacing: 1.8px;
+      }
+    }
+    .react-multi-carousel-list {
+      ul {
+        li {
+          p {
+            a {
+              text-decoration: none;
+              color: black;
+              font-family: "roboto mono", sans-serif;
+              font-size: 1.25rem;
+              font-weight: 600;
+              font-style: italic;
+            }
+          }
+        }
+      }
+    }
+  
+    .scrolling-text {
+      display: flex;
+      overflow: hidden;
+      white-space: nowrap;
+  
+      .scroll-item {
+        padding: 10px;
+        font-size: 2rem;
+        color: #333;
+        margin-right: 50px;
+  
+        a {
+          text-decoration: none;
+          color: #333;
+          &:hover {
+            transform: scale(1.05);
+          }
+        }
+      }
+    }
+  }
+}

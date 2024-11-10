@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
 .kitchens-page {
   display: flex;
@@ -19,5 +20,17 @@
   padding-top: 2rem;
 }
 .kitchens-page main .lazyload-wrapper:nth-child(even) {
-  background-color: rgba(73, 71, 71, 0.658);
+  background-color: rgba(73, 71, 71, 0.659);
+  position: relative; /* Potrebno za pozicioniranje pseudo-elementa */
+}
+.kitchens-page main .lazyload-wrapper:nth-child(even):before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100px; /* Visina sjene, možete prilagoditi */
+  background: rgba(73, 71, 71, 0.6588235294);
+  background: linear-gradient(180deg, black, rgb(48, 47, 47) 100%);
+  z-index: 1; /* Osigurava da je pseudo-element iznad pozadine */
 }/*# sourceMappingURL=KitchensPage.css.map */

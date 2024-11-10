@@ -54,3 +54,59 @@
         }
     }
 }
+@media (max-width: 580px){
+    .aboutUs-page{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        min-height: 100vh;
+        background: url('../../assets/images/fullsize/pozadina_za_o_nama.webp');
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        main{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.950);
+            min-height: 100vh;
+            align-items: center;
+            section{
+                display: flex;
+                flex-direction: column;
+                max-width: 1200px;
+                margin-top: 4rem;
+                color: rgba(245, 245, 245, 0.671);
+                article{
+                    display: flex;
+                    flex-direction: column;
+                    padding: 1rem;
+                    .title-aboutus{
+                        h2{
+                            font-size: 2.5rem;
+                            color: red;
+    
+                        }
+                    }
+                    .descriprion{
+                        p{
+                            font-family: 'roboto mono', sans-serif;
+                            margin-top: 2rem;
+                            letter-spacing: 1px;
+                            font-weight: 200;
+                            line-height: 1.4;
+    
+    
+                            span{
+                                color: red;
+                                    margin-top: 4rem;
+    
+                            }
+                        }
+                    }
+                }
+    
+            }
+        }
+    }
+}

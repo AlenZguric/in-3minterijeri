@@ -38,8 +38,9 @@ const HomePage = () => {
           property="og:description"
           content="Izradite namještaj po mjeri za svoj dom ili ured. Nudimo personalizirane kuhinje, kupaonice, ormare i predsoblja vrhunske kvalitete."
         />
+        <meta property="og:site_name" content="In-3m Interijeri"></meta>
         <meta property="og:image" content="URL_OG_IMAGE" />
-        <meta property="og:url" content="https://www.in3em-interijeri.com" />
+        <meta property="og:url" content="https:/in3m-interijeri.web.app/" />
 
         {/* Twitter Card metatagi */}
         <meta name="twitter:card" content="https://in3m-interijeri.web.app/social.webp" />
@@ -49,13 +50,13 @@ const HomePage = () => {
           content="Izradite namještaj po mjeri za svoj dom ili ured. Nudimo personalizirane kuhinje, kupaonice, ormare i predsoblja vrhunske kvalitete."
         />
         <meta name="twitter:image" content="https://in3m-interijeri.web.app/social.webp" />
-        <meta name="twitter:url" content="https://www.in3em-interijeri.com" />
+        <meta name="twitter:url" content="https:/in3m-interijeri.web.app/" />
       </Helmet>
       <main>
         <motion.section
          initial="hidden"
           whileInView="show"
-          variants={scrollAnimations.fadeInDownRight}
+          variants={scrollAnimations.bounceUp}
           viewport={{ once: true, amount: 0.05 }}
         >
           <Header />

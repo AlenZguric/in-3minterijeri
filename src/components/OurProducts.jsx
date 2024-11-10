@@ -2,13 +2,12 @@ import React from 'react';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import '../styles/components/OurProducts.css';
-import Kuhinja from '../assets/images/smallsize/kuhinja-po-mjeri-img.jpg';
-import ZidneObloge from '../assets/images/smallsize/kuhinja/kuhinja-small.jpg';
-import Dnevni from '../assets/images/smallsize/dnevni- boravak-img.jpg';
-import DekorativniPaneli from '../assets/images/smallsize/dekorativni-paneli-img.png';
-import Hodnik from '../assets/images/smallsize/hodnici-predsoblje-img.jpg';
+import Kuhinja from '../assets/images/fullsize/kuhinja/kuhinja_26/1.webp';
+import ZidneObloge from '../assets/images/fullsize/Paneli/9.webp';
+import HodniciiPredsoblja from '../assets/images/fullsize/predsoblje/9.webp';
+import Ormari from '../assets/images/fullsize/ormari/12.webp'
 import Kupaonice from '../assets/images/smallsize/kupaonice-img.jpg';
-import Ormari from '../assets/images/smallsize/ormari-img.jpg';
+import OrmariKlizni from '../assets/images/fullsize/klizni ormari/7.webp';
 import Ostali from '../assets/images/smallsize/ostali namješta-img.jpg';
 
 const categories = [
@@ -25,22 +24,17 @@ const categories = [
     url: '/zidne-obloge'
   },
   {
-    title: 'Dnevni boravci',
-    image: Dnevni,
-    description: 'Namještaj za dnevne boravke koji donosi udobnost i stil',
-    url: '/dnevni-boravci'
+    title: 'Hodnici i predsoblja',
+    image: HodniciiPredsoblja,
+    description: 'Namještaj za hodnike i predsoblja koji donosi udobnost i stil',
+    url: '/hodnici-i-predsoblja'
   },
   {
-    title: 'Dekorativni paneli',
-    image: DekorativniPaneli,
-    description: 'Dekorativni paneli za poboljšanje vašeg interijera',
-    url: '/dekorativni-paneli'
-  },
-  {
-    title: 'Hodnici predsoblja',
-    image: Hodnik,
-    description: 'Kustomizirani hodnici i ulazi',
-    url: '/hodnici'
+
+    title: 'Ormari',
+    image: Ormari,
+    description: 'Ormari koji iskoriste svaki kutak Vaše prostorije',
+    url: '/ormari'
   },
   {
     title: 'Kupaonice',
@@ -50,15 +44,15 @@ const categories = [
   },
   {
     title: 'Ugradbeni ormari',
-    image: Ormari,
+    image: OrmariKlizni,
     description:'Ugradbeni ormari prilagođeni vašem prostoru',
-    url: '/ormari'
+    url: '/ugradbeni-ormari'
   },
   {
-    title: 'Ostali namještaj',
+    title: 'Dječje sobe',
     image: Ostali,
-    description: 'Različiti drugi komadi namještaja po mjeri',
-    url: '/ostali-namjestaj'
+    description: 'Napravite Vašim mališanima sobu za odmor i igru',
+    url: '/djecje-sobe'
   }
 ];
 

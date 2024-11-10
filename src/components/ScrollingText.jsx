@@ -12,6 +12,8 @@ const ScrollingText = () => {
     { name: ' IVERPAN ', url: 'https://www.iverpan.hr/', color: 'black' },
     { name: ' DEWALT ', url: 'https://www.dewalt.com/', color: '#ffba00' },
     { name: ' FESTOOL ', url: 'https://www.festool.com/', color: '#46b82e' },
+    { name: ' Würth  ', url: 'https://eshop.wuerth.com.hr/', color: '#cc0000' },
+    { name: ' Schachermayer  ', url: 'https://schachermayer.hr/', color: '#fab400' },
     { name: ' GRASS ', url: 'https://www.grass.eu/', color: 'black' }
   ];
 
@@ -52,7 +54,7 @@ const ScrollingText = () => {
 >
         {words.map((word, index) => (
           <div key={index} className="scroll-item">
-            <Typography style={{color: word.color}}>
+            <Typography style={{color: word.color, textTransform: 'uppercase'}}>
               <a href={word.url} target="_blank" rel="noopener noreferrer" style={{color: word.color}}>
                 {word.name}
               </a>

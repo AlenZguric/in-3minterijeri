@@ -1,10 +1,16 @@
-import React from 'react';
+import React,{useEffect} from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useCookies } from '../contexts/CookieContekst';
 
 const CookieNotice = () => {
   const { cookiesAccepted, acceptCookies } = useCookies();
   const navigate = useNavigate();
+
+  useEffect(() => {
+    if (!cookiesAccepted) {
+      window.scrollTo(0, 0); // Pomak na vrh stranice kada se komponenta učita
+    }
+  }, [cookiesAccepted]);
 
   if (cookiesAccepted) return null;
 
@@ -41,41 +47,57 @@ const styles = {
     backgroundColor: 'rgba(0, 0, 0, 0.7)',
     display: 'flex',
     justifyContent: 'center',
-    alignItems: 'center',
+    alignItems: 'center', // Dodajte za vertikalno centriranje
     zIndex: 1001,
   },
+  
   cookieContainer: {
+    display: 'flex',
+    flexDirection: 'column',
     backgroundColor: 'white',
     padding: '20px',
     borderRadius: '5px',
     textAlign: 'center',
-    width: '100%', // prilagođeno za različite veličine ekrana
-    //maxWidth: '500px',
+    justifyContent: 'center',
+    width: '100%',
+    maxWidth: '500px',
+    height: '200px',
     boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.2)',
     position: 'fixed',
-    left: 0,
-    bottom: 0,
+    top: '0', // Dodajte ovaj red
+    bottom: '0', // Ostavite ovo kako biste postigli centriranje
+    zIndex: 1002,
+    margin: 'auto', // Za centriranje po vertikali i horizontali
   },
+  
   buttonContainer: {
     marginTop: '10px',
     display: 'flex',
-    justifyContent: 'center',
+    justifyContent: 'space-around',
   },
   acceptButton: {
-    backgroundColor: '#4CAF50',
+    backgroundColor: '#1c5b1e',
     color: 'white',
     border: 'none',
-    padding: '10px 20px',
+    padding: '12px 24px', // povećano padding za veći dodirni cilj
     cursor: 'pointer',
     borderRadius: '5px',
-    marginRight: '10px',
-    textDecoration: 'none',
+    //marginRight: '10px',
+    fontSize: '16px', // povećan font za bolju čitljivost
+    minWidth: '150px',
+    height:'3rem', // osigurava minimalnu širinu gumba
+    justifyContent: 'center',
   },
   privacyLink: {
     color: 'white',
     textDecoration: 'none',
+    justifyContent: 'center',
     cursor: 'pointer',
+    fontSize: '14px', // manji font za poveznicu
+    display: 'block', // omogućava lakše ciljanje i klikabilnost
+    //marginTop: '10px', // dodan razmak između gumba i poveznice
   },
 };
+
 
 export default CookieNotice;

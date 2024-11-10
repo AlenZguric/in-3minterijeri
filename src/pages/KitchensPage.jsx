@@ -30,7 +30,6 @@ const KitchensPage = () => {
           property="og:description"
           content="Pogledajte našu kolekciju kuhinja po mjeri, s modernim dizajnom i vrhunskom izradom. Naše kuhinje su prilagođene vašim potrebama i prostoru."
         />
-        <meta property="og:image" content={kitchensData[0].image.thumb} />
         <meta property="og:url" content="https://www.in3em-interijeri.com/kuhinje" />
 
         {/* Twitter Card metatagi */}
@@ -40,7 +39,6 @@ const KitchensPage = () => {
           name="twitter:description"
           content="Pogledajte našu kolekciju kuhinja po mjeri, s modernim dizajnom i vrhunskom izradom. Naše kuhinje su prilagođene vašim potrebama i prostoru."
         />
-        <meta name="twitter:image" content={kitchensData[0].image.thumb} />
         <meta name="twitter:url" content="https://www.in3em-interijeri.com/kuhinje" />
       </Helmet>
       <main>

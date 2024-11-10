@@ -16,9 +16,23 @@
       width: 100%;
       height: 100%;
       padding-top: 2rem;
-      &:nth-child(even){
-        background-color: rgba(73, 71, 71, 0.658);
+      &:nth-child(even) {
+        background-color: rgba(73, 71, 71, 0.659);
+        position: relative; /* Potrebno za pozicioniranje pseudo-elementa */
+      
+        &:before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          height: 100px; /* Visina sjene, možete prilagoditi */
+          background: #494747a8;
+          background: linear-gradient(180deg,black,rgb(48,47,47) 100%);
+          z-index: 1; /* Osigurava da je pseudo-element iznad pozadine */
+        }
       }
+      
     }
   }
 }

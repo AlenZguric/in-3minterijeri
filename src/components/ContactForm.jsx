@@ -106,12 +106,15 @@ const ContactForm = () => {
                   href="https://www.instagram.com/interijeri_in3m/"
                   target="_blank"
                   className="instagram"
+                  aria-label="Posjetite naš Instagram profil"
                 >
                   <Instagram />
                 </IconButton>
                 <IconButton
                   href="https://web.facebook.com/profile.php?id=100090646789855"
                   target="_blank"
+                  className="facebook"
+                  aria-label="Posjetite naš Facebook profil"
                 >
                   <Facebook />
                 </IconButton>
@@ -119,6 +122,7 @@ const ContactForm = () => {
                   href="https://wa.me/385917208379"
                   target="_blank"
                   className="whatsapp"
+                  aria-label="Kontaktirajte nas putem WhatsApp-a"
                 >
                   <WhatsAppIcon />
                 </IconButton>
