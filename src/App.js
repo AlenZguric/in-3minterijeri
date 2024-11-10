@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect} from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Footer from "./components/Footer";
 import HomePage from "./pages/HomePage";
@@ -31,6 +31,10 @@ const AppContent = () => {
 
   // Provjeri je li trenutna ruta "/politika-privatnosti"
   const isPrivacyPage = location.pathname === "/politika-privatnosti";
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
 
   return (
     <>
