@@ -31,7 +31,7 @@
 }
 .gallery-page main .main-container .title-section p {
   font-size: 2rem;
-  color: rgb(253, 0, 0);
+  color: rgb(168, 23, 63);
   font-family: "Caveat", sans-serif;
   text-align: center;
   font-weight: 600;
@@ -79,11 +79,11 @@
 .gallery-page main .main-container .article-about .article-about-box-descriptions a {
   text-decoration: none;
   margin-top: 2rem;
-  border: 1 solid red;
+  border: 1 solid rgb(168, 23, 63);
   border-radius: 0.5rem;
   padding: 0.5rem;
   color: white;
-  background-color: red;
+  background-color: rgb(168, 23, 63);
   width: 10rem;
   text-align: center;
 }

@@ -232,11 +232,11 @@ const ContactForm = () => {
             type="submit"
             variant="contained"
             sx={{
-              backgroundColor: "#e4dfdf",
-              color: "black",
+              backgroundColor: "#a8173f",
+              color: "white",
               width: "200px",
               
-              "&:hover": {backgroundColor: "red", color: 'white'
+              "&:hover": {backgroundColor: "#a8173f", color: 'white'
                },
             }}
           >

@@ -34,7 +34,7 @@
   color: whitesmoke;
 }
 .services-page main .services-description .title h2 span {
-  color: red;
+  color: rgb(168, 23, 63);
   font-weight: 600;
   text-wrap: wrap;
 }
@@ -64,7 +64,7 @@
 }
 .services-page main .services-description .description-row .left-side ul li a, .services-page main .services-description .description-row .right-side ul li a {
   text-decoration: none;
-  color: red;
+  color: rgb(168, 23, 63);
   font-weight: 700;
 }
 .services-page .contact-form {

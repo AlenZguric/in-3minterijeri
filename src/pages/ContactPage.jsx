@@ -59,6 +59,13 @@ const ContactPage = () => {
               <p>TEL:
                 <span> <a href="tel:+385917208379"title="Klik za poziv">+385 91 720 8379</a></span>
               </p>
+      <p>
+      <address>
+           Gornje Selo 32
+            <br />
+            44317 Osekovo – Hrvatska
+            </address>
+      </p>
              
               <div className="button">
                 <button>

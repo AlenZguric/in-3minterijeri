@@ -54,11 +54,11 @@
   color: white;
 }
 .our-business .container-our-business .row-text span {
-  color: red;
+  color: rgb(168, 23, 63);
 }
 .our-business .container-our-business .row-text .button-see-more button {
   padding: 10px 20px;
-  background-color: red;
+  background-color: rgb(168, 23, 63);
   color: white;
   border: none;
   border-radius: 5px;

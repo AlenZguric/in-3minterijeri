@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useState, useEffect} from 'react';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import '../styles/components/OurProducts.css';
@@ -72,13 +72,29 @@ const responsive = {
 };
 
 const FurnitureCarousel = () => {
+
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 464);
+    };
+
+    // Postavi inicijalno stanje i dodaj listener za promjenu širine
+    handleResize();
+    window.addEventListener('resize', handleResize);
+
+    // Ukloni listener pri demontaži
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
   const handleCategoryClick = (url) => {
     window.location.href = url; // Preusmjerava na zadani URL
   };
 
   return (
     <div className="carousel-container">  
-      <Carousel responsive={responsive} infinite autoPlay autoPlaySpeed={3500}  showDots rtl={true} >
+      <Carousel responsive={responsive} infinite autoPlay={!isMobile} autoPlaySpeed={5000}  showDots rtl={true} >
         {categories.map((category, index) => (
           <div
             key={index}

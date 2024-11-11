@@ -23,7 +23,7 @@
       h2 {
         margin-top: 2rem;
         margin-bottom: 4rem;
-        color: red;
+        color: rgb(168,23,63);
         font-family: "roboto mono", sans-serif;
         font-size: 2.5rem;
         font-weight: 200;
@@ -42,8 +42,8 @@
         flex-direction: column;
         width: 45%;
         padding: 2rem;
-        border-left: 2px solid red;
-        border-top: 2px solid red;
+        border-left: 2px solid rgb(168,23,63);
+        border-top: 2px solid rgb(168,23,63);
         border-radius: 10%;
         
         justify-content: space-evenly;
@@ -110,7 +110,7 @@
               letter-spacing: 2px;
               font-size: 1.25rem;
               span {
-                color: red;
+                color: rgb(168,23,63);
               }
             }
           }
@@ -147,9 +147,9 @@
         flex-direction: column;
         width: 45%;
         padding: 1rem;
-        background-color: #2c2a2a71;
-        border-right: 2px solid red;
-        border-bottom: 2px solid red;
+        background-color: #2c2a2a36;
+        border-right: 2px solid rgb(168,23,63);
+        border-bottom: 2px solid rgb(168,23,63);
         border-radius: 10%;     
            .title-contact {
           display: flex;
@@ -171,11 +171,18 @@
         .MuiTextField-root {
           margin-bottom: 1.5rem;
           width: 100%;
+          .MuiInputBase-input{
+            color: white;
+          }
         }
         .MuiButton-containedPrimary {
           margin-top: 1rem;
           margin-bottom: 100px;
         }
+        .MuiInputBase-input-MuiOutlinedInput-input {
+          color: white;
+        }
+
       }
     }
   }
@@ -250,7 +257,7 @@
           background-color: transparent;
           margin-bottom: 2rem;
           .MuiButton-containedPrimary{
-            background-color: rgba(255, 0, 0, 0.747);
+            background-color:rgb(168,23,63);
             color: whitesmoke;
           }
         }
@@ -332,7 +339,7 @@
             margin-bottom: 2rem;
             padding: 2rem 2rem;
             .MuiButton-containedPrimary{
-              background-color: rgba(255, 0, 0, 0.747);
+              background-color: rgb(168,23,63);
               color: whitesmoke;
             }
           }

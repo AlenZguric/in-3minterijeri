@@ -26,7 +26,7 @@
 .contact-container .contact-container-box .title h2 {
   margin-top: 2rem;
   margin-bottom: 4rem;
-  color: red;
+  color: rgb(168, 23, 63);
   font-family: "roboto mono", sans-serif;
   font-size: 2.5rem;
   font-weight: 200;
@@ -43,8 +43,8 @@
   flex-direction: column;
   width: 45%;
   padding: 2rem;
-  border-left: 2px solid red;
-  border-top: 2px solid red;
+  border-left: 2px solid rgb(168, 23, 63);
+  border-top: 2px solid rgb(168, 23, 63);
   border-radius: 10%;
   justify-content: space-evenly;
   align-items: center;
@@ -108,7 +108,7 @@
   font-size: 1.25rem;
 }
 .contact-container .contact-container-box .contact-box .contact-info-box .social-icons .title-social h3 span {
-  color: red;
+  color: rgb(168, 23, 63);
 }
 .contact-container .contact-container-box .contact-box .contact-info-box .social-icons .icons-social {
   display: flex;
@@ -139,9 +139,9 @@
   flex-direction: column;
   width: 45%;
   padding: 1rem;
-  background-color: rgba(44, 42, 42, 0.4431372549);
-  border-right: 2px solid red;
-  border-bottom: 2px solid red;
+  background-color: rgba(44, 42, 42, 0.2117647059);
+  border-right: 2px solid rgb(168, 23, 63);
+  border-bottom: 2px solid rgb(168, 23, 63);
   border-radius: 10%;
 }
 .contact-container .contact-container-box .contact-box .contact-form .title-contact {
@@ -164,9 +164,15 @@
   margin-bottom: 1.5rem;
   width: 100%;
 }
+.contact-container .contact-container-box .contact-box .contact-form .MuiTextField-root .MuiInputBase-input {
+  color: white;
+}
 .contact-container .contact-container-box .contact-box .contact-form .MuiButton-containedPrimary {
   margin-top: 1rem;
   margin-bottom: 100px;
+}
+.contact-container .contact-container-box .contact-box .contact-form .MuiInputBase-input-MuiOutlinedInput-input {
+  color: white;
 }
 
 @media (max-width: 480px) {
@@ -229,7 +235,7 @@
     margin-bottom: 2rem;
   }
   .contact-container .contact-container-box .contact-box .contact-form .MuiButton-containedPrimary {
-    background-color: rgba(255, 0, 0, 0.747);
+    background-color: rgb(168, 23, 63);
     color: whitesmoke;
   }
 }
@@ -293,7 +299,7 @@
     padding: 2rem 2rem;
   }
   .contact-container .contact-container-box .contact-box .contact-form .MuiButton-containedPrimary {
-    background-color: rgba(255, 0, 0, 0.747);
+    background-color: rgb(168, 23, 63);
     color: whitesmoke;
   }
 }

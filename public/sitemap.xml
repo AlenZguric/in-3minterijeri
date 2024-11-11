@@ -1,82 +1,82 @@
 <?xml version="1.0" encoding="UTF-8"?>
-		<!--	created with www.mysitemapgenerator.com	-->
-		<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<!-- created with www.mysitemapgenerator.com -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 	<loc>https://in3m-interijeri.web.app/</loc>
-	<lastmod>2024-11-11T01:11:37+01:00</lastmod>
-		<changefreq>monthly</changefreq>
+	<lastmod>2024-11-12T00:00:00+01:00</lastmod>
+	<changefreq>monthly</changefreq>
 	<priority>1.0</priority>
 </url>
 <url>
 	<loc>https://in3m-interijeri.web.app/politika-privatnosti</loc>
-	<lastmod>2024-11-09T01:06:37+01:00</lastmod>
-		<changefreq>yearly</changefreq>
+	<lastmod>2024-11-12T00:00:00+01:00</lastmod>
+	<changefreq>yearly</changefreq>
 	<priority>0.8</priority>
 </url>
 <url>
 	<loc>https://in3m-interijeri.web.app/o-nama</loc>
-	<lastmod>2024-11-09T01:06:37+01:00</lastmod>
-		<changefreq>yearly</changefreq>
+	<lastmod>2024-11-12T00:00:00+01:00</lastmod>
+	<changefreq>yearly</changefreq>
 	<priority>0.8</priority>
 </url>
 <url>
 	<loc>https://in3m-interijeri.web.app/proizvodi</loc>
-	<lastmod>2024-11-09T01:06:37+01:00</lastmod>
-		<changefreq>yearly</changefreq>
+	<lastmod>2024-11-12T00:00:00+01:00</lastmod>
+	<changefreq>yearly</changefreq>
 	<priority>0.8</priority>
 </url>
 <url>
 	<loc>https://in3m-interijeri.web.app/usluge</loc>
-	<lastmod>2024-11-09T01:06:37+01:00</lastmod>
-		<changefreq>yearly</changefreq>
+	<lastmod>2024-11-12T00:00:00+01:00</lastmod>
+	<changefreq>yearly</changefreq>
 	<priority>0.8</priority>
 </url>
 <url>
 	<loc>https://in3m-interijeri.web.app/kontakt</loc>
-	<lastmod>2024-11-09T01:06:37+01:00</lastmod>
-		<changefreq>yearly</changefreq>
+	<lastmod>2024-11-12T00:00:00+01:00</lastmod>
+	<changefreq>yearly</changefreq>
 	<priority>0.8</priority>
 </url>
 <url>
 	<loc>https://in3m-interijeri.web.app/kuhinje</loc>
-	<lastmod>2024-11-09T01:06:37+01:00</lastmod>
-		<changefreq>weekly</changefreq>
+	<lastmod>2024-11-12T00:00:00+01:00</lastmod>
+	<changefreq>weekly</changefreq>
 	<priority>1.0</priority>
 </url>
 <url>
 	<loc>https://in3m-interijeri.web.app/kupaonice</loc>
-	<lastmod>2024-11-09T01:06:37+01:00</lastmod>
-		<changefreq>weekly</changefreq>
+	<lastmod>2024-11-12T00:00:00+01:00</lastmod>
+	<changefreq>weekly</changefreq>
 	<priority>1.0</priority>
 </url>
 <url>
 	<loc>https://in3m-interijeri.web.app/hodnici-i-predsoblja</loc>
-	<lastmod>2024-11-09T01:06:37+01:00</lastmod>
-		<changefreq>weekly</changefreq>
+	<lastmod>2024-11-12T00:00:00+01:00</lastmod>
+	<changefreq>weekly</changefreq>
 	<priority>1.0</priority>
 </url>
 <url>
 	<loc>https://in3m-interijeri.web.app/ugradbeni-ormari</loc>
-	<lastmod>2024-11-09T01:06:37+01:00</lastmod>
-		<changefreq>weekly</changefreq>
-	<priority>1.00.8</priority>
+	<lastmod>2024-11-12T00:00:00+01:00</lastmod>
+	<changefreq>weekly</changefreq>
+	<priority>0.8</priority>
 </url>
 <url>
 	<loc>https://in3m-interijeri.web.app/ormari</loc>
-	<lastmod>2024-11-09T01:06:37+01:00</lastmod>
-		<changefreq>weekly</changefreq>
+	<lastmod>2024-11-12T00:00:00+01:00</lastmod>
+	<changefreq>weekly</changefreq>
 	<priority>0.8</priority>
 </url>
 <url>
 	<loc>https://in3m-interijeri.web.app/djecje-sobe</loc>
-	<lastmod>2024-11-09T01:06:37+01:00</lastmod>
-		<changefreq>weekly</changefreq>
+	<lastmod>2024-11-12T00:00:00+01:00</lastmod>
+	<changefreq>weekly</changefreq>
 	<priority>0.8</priority>
 </url>
 <url>
 	<loc>https://in3m-interijeri.web.app/zidne-obloge</loc>
-	<lastmod>2024-11-09T01:06:37+01:00</lastmod>
-		<changefreq>yearly</changefreq>
+	<lastmod>2024-11-12T00:00:00+01:00</lastmod>
+	<changefreq>yearly</changefreq>
 	<priority>0.8</priority>
 </url>
 </urlset>

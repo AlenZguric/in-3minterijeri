@@ -5,10 +5,11 @@
   flex-direction: column;
   width: 100%;
   min-height: 100vh;
-  background-color: $background_color_div;
+  background-color: black;
   main {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
+
     //margin-top: 150px;
     .title-contact-page {
       display: flex;
@@ -28,7 +29,7 @@
           line-height: 1.5;
         }
         h1 {
-          color: red;
+          color: rgb(168,23,63);
           font-size: 1.6rem;
           font-weight: 400;
           font-family: "roboto mono", sans-serif;
@@ -56,13 +57,13 @@
         .button {
           margin-top: 2rem;
           button {
-            background-color: red;
+            background-color: rgb(168,23,63);
             height: 1.8rem;
             width: 9rem;
             transition: all 0.3s ease;
             border-radius: 6px;
             &:hover {
-              background-color: white;
+             // background-color: white;
               color: black;
               transform: scale(1.05);
             }
@@ -84,11 +85,24 @@
   }
 }
 @media (max-width: 480px) {
+  .contact-page{
+    main{
+      margin-top: 2rem;
+    }
+  }
   .contact-page main .title-contact-page .title-box1 h2{
     font-size: 2rem;
   }
 }
 
-  @media (min-width: 481px) and (max-width: 767px) {}
+  @media (min-width: 481px) and (max-width: 767px) {
+    .contact-page main{
+      margin-top: 2rem;
+    }
+  }
 
-  @media (min-width: 768px) and (max-width: 991px) {}
+  @media (min-width: 768px) and (max-width: 991px) {
+    .contact-page main{
+      margin-top: 3rem;
+    }
+  }
