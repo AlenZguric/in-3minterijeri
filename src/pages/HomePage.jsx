@@ -10,7 +10,7 @@ import { scrollAnimations } from "../styles/utils/animations/animations";
 import OurBusiness from "../components/OurBusiness";
 import ScrollingText from "../components/ScrollingText";
 
-import '../styles/pages/HomePage.css';
+import "../styles/pages/HomePage.css";
 
 const HomePage = () => {
   useEffect(() => {
@@ -19,7 +19,7 @@ const HomePage = () => {
 
   return (
     <div className="home-page">
- <Helmet>
+      <Helmet>
         <title>In-3M Interijeri - Namještaj po mjeri za vaš dom</title>
         <meta
           name="description"
@@ -33,7 +33,10 @@ const HomePage = () => {
 
         {/* Open Graph metatagi */}
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="In-3M Interijeri - Namještaj po mjeri za vaš dom" />
+        <meta
+          property="og:title"
+          content="In-3M Interijeri - Namještaj po mjeri za vaš dom"
+        />
         <meta
           property="og:description"
           content="Izradite namještaj po mjeri za svoj dom ili ured. Nudimo personalizirane kuhinje, kupaonice, ormare i predsoblja vrhunske kvalitete."
@@ -43,18 +46,30 @@ const HomePage = () => {
         <meta property="og:url" content="https:/in3m-interijeri.web.app/" />
 
         {/* Twitter Card metatagi */}
-        <meta name="twitter:card" content="https://in3m-interijeri.web.app/social.webp" />
-        <meta name="twitter:title" content="In-3M Interijeri - Namještaj po mjeri za vaš dom" />
+        <meta
+          name="twitter:card"
+          content="https://in3m-interijeri.web.app/social.webp"
+        />
+        <meta
+          name="twitter:title"
+          content="In-3M Interijeri - Namještaj po mjeri za vaš dom"
+        />
         <meta
           name="twitter:description"
           content="Izradite namještaj po mjeri za svoj dom ili ured. Nudimo personalizirane kuhinje, kupaonice, ormare i predsoblja vrhunske kvalitete."
         />
-        <meta name="twitter:image" content="https://in3m-interijeri.web.app/social.webp" />
-        <meta name="twitter:url" content="https:/in3m-interijeri.web.app/" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+
+        <meta
+          name="twitter:image"
+          content="https://in3m-interijeri.web.app/social.webp"
+        />
+        <meta name="twitter:url" content="https://in3m-interijeri.web.app/" />
       </Helmet>
       <main>
         <motion.section
-         initial="hidden"
+          initial="hidden"
           whileInView="show"
           variants={scrollAnimations.bounceUp}
           viewport={{ once: true, amount: 0.05 }}
@@ -112,7 +127,7 @@ const HomePage = () => {
           viewport={{ once: true, amount: 0.05 }}
         >
           <ContactForm />
-        </motion.section> 
+        </motion.section>
       </main>
     </div>
   );
