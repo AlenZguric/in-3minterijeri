@@ -1,10 +1,9 @@
 import React,{useEffect} from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { useCookies } from '../contexts/CookieContekst';
 
 const CookieNotice = () => {
   const { cookiesAccepted, acceptCookies } = useCookies();
-  const navigate = useNavigate();
 
   useEffect(() => {
     if (!cookiesAccepted) {
@@ -14,24 +13,20 @@ const CookieNotice = () => {
 
   if (cookiesAccepted) return null;
 
-  const handlePrivacyClick = () => {
-    navigate('/politika-privatnosti');
-  };
 
   return (
     <div style={styles.overlay}>
       <div style={styles.cookieContainer}>
-        <p>Ova stranica koristi kolačiće kako bi osigurala najbolje iskustvo na našoj web stranici.</p>
+        <p>Ova stranica koristi kolačiće kako bi osigurala najbolje iskustvo na našoj web stranici. Više informacija na <Link to="/politika-privatnosti" >
+              Politika privatnosti
+            </Link>.</p>
         <div style={styles.buttonContainer}>
           <button style={styles.acceptButton} onClick={acceptCookies}>
-            Slažem se
+            Razumijem
           </button>
-          <button style={styles.acceptButton} onClick={handlePrivacyClick}>
-            <Link to="/politika-privatnosti" style={styles.privacyLink}>
-              Politika privatnosti
-            </Link>
-          </button>
+            
         </div>
+        
       </div>
     </div>
   );
@@ -87,6 +82,7 @@ const styles = {
     minWidth: '150px',
     height:'3rem', // osigurava minimalnu širinu gumba
     justifyContent: 'center',
+    marginTop: '2rem', 
   },
   privacyLink: {
     color: 'white',
