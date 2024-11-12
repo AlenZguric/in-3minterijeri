@@ -1,6 +1,6 @@
 import React from "react";
 import {  Link } from "react-router-dom";
-import OurBuisnessImage from "../assets/images/fullsize/OurBusinessImage.jpg";
+import OurBuisnessImage from "../assets/images/fullsize/kuhinja/kuhinja_26/10.webp";
 
 import '../styles/components/OurBusiness.css';
 const OurBusiness = () => {
