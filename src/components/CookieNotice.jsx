@@ -1,18 +1,24 @@
-import React,{useEffect} from 'react';
+import React,{useEffect, useState} from 'react';
 import { Link } from 'react-router-dom';
 import { useCookies } from '../contexts/CookieContekst';
 
 const CookieNotice = () => {
   const { cookiesAccepted, acceptCookies } = useCookies();
+  const [showNotice, setShowNotice] = useState(false);
 
   useEffect(() => {
     if (!cookiesAccepted) {
-      window.scrollTo(0, 0); // Pomak na vrh stranice kada se komponenta učita
+      // Odgoda prikaza komponente za 2 sekunde
+      const timer = setTimeout(() => {
+        setShowNotice(true);
+      }, 2000);
+
+      // Scroll na vrh samo kada se komponenta prikaže
+      return () => clearTimeout(timer);
     }
   }, [cookiesAccepted]);
 
-  if (cookiesAccepted) return null;
-
+  if (cookiesAccepted || !showNotice) return null;
 
   return (
     <div style={styles.overlay}>
