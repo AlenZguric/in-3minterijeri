@@ -40,15 +40,31 @@
   color: #666;
   padding: 1rem;
 }
+.react-multi-carousel-dot-list {
+  padding: 10px 0; /* Dodaje padding iznad i ispod cijelog popisa točaka */
+  display: flex;
+  justify-content: center;
+}
+
 // Small mobile (max-width: 480px)
 @media (max-width: 480px) {
-
+  .react-multi-carousel-dot-list {
+    padding: 10px 0; /* Dodaje padding iznad i ispod cijelog popisa točaka */
+    display: flex;
+    justify-content: center;
+  }
 
   }
 
   // Midle mobile (481px - 767px)
   
   @media (min-width: 481px) and (max-width: 767px) {
+    .react-multi-carousel-dot-list {
+    height: auto;
+      padding-top: 4rem; /* Dodaje padding iznad i ispod cijelog popisa točaka */
+      display: flex;
+      justify-content: center;
+    }
   }
   // Tablet (768px - 991px)
   

@@ -21,21 +21,42 @@ const ContactPage = () => {
   {/* Open Graph za društvene mreže */}
   <meta property="og:title" content="Kontakt - In-3M Interijeri" />
   <meta property="og:description" content="Kontaktirajte nas za sve informacije o proizvodima i uslugama tvrtke In-3M Interijeri." />
-  <meta property="og:url" content="https://in3m-interijeri.web.app/kontakt" />
+  <meta property="og:url" content="https://in-3minterijeri.com/kontakt" />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="https://in3m-interijeri.web.app/social.webp" /> {/* Zamijenite s pravom URL adresom slike */}
+  <meta property="og:image" content="%PUBLIC_URL%/social.webp" /> {/* Zamijenite s pravom URL adresom slike */}
 
   {/* Twitter Card za dijeljenje na Twitteru */}
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Kontakt - In-3M Interijeri" />
   <meta name="twitter:description" content="Kontaktirajte nas za sve informacije o proizvodima i uslugama tvrtke In-3M Interijeri." />
-  <meta name="twitter:image" content="https://in3m-interijeri.web.app/social.webp" /> {/* Zamijenite s pravom URL adresom slike */}
+  <meta name="twitter:image" content="%PUBLIC_URL%/social.webp" /> {/* Zamijenite s pravom URL adresom slike */}
 
   {/* Kanonska veza za izbjegavanje dupliciranog sadržaja */}
-  <link rel="canonical" href="https://in3m-interijeri.web.app/kontakt" />
+  <link rel="canonical" href="https://in-3minterijeri.com/kontakt" />
 
   {/* Dodatni meta tag za jezik */}
   <meta http-equiv="Content-Language" content="hr" /> {/* Ovisno o jeziku stranice */}
+  <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Naslovnica",
+                "item": "https://in-3minterijeri.com"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Kuhinje",
+                "item": "https://in-3minterijeri.com/kontakt"
+              }
+        
+            ]
+          })}
+        </script>
 </Helmet>
 
       <main>

@@ -9,6 +9,7 @@ import "react-toastify/dist/ReactToastify.css";
 // import { scrollAnimations } from "../styles/utils/animations/animations";
 
 import "../styles/components/ContactForm.scss";
+import { Link } from "react-router-dom";
 
 const ContactForm = () => {
   const [name, setName] = useState("");
@@ -140,11 +141,11 @@ const ContactForm = () => {
             <p>
               Vaše vizije savršenog namještaja mogu postati stvarnost. Izazovite
               nas i dopustite da vaš dom postane živahno mjesto. Ne čekajte,
-              obratite nam se danas za besplatnu izradu namještaja po mjeri.
+              obratite nam se danas za besplatnu izradu ponudu.
             </p>
             <p>
               {" "}
-              Slanjem ovog obrasca slažete se s pravilima privatnosti naše
+              Slanjem ovog obrasca slažete se s <Link to="/politika-privatnosti">pravilima privatnosti</Link> naše
               stranice. Podaci prikupljeni ovim putem neće biti javno objavljeni
               niti korišteni u druge svrhe, osim za odgovor na vaš upit!
             </p>

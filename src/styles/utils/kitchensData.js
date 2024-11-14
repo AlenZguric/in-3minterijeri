@@ -72,6 +72,10 @@ const importAll = (r) => {
   const images27 = importAll(require.context('../../assets/images/fullsize/kuhinja/kuhinja_27', false, /\.(png|jpe?g|svg|webp)$/));
   const images28 = importAll(require.context('../../assets/images/fullsize/kuhinja/kuhinja_28', false, /\.(png|jpe?g|svg|webp)$/));
   const images29 = importAll(require.context('../../assets/images/fullsize/kuhinja/kuhinja_29', false, /\.(png|jpe?g|svg|webp)$/));
+  const images30 = importAll(require.context('../../assets/images/fullsize/kuhinja/kuhinja_30', false, /\.(png|jpe?g|svg|webp)$/));
+
+  const images31 = importAll(require.context('../../assets/images/fullsize/kuhinja/kuhinja_31', false, /\.(png|jpe?g|svg|webp)$/));
+
 
 
 
@@ -271,8 +275,6 @@ const importAll = (r) => {
           { src: images10['2.webp'], thumb: images10['2.webp'], width: 810, height: 1080 },
           { src: images10['3.webp'], thumb: images10['3.webp'], width: 810, height: 1080 },
           { src: images10['4.webp'], thumb: images10['4.webp'], width: 810, height: 1080 },
-          { src: images10['5.webp'], thumb: images10['5.webp'], width: 810, height: 1080 },
-          { src: images10['6.webp'], thumb: images10['6.webp'], width: 810, height: 1080 },
         ],
       },
       
@@ -662,6 +664,49 @@ const importAll = (r) => {
     { src: images29['10.webp'], thumb: images29['10.webp'], width: 1440, height: 1080 },
     { src: images29['11.webp'], thumb: images29['11.webp'], width: 810, height: 1080 },
     { src: images29['12.webp'], thumb: images29['12.webp'], width: 810, height: 1080 },
+  ],
+},
+{
+  name: "Kuhinja 30",
+  material: materijal.MDF.visoki_sjaj.title,
+        description: materijal.MDF.visoki_sjaj.description,
+        radna: radna_ploca.EGGER_38mm,
+        hardware: okovi.Grass,
+        location: 'Hižanovec',
+  images: [
+
+    { src: images30['1.webp'], thumb: images30['1.webp'], width: 810, height: 1080 },
+    { src: images30['2.webp'], thumb: images30['2.webp'], width: 810, height: 1080 },
+    { src: images30['3.webp'], thumb: images30['3.webp'], width: 810, height: 1080 },
+    { src: images30['4.webp'], thumb: images30['4.webp'], width: 810, height: 1080 },
+    { src: images30['5.webp'], thumb: images30['5.webp'], width: 810, height: 1080 },
+    { src: images30['6.webp'], thumb: images30['6.webp'], width: 810, height: 1080 },
+    { src: images30['7.webp'], thumb: images30['7.webp'], width: 810, height: 1080 },
+    { src: images30['8.webp'], thumb: images30['8.webp'], width: 810, height: 1080 },
+    { src: images30['9.webp'], thumb: images30['9.webp'], width: 810, height: 1080 },
+  ],
+},
+{
+  name: "Kuhinja 31",
+  material: materijal.MDF.pet_mat.title,
+        description: materijal.MDF.pet_mat.description,
+        radna: radna_ploca.EGGER_38mm,
+        hardware: okovi.Grass,
+        location: 'Tinj, Biograd na moru',
+  images: [
+
+    { src: images31['1.webp'], thumb: images31['1.webp'], width: 810, height: 1080 },
+    { src: images31['2.webp'], thumb: images31['2.webp'], width: 810, height: 1080 },
+    { src: images31['3.webp'], thumb: images31['3.webp'], width: 810, height: 1080 },
+    { src: images31['4.webp'], thumb: images31['4.webp'], width: 810, height: 1080 },
+    { src: images31['5.webp'], thumb: images31['5.webp'], width: 810, height: 1080 },
+    { src: images31['6.webp'], thumb: images31['6.webp'], width: 810, height: 1080 },
+    { src: images31['7.webp'], thumb: images31['7.webp'], width: 810, height: 1080 },
+    { src: images31['8.webp'], thumb: images31['8.webp'], width: 810, height: 1080 },
+    { src: images31['9.webp'], thumb: images31['9.webp'], width: 810, height: 1080 },
+    { src: images31['10.webp'], thumb: images31['10.webp'], width: 810, height: 1080 },
+    { src: images31['11.webp'], thumb: images31['11.webp'], width: 810, height: 1080 },
+    { src: images31['12.webp'], thumb: images31['12.webp'], width: 810, height: 1080 },
   ],
 },
 

@@ -45,8 +45,8 @@ const ScrollingText = () => {
   responsive={responsive}
   infinite={true}
   autoPlay={true}
-  autoPlaySpeed={10000}  // Smanjeni interval za neprekidno klizanje
-  customTransition="transform 10000ms linear" // Postavlja glatki prijelaz
+  autoPlaySpeed={7000}  // Smanjeni interval za neprekidno klizanje
+  customTransition="transform 6000ms linear" // Postavlja glatki prijelaz
   //transitionDuration={15000} // Brzina prijelaza
   keyBoardControl={true}
   showDots={false}

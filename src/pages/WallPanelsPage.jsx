@@ -58,8 +58,8 @@ const WallPanelsPage = () => {
           property="og:description"
           content="Pogledajte našu kolekciju zidnih panela koji će vašem prostoru dati sofisticiran i moderan izgled."
         />
-        <meta property="og:image" content="https://in3m-interijeri.web.app/social.webp" /> {/* Zamijeniti sa stvarnom slikom */}
-        <meta property="og:url" content="https://www.in3em-interijeri.com/zidni-paneli" />
+        <meta property="og:image" content="%PUBLIC_URL%/social.webp" /> {/* Zamijeniti sa stvarnom slikom */}
+        <meta property="og:url" content="https:/in-3minterijeri.com/zidne-obloge" />
 
         {/* Twitter Card metatagi */}
         <meta name="twitter:card" content="summary_large_image" />
@@ -68,8 +68,29 @@ const WallPanelsPage = () => {
           name="twitter:description"
           content="Pogledajte našu kolekciju zidnih panela koji će vašem prostoru dati sofisticiran i moderan izgled."
         />
-        <meta name="twitter:image" content="https://in3m-interijeri.web.app/social.webp" /> {/* Zamijeniti sa stvarnom slikom */}
-        <meta name="twitter:url" content="https://www.in3em-interijeri.com/zidni-paneli" />
+        <meta name="twitter:image" content="%PUBLIC_URL%/social.webp" /> {/* Zamijeniti sa stvarnom slikom */}
+        <meta name="twitter:url" content="https://in-3minterijeri.com/zidne-obloge" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Naslovnica",
+                "item": "https://in-3minterijeri.com"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Kuhinje",
+                "item": "https://in-3minterijeri.com/zidne-obloge"
+              }
+        
+            ]
+          })}
+        </script>
       </Helmet>      <main className="panels-main">
         <div id="gallery" className="gallery-grid">
           {wallPanelsData.images.map((image, index) => (

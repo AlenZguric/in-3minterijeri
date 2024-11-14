@@ -27,8 +27,8 @@ const Services = () => {
           property="og:description"
           content="Saznajte više o uslugama profesionalnog dizajna, projektiranja i izrade namještaja po mjeri, uključujući 3D nacrte, CNC obradu i montažu."
         />
-        <meta property="og:image" content="https://in3m-interijeri.web.app/social.webp" /> {/* Zamijeniti sa stvarnom slikom */}
-        <meta property="og:url" content="https://www.in3em-interijeri.com/usluge" />
+        <meta property="og:image" content="%PUBLIC_URL%/social.webp" /> {/* Zamijeniti sa stvarnom slikom */}
+        <meta property="og:url" content="https://in-3minterijeri.com/usluge" />
 
         {/* Twitter Card metatagi */}
         <meta name="twitter:card" content="summary_large_image" />
@@ -37,8 +37,29 @@ const Services = () => {
           name="twitter:description"
           content="Saznajte više o uslugama profesionalnog dizajna, projektiranja i izrade namještaja po mjeri, uključujući 3D nacrte, CNC obradu i montažu."
         />
-        <meta name="twitter:image" content="https://in3m-interijeri.web.app/social.webp" /> {/* Zamijeniti sa stvarnom slikom */}
-        <meta name="twitter:url" content="https://www.in3em-interijeri.com/usluge" />
+        <meta name="twitter:image" content="%PUBLIC_URL%/social.webp" /> {/* Zamijeniti sa stvarnom slikom */}
+        <meta name="twitter:url" content="https://in-3minterijeri.com/usluge" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Naslovnica",
+                "item": "https://in-3minterijeri.com"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Kuhinje",
+                "item": "https://in-3minterijeri.com/usluge"
+              }
+        
+            ]
+          })}
+        </script>
       </Helmet>
       <main>
         <section>
@@ -82,14 +103,13 @@ const Services = () => {
                 </motion.div>
                 <motion.div
                   className="right-side"
-                  initial={{ x: '100vw' }} // Početna pozicija desno izvan ekrana
-                  animate={{ x: 0 }} // Pozicija pri animaciji
+                  initial={{ y: '100vh' }} // Početna pozicija desno izvan ekrana
+                  animate={{ y: 0 }} // Pozicija pri animaciji
                   transition={{ delay: 1.1, duration: 2 }} // Animacija počinje nakon 1.5 sekunde i traje 3 sekunde
                 >
                   <ul>
                     <li>Kantiranje rubova do 54 mm</li>
-                    <li>Rezanje pod kutom +46/-46°</li>
-                    <li>CNC obrada materijala</li>
+                     <li>CNC obrada materijala</li>
                     <li>Prešanje i spajanje ploča</li>
                     <li>Krivolinijsko rezanje i kantiranje</li>
                     <li>Priprema za strojnu obradu</li>

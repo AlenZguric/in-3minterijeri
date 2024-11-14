@@ -101,9 +101,14 @@
   }
   .our-business .container-our-business .row-text .title h1 {
     font-weight: 300;
+    text-align: justify;
+  }
+  .our-business .container-our-business .row-text .title h1 span {
+    text-align: justify;
   }
   .our-business .container-our-business .row-text .description p {
     line-height: 2;
+    text-align: justify;
   }
   .our-business .container-our-business .row-text .button-see-more button {
     margin-top: 0;
@@ -134,9 +139,11 @@
   }
   .our-business .container-our-business .row-text .title h1 {
     font-weight: 300;
+    text-align: justify;
   }
   .our-business .container-our-business .row-text .description p {
     line-height: 2;
+    text-align: justify;
   }
 }
 @media (min-width: 769px) and (max-width: 991px) {

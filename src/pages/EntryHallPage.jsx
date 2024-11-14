@@ -59,7 +59,7 @@ const EntryHallPage = () => {
           content="Pogledajte našu kolekciju hodnika i predsoblja po mjeri, s modernim i funkcionalnim dizajnom koji će vašem prostoru dati sofisticirani izgled."
         />
         <meta property="og:image" content={entryHallData.images[0].thumb} />
-        <meta property="og:url" content="https://www.in3em-interijeri.com/hodnici-predsoblja" />
+        <meta property="og:url" content="https://in-3minterijeri.com/hodnici-i-predsoblja" />
 
         {/* Twitter Card metatagi */}
         <meta name="twitter:card" content="summary_large_image" />
@@ -69,8 +69,30 @@ const EntryHallPage = () => {
           content="Pogledajte našu kolekciju hodnika i predsoblja po mjeri, s modernim i funkcionalnim dizajnom koji će vašem prostoru dati sofisticirani izgled."
         />
         <meta name="twitter:image" content={entryHallData.images[0].thumb} />
-        <meta name="twitter:url" content="https://www.in3em-interijeri.com/hodnici-predsoblja" />
-      </Helmet>      <main className="entryhall-main">
+        <meta name="twitter:url" content="https://in-3minterijeri.com/hodnici-i-predsoblja" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Naslovnica",
+                "item": "https://in-3minterijeri.com"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Kuhinje",
+                "item": "https://in-3minterijeri.com/hodnici-i-predsoblja"
+              }
+        
+            ]
+          })}
+        </script>
+      </Helmet>   
+         <main className="entryhall-main">
         <div id="gallery" className="gallery-grid">
           {entryHallData.images.map((image, index) => (
             <motion.div

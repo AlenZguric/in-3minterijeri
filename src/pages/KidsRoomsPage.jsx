@@ -59,12 +59,12 @@ const KidsRoomsPage = () => {
         <meta property="og:image" content={kidsRoomsData.images[0].thumb} />
         <meta
           property="og:url"
-          content="https://www.in3em-interijeri.com/djecje-sobe"
+          content="https://in-3minterijeri.com/djecje-sobe"
         />
 
         {/* Twitter Card metatagi */}
-        <meta name="twitter:card" content="https://in3m-interijeri.web.app/social.webp" />
-        <meta name="twitter:title" content="Dječje Sobe | In3em Interijeri" />
+        <meta name="twitter:card" content="%PUBLIC_URL%/social.webp" />
+        <meta name="twitter:title" content="Dječje Sobe | In3m Interijeri" />
         <meta
           name="twitter:description"
           content="Pogledajte našu kolekciju dječjih soba po mjeri, s funkcionalnim i kreativnim dizajnom koji će pružiti udoban prostor za vašu djecu."
@@ -72,8 +72,30 @@ const KidsRoomsPage = () => {
         <meta name="twitter:image" content={kidsRoomsData.images[0].thumb} />
         <meta
           name="twitter:url"
-          content="https://www.in3em-interijeri.com/djecje-sobe"
+          content="https://in-3minterijeri.com/djecje-sobe"
         />
+               <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Naslovnica",
+                "item": "https://in-3minterijeri.com"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Kuhinje",
+                "item": "https://in-3minterijeri.com/djecje-sobe"
+              }
+        
+            ]
+          })}
+        </script>
+
       </Helmet>{" "}
       <main className="kids-main">
         <div id="gallery" className="gallery-grid">

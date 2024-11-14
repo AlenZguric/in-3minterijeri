@@ -112,11 +112,16 @@
         .title{
           h1{
             font-weight: 300;
+            text-align: justify;
+            span{
+              text-align: justify;
+            }
           }
         }
         .description{
           p{
          line-height: 2;
+         text-align: justify;
         }}
         .button-see-more{
           button{
@@ -153,11 +158,13 @@
           .title{
             h1{
               font-weight: 300;
+              text-align: justify;
             }
           }
           .description{
             p{
               line-height: 2;
+              text-align: justify;
             }
           }
         }

@@ -61,6 +61,7 @@
   }
   .why-choose-us .title h2 {
     font-size: clamp(2rem, 1rem + 1vw, 3rem);
+    margin-bottom: 0;
   }
   .why-choose-us .benefits {
     display: flex;

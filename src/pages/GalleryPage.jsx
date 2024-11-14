@@ -93,7 +93,7 @@ const GalleryPage = () => {
           content="Pogledajte našu kolekciju namještaja po mjeri, uključujući kuhinje, kupaonice, hodnike, ormariće i više. Kvaliteta i dizajn na dohvat ruke."
         />
         <meta property="og:image" content={kuhinjeImage} /> {/* Prikazivanje slike prilikom dijeljenja */}
-        <meta property="og:url" content="https://www.in3em-interijeri.com/galerija" />
+        <meta property="og:url" content="https:/in-3minterijeri.com/galerija" />
 
         {/* Twitter Card meta tags */}
         <meta name="twitter:card" content="summary_large_image" />
@@ -102,14 +102,37 @@ const GalleryPage = () => {
           name="twitter:description"
           content="Pogledajte našu kolekciju namještaja po mjeri, uključujući kuhinje, kupaonice, hodnike, ormariće i više. Kvaliteta i dizajn na dohvat ruke."
         />
-        <meta name="twitter:image" content={kuhinjeImage} /> {/* Prikazivanje slike na Twitteru */}
-        <meta name="twitter:url" content="https://www.in3em-interijeri.com/galerija" />
-      </Helmet>      <main>
+        <meta name="twitter:image" content="%PUBLIC_URL%/social.webp"  /> {/* Prikazivanje slike na Twitteru */}
+        <meta name="twitter:url" content="https://in-3minterijeri.com/galerija" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Naslovnica",
+                "item": "https://in-3minterijeri.com"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Kuhinje",
+                "item": "https://in-3minterijeri.com/proizvodi"
+              }
+        
+            ]
+          })}
+        </script>
+      </Helmet>  
+          <main>
         <div className="main-container">
           <section className="title-section">
             <p>ODABERITE KVALITETNE PROIZVODE IZ NAŠE KOLEKCIJE</p>
           </section>
           <section>
+        
             {categories.map((category, index) => (
               <article key={index} className="article-about">
                 <div className="article-about-box">

@@ -27,9 +27,9 @@ const AboutPage = () => {
   />
   <meta
     property="og:image"
-    content="https://in3m-interijeri.web.app/social.webp" /> {/* Zamijenite s pravom URL adresom slike */}
+    content="%PUBLIC_URL%/social.webp" /> {/* Zamijenite s pravom URL adresom slike */}
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://in3m-interijeri.web.app/o-nama" /> {/* Provjerite URL */}
+  <meta property="og:url" content="https://in-3minterijeri.com/o-nama" /> {/* Provjerite URL */}
   
   {/* Twitter Card za dijeljenje na Twitteru */}
   <meta name="twitter:card" content="summary_large_image" />
@@ -40,13 +40,34 @@ const AboutPage = () => {
   />
   <meta
     name="twitter:image"
-    content="https://in3m-interijeri.web.app/social.webp" /> {/* Zamijenite s pravom URL adresom slike */}
+    content="%PUBLIC_URL%/social.webp" /> {/* Zamijenite s pravom URL adresom slike */}
 
   {/* Kanonska veza za izbjegavanje dupliciranog sadržaja */}
-  <link rel="canonical" href="https://in3m-interijeri.web.app/o-nama" />
+  <link rel="canonical" href="https://in-3minterijeri.com/o-nama" />
   
   {/* Dodatni meta tag za jezik */}
   <meta http-equiv="Content-Language" content="hr" /> {/* Ovisno o jeziku stranice */}
+  <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Naslovnica",
+                "item": "https://in-3minterijeri.com"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Kuhinje",
+                "item": "https://in-3minterijeri.com/o-nama"
+              }
+        
+            ]
+          })}
+        </script>
 </Helmet>
         <main>
         <section>

@@ -20,6 +20,7 @@ const OurBusiness = () => {
             </h1>
           </div>
           <div className="description">
+            <article>
             <p>
               Unesite novi život u svoj dom s našom ekskluzivnom kolekcijom
               namještaja izrađenog po mjeri. Naši kuhinjski elementi i ugradbeni
@@ -30,6 +31,7 @@ const OurBusiness = () => {
               sofisticiranost, stvarajući prostor koji odražava vašu jedinstvenu
               viziju doma iz snova.
             </p>
+              </article>
             
           </div>
           <div className="button-see-more">

@@ -14,6 +14,7 @@ const WhyChooseUs = () => {
 
       </div>
       <div className="benefits">
+       
         <div className="benefit">
         <DiamondIcon style={{ fontSize: 50, color: '#333' }} aria-label="Diamond icon" title="Vrhunska kvaliteta" />
 

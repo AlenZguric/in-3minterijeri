@@ -55,7 +55,7 @@ const AppContent = () => {
             <NavBar />
           </header>
           <Routes>
-            <Route path="/" element={<HomePage />} />
+            <Route index path="/" element={<HomePage />} />
             <Route path="/o-nama" element={<AboutPage />} />
             <Route path="/proizvodi" element={<GalleryPage />} />
             <Route path="/usluge" element={<Services />} />
@@ -66,10 +66,6 @@ const AppContent = () => {
             <Route path="/ugradbeni-ormari" element={<BuiltInWardrobesPage />} />
             <Route path="/ormari" element={<WardrobePage />} />
             <Route path="/djecje-sobe" element={<KidsRoomsPage />} />
-
-
-
-
             <Route path="/zidne-obloge" element={<WallPanelsPage />} />
             <Route
               path="/politika-privatnosti"

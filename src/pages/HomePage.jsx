@@ -43,12 +43,12 @@ const HomePage = () => {
         />
         <meta property="og:site_name" content="In-3m Interijeri"></meta>
         <meta property="og:image" content="URL_OG_IMAGE" />
-        <meta property="og:url" content="https:/in3m-interijeri.web.app/" />
+        <meta property="og:url" content="https:/in-3minterijeri.com/" />
 
         {/* Twitter Card metatagi */}
         <meta
           name="twitter:card"
-          content="https://in3m-interijeri.web.app/social.webp"
+          content="%PUBLIC_URL%/social.webp"
         />
         <meta
           name="twitter:title"
@@ -61,19 +61,34 @@ const HomePage = () => {
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
 
-        <meta
-          name="twitter:image"
-          content="https://in3m-interijeri.web.app/social.webp"
-        />
-        <meta name="twitter:url" content="https://in3m-interijeri.web.app/" />
+       
+        <meta name="twitter:url" content="https://in-3minterijeri.com/" />
+        <meta name="twitter:image" content="%PUBLIC_URL%/social.webp" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Naslovnica",
+                "item": "https://in-3minterijeri.com"
+              }
+        
+            ]
+          })}
+        </script>
       </Helmet>
       <main>
         <motion.section
           initial="hidden"
           whileInView="show"
           variants={scrollAnimations.bounceUp}
-          viewport={{ once: true, amount: 0.05 }}
+          viewport={{ once: true, amount: 0.05,  }}
+  
         >
+
           <Header />
         </motion.section>
 

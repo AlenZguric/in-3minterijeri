@@ -69,6 +69,7 @@
     .title{
       h2{
         @include fluid-font(2rem,3rem);
+        margin-bottom: 0;
       }
     }
     .benefits{

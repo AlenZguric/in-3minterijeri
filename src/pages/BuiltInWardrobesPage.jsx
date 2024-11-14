@@ -1,19 +1,19 @@
 // components/BuiltInWardrobesPage.jsx
-import React, { useEffect, useRef } from 'react';
-import { Helmet } from 'react-helmet';
-import { motion } from 'framer-motion';
-import { LazyLoadImage } from 'react-lazy-load-image-component';
-import PhotoSwipeLightbox from 'photoswipe/lightbox';
-import 'photoswipe/style.css';
-import 'react-lazy-load-image-component/src/effects/blur.css';
+import React, { useEffect, useRef } from "react";
+import { Helmet } from "react-helmet";
+import { motion } from "framer-motion";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import PhotoSwipeLightbox from "photoswipe/lightbox";
+import "photoswipe/style.css";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
-import { builtInWardrobesData } from '../styles/utils/builtInWardrobesData';
-import '../styles/pages/BuiltInWardrobesPage.css';
+import { builtInWardrobesData } from "../styles/utils/builtInWardrobesData";
+import "../styles/pages/BuiltInWardrobesPage.css";
 
 const scrollAnimations = {
   fadeIn: {
     hidden: { opacity: 0, y: 50 },
-    show: { opacity: 1, y: 0, transition: { duration: 0.6, ease: 'easeOut' } },
+    show: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
   },
 };
 
@@ -23,9 +23,9 @@ const BuiltInWardrobesPage = () => {
   useEffect(() => {
     // Inicijalizacija PhotoSwipe Lightboxa
     lightbox.current = new PhotoSwipeLightbox({
-      gallery: '#gallery',
-      children: 'a',
-      pswpModule: () => import('photoswipe'),
+      gallery: "#gallery",
+      children: "a",
+      pswpModule: () => import("photoswipe"),
     });
 
     lightbox.current.init();
@@ -40,7 +40,7 @@ const BuiltInWardrobesPage = () => {
 
   return (
     <div className="built-in-wardrobes-page">
-   <Helmet>
+      <Helmet>
         <title>Ugradbeni ormari | In3em Interijeri</title>
         <meta
           name="description"
@@ -54,24 +54,64 @@ const BuiltInWardrobesPage = () => {
 
         {/* Open Graph meta tags */}
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Ugradbeni ormari | In3em Interijeri" />
+        <meta
+          property="og:title"
+          content="Ugradbeni ormari | In3em Interijeri"
+        />
         <meta
           property="og:description"
           content="Pogledajte našu kolekciju ugradbenih ormara po mjeri, uključujući klizna vrata, unutrašnje rasporede i visokokvalitetne materijale za dugotrajnu uporabu."
         />
-        <meta property="og:image" content={builtInWardrobesData.images[0].thumb} />
-        <meta property="og:url" content="https://www.in3em-interijeri.com/ugradbeni-ormari" />
+        <meta
+          property="og:image"
+          content={builtInWardrobesData.images[0].thumb}
+        />
+        <meta
+          property="og:url"
+          content="https://in-3minterijeri/ugradbeni-ormari"
+        />
 
         {/* Twitter Card meta tags */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Ugradbeni ormari | In3em Interijeri" />
+        <meta
+          name="twitter:title"
+          content="Ugradbeni ormari | In3em Interijeri"
+        />
         <meta
           name="twitter:description"
           content="Pogledajte našu kolekciju ugradbenih ormara po mjeri, uključujući klizna vrata, unutrašnje rasporede i visokokvalitetne materijale za dugotrajnu uporabu."
         />
-        <meta name="twitter:image" content={builtInWardrobesData.images[0].thumb} />
-        <meta name="twitter:url" content="https://www.in3em-interijeri.com/ugradbeni-ormari" />
-      </Helmet>      <main className="wardrobe-main">
+        <meta
+          name="twitter:image"
+          content={builtInWardrobesData.images[0].thumb}
+        />
+        <meta
+          name="twitter:url"
+          content="https://in-3minterijeri/ugradbeni-ormari"
+        />
+                <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Naslovnica",
+                "item": "https://in-3minterijeri.com"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Kuhinje",
+                "item": "https://in-3minterijeri.com/ugradbeni-ormari"
+              }
+        
+            ]
+          })}
+        </script>
+      </Helmet>
+      <main className="wardrobe-main">
         <div id="gallery" className="gallery-grid">
           {builtInWardrobesData.images.map((image, index) => (
             <motion.div
@@ -91,7 +131,7 @@ const BuiltInWardrobesPage = () => {
               >
                 <LazyLoadImage
                   src={image.thumb}
-                  alt={image.alt}  // Koristi alt iz objekta
+                  alt={image.alt} // Koristi alt iz objekta
                   effect="blur" // Efekt zamagljenja za svaku sliku
                   className="gallery-image"
                 />

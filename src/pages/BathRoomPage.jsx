@@ -59,7 +59,7 @@ const BathRoomPage = () => {
           content="Pogledajte našu kolekciju kupaonskog namještaja po mjeri, uključujući ormariće, police, lavabo i druge komponente. Kvaliteta, funkcionalnost i dizajn."
         />
         <meta property="og:image" content={bathRoomData.images[0].thumb} /> {/* Prikazivanje slike prilikom dijeljenja */}
-        <meta property="og:url" content="https://www.in3em-interijeri.com/kupaonice" />
+        <meta property="og:url" content="https://in-3minterijeri.com/kupaonice" />
 
         {/* Twitter Card meta tags */}
         <meta name="twitter:card" content="summary_large_image" />
@@ -68,8 +68,29 @@ const BathRoomPage = () => {
           name="twitter:description"
           content="Pogledajte našu kolekciju kupaonskog namještaja po mjeri, uključujući ormariće, police, lavabo i druge komponente. Kvaliteta, funkcionalnost i dizajn."
         />
-        <meta name="twitter:image" content={bathRoomData.images[0].thumb} /> {/* Prikazivanje slike na Twitteru */}
-        <meta name="twitter:url" content="https://www.in3em-interijeri.com/kupaonice" />
+        <meta name="twitter:image" content="%PUBLIC_URL%/social.webp" /> {/* Prikazivanje slike na Twitteru */}
+        <meta name="twitter:url" content="https://in-3minterijeri.com/kupaonice" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Naslovnica",
+                "item": "https://in-3minterijeri.com"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Kuhinje",
+                "item": "https://in-3minterijeri.com/kupaonice"
+              }
+        
+            ]
+          })}
+        </script>
       </Helmet>  
           <main className="bath-main">
         <div id="gallery" className="gallery-grid">

@@ -1,5 +1,4 @@
 import React from "react";
-import { Helmet } from "react-helmet";
 import { useCookies } from '../contexts/CookieContekst';
 
 import "../styles/pages/PrivacyPolicyPage.css";
@@ -9,12 +8,7 @@ const PrivacyPolicyPage = () => {
 
   return (
     <div className="privacy-Policy-Page">
-       <Helmet>
-        <title>Izjava o zaštiti privatnosti</title>
-        <meta name="description" content="Pročitajte našu izjavu o zaštiti privatnosti i saznajte kako štitimo vaše osobne podatke." />
-        <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://in3m-interijeri.web.app/privacy-policy" />
-      </Helmet>
+    
       <main className="main-privacy-Policy-Page">
         <div className="main-privacy-Policy-Page-title">
           <h2>Izjava o zaštiti privatnosti</h2>
@@ -27,7 +21,7 @@ const PrivacyPolicyPage = () => {
       )}
           <p>
             Ovom se izjavom obvezujemo štititi privatnost korisnika i
-            posjetitelja naših mrežnih stranica <a href="https://in3m-interijeri.web.app/">https://in3m-interijeri.web.app/</a> uz
+            posjetitelja naših mrežnih stranica <a href="https://in-3minterijeri.com/">https://in-3minterijeri.com</a> uz
             sigurnost osobnih podataka primljenih u interakciji bilo kakve
             vrste.
           </p>

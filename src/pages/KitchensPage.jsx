@@ -12,7 +12,7 @@ const KitchensPage = () => {
   return (
     <div className="kitchens-page">
       <Helmet>
-        <title>Kuhinje po mjeri | In3em Interijeri</title>
+        <title>Kuhinje po mjeri | In3m Interijeri | kuhinje po mjeri suvremenog dizajna</title>
         <meta
           name="description"
           content="Pogledajte našu kolekciju kuhinja po mjeri, s modernim dizajnom i vrhunskom izradom. Naše kuhinje su prilagođene vašim potrebama i prostoru."
@@ -30,7 +30,7 @@ const KitchensPage = () => {
           property="og:description"
           content="Pogledajte našu kolekciju kuhinja po mjeri, s modernim dizajnom i vrhunskom izradom. Naše kuhinje su prilagođene vašim potrebama i prostoru."
         />
-        <meta property="og:url" content="https://www.in3em-interijeri.com/kuhinje" />
+        <meta property="og:url" content="https://in-3minterijeri.com/kuhinje" />
 
         {/* Twitter Card metatagi */}
         <meta name="twitter:card" content="summary_large_image" />
@@ -39,7 +39,28 @@ const KitchensPage = () => {
           name="twitter:description"
           content="Pogledajte našu kolekciju kuhinja po mjeri, s modernim dizajnom i vrhunskom izradom. Naše kuhinje su prilagođene vašim potrebama i prostoru."
         />
-        <meta name="twitter:url" content="https://www.in3em-interijeri.com/kuhinje" />
+        <meta name="twitter:url" content="https://in-3minterijeri.com/kuhinje" />
+        <meta name="twitter:image" content="%PUBLIC_URL%/social.webp" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Naslovnica",
+                "item": "https://in-3minterijeri.com"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Kuhinje",
+                "item": "https://in-3minterijeri.com/kuhinje"
+              }
+            ]
+          })}
+        </script>
       </Helmet>
       <main>
         {kitchensData.slice().reverse().map((kitchen, index) => (

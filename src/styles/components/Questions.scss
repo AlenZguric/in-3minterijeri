@@ -33,6 +33,16 @@
           box-shadow: 0 5px 15px rgba(255, 255, 255, 0.507);
           transform: translateY(-5px);
         }
+        .faq-answer {
+          max-height: 0;
+          overflow: hidden;
+          transition: max-height 1.1s ease;
+        }
+        
+        .faq-answer.open {
+          max-height: 1000px; /* Dovoljno velika vrijednost da sadržaj stane */
+          transition: max-height 1.1s ease;
+        }
   
         .faq-question {
           display: flex;
@@ -54,7 +64,7 @@
             color: rgba(255, 255, 255, 0.747);
           }
   
-          .rotate {
+          .arrow-icon.rotate {
             transform: rotate(180deg);
           }
         }

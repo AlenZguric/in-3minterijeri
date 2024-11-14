@@ -154,6 +154,15 @@
            .title-contact {
           display: flex;
           flex-direction: column;
+          a{
+            text-decoration: none;
+            color: white;
+            font-weight: 700;
+            font-style: normal;
+            &:hover{
+              text-decoration: underline;
+            }
+          }
           p {
             color: $text-color;
             padding: 15px;
@@ -171,8 +180,14 @@
         .MuiTextField-root {
           margin-bottom: 1.5rem;
           width: 100%;
+          background-color: rgba(100, 100, 100, 0);
           .MuiInputBase-input{
             color: white;
+            background-color: rgba(245, 245, 245, 0);
+          }
+          .MuiInputBase-root{
+            background-color: rgba(245, 245, 245, 0.452);
+
           }
         }
         .MuiButton-containedPrimary {
@@ -181,6 +196,11 @@
         }
         .MuiInputBase-input-MuiOutlinedInput-input {
           color: white;
+        }
+        button{
+          &:hover{
+            transform: scale(1.02);
+          }
         }
 
       }
