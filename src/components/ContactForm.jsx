@@ -141,7 +141,7 @@ const ContactForm = () => {
             <p>
               Vaše vizije savršenog namještaja mogu postati stvarnost. Izazovite
               nas i dopustite da vaš dom postane živahno mjesto. Ne čekajte,
-              obratite nam se danas za besplatnu izradu ponudu.
+              obratite nam se danas za besplatnu izradu ponude.
             </p>
             <p>
               {" "}
