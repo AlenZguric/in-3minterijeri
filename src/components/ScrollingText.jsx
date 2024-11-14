@@ -8,13 +8,14 @@ import '../styles/components/ScrollingText.css';
 
 const ScrollingText = () => {
   const words = [
-    { name: ' ELGRAD ', url: 'https://www.elgrad.hr/', color: '#ca1a20' },
-    { name: ' IVERPAN ', url: 'https://www.iverpan.hr/', color: 'black' },
-    { name: ' DEWALT ', url: 'https://www.dewalt.com/', color: '#ffba00' },
-    { name: ' FESTOOL ', url: 'https://www.festool.com/', color: '#46b82e' },
-    { name: ' Würth  ', url: 'https://eshop.wuerth.com.hr/', color: '#cc0000' },
-    { name: ' Schachermayer  ', url: 'https://schachermayer.hr/', color: '#fab400' },
-    { name: ' GRASS ', url: 'https://www.grass.eu/', color: 'black' }
+    { name: 'ELGRAD', url: 'https://www.elgrad.hr/', color: '#ca1a20' },
+    { name: 'IVERPAN', url: 'https://www.iverpan.hr/', color: 'black' },
+    { name: 'DEWALT', url: 'https://www.dewalt.com/', color: '#ffba00' },
+    { name: 'LAMELIO' , url: 'https://lamelio.hr/', color: 'black '},
+    { name: 'FESTOOL', url: 'https://www.festool.com/', color: '#46b82e' },
+    { name: 'Würth', url: 'https://eshop.wuerth.com.hr/', color: '#cc0000' },
+    { name: 'Schachermayer', url: 'https://schachermayer.hr/', color: '#fab400' },
+    { name: 'GRASS', url: 'https://www.grass.eu/', color: 'black' },
   ];
 
   const responsive = {
@@ -46,7 +47,7 @@ const ScrollingText = () => {
   infinite={true}
   autoPlay={true}
   autoPlaySpeed={7000}  // Smanjeni interval za neprekidno klizanje
-  customTransition="transform 6000ms linear" // Postavlja glatki prijelaz
+  customTransition="transform 11000ms linear" // Postavlja glatki prijelaz
   //transitionDuration={15000} // Brzina prijelaza
   keyBoardControl={true}
   showDots={false}

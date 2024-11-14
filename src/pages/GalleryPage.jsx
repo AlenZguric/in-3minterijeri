@@ -61,7 +61,7 @@ const categories = [
     title: "Zidne obloge",
     image: zidneOblogeImage,
     description:
-      "Naše zidne obloge pružaju elegantan izgled i dodatnu zaštitu zidova u vašem domu. Idealne su za sve prostorije, a izrađene su od visokokvalitetnih materijala poput PVC-a, drva i laminata, otpornih na vlagu i jednostavnih za održavanje.",
+      "Naše zidne obloge pružaju elegantan izgled i dodatnu zaštitu zidova u vašem domu. Idealne su za sve prostorije, a izrađene su od visokokvalitetnih materijala poput PVC-a i drveta koji su otporni na vlagu i jednostavni za održavanje.",
     url: "/zidne-obloge",
   },
 
