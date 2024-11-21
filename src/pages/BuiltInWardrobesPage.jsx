@@ -56,7 +56,7 @@ const BuiltInWardrobesPage = () => {
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="Ugradbeni ormari | In3em Interijeri"
+          content="Ugradbeni ormari | In-3m Interijeri"
         />
         <meta
           property="og:description"
@@ -89,6 +89,9 @@ const BuiltInWardrobesPage = () => {
           name="twitter:url"
           content="https://in-3minterijeri/ugradbeni-ormari"
         />
+
+<link rel="canonical" href="https://in-3minterijeri.com/ugradbeni-ormari" />
+
                 <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",

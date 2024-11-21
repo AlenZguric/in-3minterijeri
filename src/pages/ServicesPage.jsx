@@ -9,7 +9,7 @@ const Services = () => {
   return (
     <div className="services-page">
           <Helmet>
-        <title>Naše Usluge - Proces Izrade Namještaja po Mjeri | In3em Interijeri</title>
+        <title>Naše Usluge - Proces Izrade Namještaja po Mjeri | I-3m Interijeri</title>
         <meta
           name="description"
           content="Saznajte više o uslugama profesionalnog dizajna, projektiranja i izrade namještaja po mjeri, uključujući 3D nacrte, CNC obradu i montažu."
@@ -22,7 +22,7 @@ const Services = () => {
 
         {/* Open Graph metatagi */}
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Naše Usluge - Proces Izrade Namještaja po Mjeri | In3em Interijeri" />
+        <meta property="og:title" content="Naše Usluge - Proces Izrade Namještaja po Mjeri | In-3m Interijeri" />
         <meta
           property="og:description"
           content="Saznajte više o uslugama profesionalnog dizajna, projektiranja i izrade namještaja po mjeri, uključujući 3D nacrte, CNC obradu i montažu."
@@ -32,13 +32,20 @@ const Services = () => {
 
         {/* Twitter Card metatagi */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Naše Usluge - Proces Izrade Namještaja po Mjeri | In3em Interijeri" />
+        <meta name="twitter:title" content="Naše Usluge - Proces Izrade Namještaja po Mjeri | In-3m Interijeri" />
         <meta
           name="twitter:description"
           content="Saznajte više o uslugama profesionalnog dizajna, projektiranja i izrade namještaja po mjeri, uključujući 3D nacrte, CNC obradu i montažu."
         />
         <meta name="twitter:image" content="%PUBLIC_URL%/social.webp" /> {/* Zamijeniti sa stvarnom slikom */}
         <meta name="twitter:url" content="https://in-3minterijeri.com/usluge" />
+
+         {/* Kanonska veza za izbjegavanje dupliciranog sadržaja */}
+  <link rel="canonical" href="https://in-3minterijeri.com/usluge" />
+
+{/* Dodatni meta tag za jezik */}
+<meta http-equiv="Content-Language" content="hr" /> {/* Ovisno o jeziku stranice */}
+
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
@@ -53,7 +60,7 @@ const Services = () => {
               {
                 "@type": "ListItem",
                 "position": 2,
-                "name": "Kuhinje",
+                "name": "Usluge",
                 "item": "https://in-3minterijeri.com/usluge"
               }
         

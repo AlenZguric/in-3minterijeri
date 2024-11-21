@@ -40,7 +40,7 @@ const EntryHallPage = () => {
   return (
     <div className="entryhall-page">
 <Helmet>
-        <title>Hodnici i Predsoblja | In3em Interijeri</title>
+        <title>Hodnici i Predsoblja | In-3m Interijeri</title>
         <meta
           name="description"
           content="Pogledajte našu kolekciju hodnika i predsoblja po mjeri, s modernim i funkcionalnim dizajnom koji će vašem prostoru dati sofisticirani izgled."
@@ -53,7 +53,7 @@ const EntryHallPage = () => {
 
         {/* Open Graph metatagi */}
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Hodnici i Predsoblja | In3em Interijeri" />
+        <meta property="og:title" content="Hodnici i Predsoblja | In-3m Interijeri" />
         <meta
           property="og:description"
           content="Pogledajte našu kolekciju hodnika i predsoblja po mjeri, s modernim i funkcionalnim dizajnom koji će vašem prostoru dati sofisticirani izgled."
@@ -70,6 +70,10 @@ const EntryHallPage = () => {
         />
         <meta name="twitter:image" content={entryHallData.images[0].thumb} />
         <meta name="twitter:url" content="https://in-3minterijeri.com/hodnici-i-predsoblja" />
+
+          {/* Kanonska veza za izbjegavanje dupliciranog sadržaja */}
+  <link rel="canonical" href="https://in-3minterijeri.com/hodnici-i-predsoblja" />
+
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
@@ -84,7 +88,7 @@ const EntryHallPage = () => {
               {
                 "@type": "ListItem",
                 "position": 2,
-                "name": "Kuhinje",
+                "name": "Hodnici i Predsoblja",
                 "item": "https://in-3minterijeri.com/hodnici-i-predsoblja"
               }
         

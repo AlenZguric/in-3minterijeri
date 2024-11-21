@@ -6,7 +6,7 @@
   padding-left: 3rem;
   padding-right: 3rem;
   width: 100%;
-  height: 110vh;
+  min-height: 110vh;
   justify-content: center;
 
   &:nth-child(even) {
@@ -70,6 +70,7 @@
       flex-direction: row;
       position: relative; // Dodano za strelice
       width: 100%;
+      height: 100%;
       align-content: space-between;
       .large-image {
         display: flex;

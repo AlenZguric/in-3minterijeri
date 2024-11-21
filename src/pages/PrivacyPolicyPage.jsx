@@ -1,5 +1,7 @@
 import React from "react";
 import { useCookies } from '../contexts/CookieContekst';
+import { Helmet } from "react-helmet";
+
 
 import "../styles/pages/PrivacyPolicyPage.css";
 
@@ -8,7 +10,53 @@ const PrivacyPolicyPage = () => {
 
   return (
     <div className="privacy-Policy-Page">
-    
+    <Helmet>
+  {/* Osnovni meta tagovi za SEO */}
+  <title>Izjava o zaštiti privatnosti - In-3m Interijeri</title>
+  <meta name="description" content="Izjava o zaštiti privatnosti. Kontaktirajte nas za sve informacije o proizvodima i uslugama tvrtke In-3M Interijeri. Ovdje smo za sve vaše upite!" />
+  <meta name="keywords" content="Izjava o zaštiti privatnosti, In-3M Interijeri, namještaj, prilagođeni namještaj, interijeri" />
+  <meta name="robots" content="index, follow" /> {/* Preporučuje se za bolje SEO indeksiranje */}
+
+  {/* Open Graph za društvene mreže */}
+  <meta property="og:title" content="Kontakt - In-3M Interijeri" />
+  <meta property="og:description" content="Izjava o zaštiti privatnosti. Kontaktirajte nas za sve informacije o proizvodima i uslugama tvrtke In-3M Interijeri." />
+  <meta property="og:url" content="https://in-3minterijeri.com/politika-privatnosti" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="%PUBLIC_URL%/social.webp" /> {/* Zamijenite s pravom URL adresom slike */}
+
+  {/* Twitter Card za dijeljenje na Twitteru */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Izjava o zaštiti privatnosti - In-3M Interijeri" />
+  <meta name="twitter:description" content="Izjava o zaštiti privatnosti. Kontaktirajte nas za sve informacije o proizvodima i uslugama tvrtke In-3M Interijeri." />
+  <meta name="twitter:image" content="%PUBLIC_URL%/social.webp" /> {/* Zamijenite s pravom URL adresom slike */}
+
+  {/* Kanonska veza za izbjegavanje dupliciranog sadržaja */}
+  <link rel="canonical" href="https://in-3minterijeri.com/politika-privatnosti" />
+
+  {/* Dodatni meta tag za jezik */}
+  <meta http-equiv="Content-Language" content="hr" /> {/* Ovisno o jeziku stranice */}
+  <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Naslovnica",
+                "item": "https://in-3minterijeri.com"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Izjava o zaštiti privatnosti",
+                "item": "https://in-3minterijeri.com/politika-privatnosti"
+              }
+        
+            ]
+          })}
+        </script>
+</Helmet>
       <main className="main-privacy-Policy-Page">
         <div className="main-privacy-Policy-Page-title">
           <h2>Izjava o zaštiti privatnosti</h2>

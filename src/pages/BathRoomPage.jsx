@@ -47,13 +47,13 @@ const BathRoomPage = () => {
         />
         <meta
           name="keywords"
-          content="kupaonski namještaj, kupaonica, ormarići, police, lavabo, interijeri, po mjeri"
+          content="kupaonski namještaj, kupaonica, ormarići, police, umivaonici, interijeri, po mjeri"
         />
         <meta name="robots" content="index, follow" />
 
         {/* Open Graph meta tags */}
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Kupaonski Namještaj | In3em Interijeri" />
+        <meta property="og:title" content="Kupaonski Namještaj | In-3m Interijeri" />
         <meta
           property="og:description"
           content="Pogledajte našu kolekciju kupaonskog namještaja po mjeri, uključujući ormariće, police, lavabo i druge komponente. Kvaliteta, funkcionalnost i dizajn."
@@ -70,6 +70,10 @@ const BathRoomPage = () => {
         />
         <meta name="twitter:image" content="%PUBLIC_URL%/social.webp" /> {/* Prikazivanje slike na Twitteru */}
         <meta name="twitter:url" content="https://in-3minterijeri.com/kupaonice" />
+        
+          {/* Kanonska veza za izbjegavanje dupliciranog sadržaja */}
+  <link rel="canonical" href="https://in-3minterijeri.com/kupaonice" />
+
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",

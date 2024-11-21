@@ -47,6 +47,7 @@ const AboutPage = () => {
   
   {/* Dodatni meta tag za jezik */}
   <meta http-equiv="Content-Language" content="hr" /> {/* Ovisno o jeziku stranice */}
+
   <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
@@ -61,7 +62,7 @@ const AboutPage = () => {
               {
                 "@type": "ListItem",
                 "position": 2,
-                "name": "Kuhinje",
+                "name": "O Nama",
                 "item": "https://in-3minterijeri.com/o-nama"
               }
         

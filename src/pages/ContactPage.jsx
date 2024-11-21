@@ -50,7 +50,7 @@ const ContactPage = () => {
               {
                 "@type": "ListItem",
                 "position": 2,
-                "name": "Kuhinje",
+                "name": "Kontakt",
                 "item": "https://in-3minterijeri.com/kontakt"
               }
         

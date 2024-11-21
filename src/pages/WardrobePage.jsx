@@ -54,7 +54,7 @@ const WardrobePage = () => {
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="Wardrobe Collection | Ormari po mjeri"
+          content="Ormari po mjeri |In-3m interijeri"
         />
         <meta
           property="og:description"
@@ -67,7 +67,7 @@ const WardrobePage = () => {
         <meta name="twitter:card" content="summary_large_image" />
         <meta
           name="twitter:title"
-          content="Wardrobe Collection | Ormari po mjeri"
+          content="Ormari po mjeri  | In-3m interijeri"
         />
         <meta
           name="twitter:description"
@@ -76,7 +76,11 @@ const WardrobePage = () => {
         <meta name="twitter:image" content="%PUBLIC_URL%/social.webp" />{" "}
         {/* Zamijeniti sa stvarnom slikom */}
         <meta name="twitter:url" content="https://in-3minterijeri.com/ormari" />
+  {/* Kanonska veza za izbjegavanje dupliciranog sadržaja */}
+  <link rel="canonical" href="https://in-3minterijeri.com/ormari" />
 
+  {/* Dodatni meta tag za jezik */}
+  <meta http-equiv="Content-Language" content="hr" /> {/* Ovisno o jeziku stranice */}
         
       </Helmet>{" "}
       <main className="wardrobe-main">

@@ -74,7 +74,7 @@ const GalleryPage = () => {
   return (
     <div className="gallery-page">
  <Helmet>
-        <title>Galerija - Namještaj po mjeri | In3em Interijeri</title>
+        <title>Galerija - Namještaj po mjeri | In-3m Interijeri</title>
         <meta
           name="description"
           content="Pogledajte našu kolekciju namještaja po mjeri, uključujući kuhinje, kupaonice, hodnike, ormariće i više. Kvaliteta i dizajn na dohvat ruke."
@@ -87,7 +87,7 @@ const GalleryPage = () => {
 
         {/* Open Graph meta tags */}
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Galerija - Namještaj po mjeri | In3em Interijeri" />
+        <meta property="og:title" content="Galerija - Namještaj po mjeri | In-3m Interijeri" />
         <meta
           property="og:description"
           content="Pogledajte našu kolekciju namještaja po mjeri, uključujući kuhinje, kupaonice, hodnike, ormariće i više. Kvaliteta i dizajn na dohvat ruke."
@@ -118,7 +118,7 @@ const GalleryPage = () => {
               {
                 "@type": "ListItem",
                 "position": 2,
-                "name": "Kuhinje",
+                "name": "Proizvodi",
                 "item": "https://in-3minterijeri.com/proizvodi"
               }
         

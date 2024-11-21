@@ -38,7 +38,7 @@ const KidsRoomsPage = () => {
   return (
     <div className="kids-rooms-page">
       <Helmet>
-        <title>Dječje Sobe | In3em Interijeri</title>
+        <title>Dječje Sobe | In-3m Interijeri</title>
         <meta
           name="description"
           content="Pogledajte našu kolekciju dječjih soba po mjeri, s funkcionalnim i kreativnim dizajnom koji će pružiti udoban prostor za vašu djecu."
@@ -51,7 +51,7 @@ const KidsRoomsPage = () => {
 
         {/* Open Graph metatagi */}
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Dječje Sobe | In3em Interijeri" />
+        <meta property="og:title" content="Dječje Sobe | In-3m Interijeri" />
         <meta
           property="og:description"
           content="Pogledajte našu kolekciju dječjih soba po mjeri, s funkcionalnim i kreativnim dizajnom koji će pružiti udoban prostor za vašu djecu."
@@ -64,7 +64,7 @@ const KidsRoomsPage = () => {
 
         {/* Twitter Card metatagi */}
         <meta name="twitter:card" content="%PUBLIC_URL%/social.webp" />
-        <meta name="twitter:title" content="Dječje Sobe | In3m Interijeri" />
+        <meta name="twitter:title" content="Dječje Sobe | In-3m Interijeri" />
         <meta
           name="twitter:description"
           content="Pogledajte našu kolekciju dječjih soba po mjeri, s funkcionalnim i kreativnim dizajnom koji će pružiti udoban prostor za vašu djecu."
@@ -74,6 +74,9 @@ const KidsRoomsPage = () => {
           name="twitter:url"
           content="https://in-3minterijeri.com/djecje-sobe"
         />
+
+  {/* Kanonska veza za izbjegavanje dupliciranog sadržaja */}
+  <link rel="canonical" href="https://in-3minterijeri.com/djecje-sobe" />
                <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
@@ -88,7 +91,7 @@ const KidsRoomsPage = () => {
               {
                 "@type": "ListItem",
                 "position": 2,
-                "name": "Kuhinje",
+                "name": "Dječje sobe",
                 "item": "https://in-3minterijeri.com/djecje-sobe"
               }
         
